@@ -34,9 +34,24 @@ angular.module('starter.controllers', [])
     })
 
     .controller('HomeCtrl', function($scope, $ionicLoading, $compile) {
-      function initialize() {
 
-        var myLatlng = new google.maps.LatLng(43.07493,-89.381388);
+      navigator.geolocation.getCurrentPosition(function(pos) {
+        console.log('Position=')
+        console.log(pos);
+        latLong =  { 'lat' : pos.coords.latitude, 'long' : pos.coords.longitude };
+        initialize(latLong);
+
+      }, function(error) {
+        console.log('Got error!');
+        console.log(error);
+        latLong = null
+
+      });
+
+      function initialize($coords) {
+
+        var myLatlng = new google.maps.LatLng($coords.lat,$coords.long);
+
         console.log("aqui");
         var mapOptions = {
           center: myLatlng,
@@ -66,7 +81,7 @@ angular.module('starter.controllers', [])
 
         $scope.map = map;
       }
-      initialize();
+
       google.maps.event.addDomListener(window, 'load', initialize);
 
 
