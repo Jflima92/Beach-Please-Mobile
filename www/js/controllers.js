@@ -35,18 +35,20 @@ angular.module('starter.controllers', [])
 
     .controller('HomeCtrl', function($scope, $ionicLoading, $compile) {
 
-      navigator.geolocation.getCurrentPosition(function(pos) {
-        console.log('Position=')
-        console.log(pos);
-        latLong =  { 'lat' : pos.coords.latitude, 'long' : pos.coords.longitude };
-        initialize(latLong);
+      $scope.init = function() {
+        navigator.geolocation.getCurrentPosition(function (pos) {
+          console.log('Position=')
+          console.log(pos);
+          latLong = {'lat': pos.coords.latitude, 'long': pos.coords.longitude};
+          initialize(latLong);
 
-      }, function(error) {
-        console.log('Got error!');
-        console.log(error);
-        latLong = null
+        }, function (error) {
+          console.log('Got error!');
+          console.log(error);
+          latLong = null
 
-      });
+        });
+      }
 
       function initialize($coords) {
 
