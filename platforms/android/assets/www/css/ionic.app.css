@@ -7603,15 +7603,30 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-#scroll {
-  position: absolute;
-  height: 100%;
-  width: 100%; }
+map {
+  display: block;
+  width: 100%;
+  height: 100%; }
 
 .scroll {
-  height: 100% !important; }
+  height: 100%; }
+
+/*
+
+#scroll{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.scroll{
+  height: 100% !important;
+  //ola
+}
 
 #map {
   width: 100%;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+}
+*/

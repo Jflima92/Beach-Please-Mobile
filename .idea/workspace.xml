@@ -2,577 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac6ff863-cad7-4955-867d-4e63bf050883" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\Address.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\Connection.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\ConnectionPool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\Dispatcher.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\Failure.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\HttpResponseCache.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\Job.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\MediaType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\OkAuthenticator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\OkHttpClient.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\OkResponseCache.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\Request.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\Response.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\ResponseSource.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\Route.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\RouteDatabase.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\TunnelRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\AbstractOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Base64.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\DiskLruCache.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Dns.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\FaultRecoveringOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\NamedRunnable.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Platform.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\StrictLineReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Util.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\AbstractHttpInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HeaderParser.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpAuthenticator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpDate.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpEngine.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpTransport.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpURLConnectionImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpsEngine.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpsURLConnectionImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\OkResponseCacheAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\Policy.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RawHeaders.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RequestHeaders.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\ResponseHeaders.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RetryableOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RouteSelector.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\SpdyTransport.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\Transport.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\UnknownLengthHttpInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\ErrorCode.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\FrameReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\FrameWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\HeadersMode.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Hpack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Http20Draft06.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\IncomingStreamHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\NameValueBlockReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Ping.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Settings.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Spdy3.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyConnection.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Variant.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\tls\DistinguishedNameParser.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\tls\OkHostnameVerifier.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\App.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\CordovaChromeClient.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\CordovaUriHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewClient.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\DirectoryManager.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\DroidGap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\ExifHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\FileHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\IceCreamCordovaWebViewClient.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\JSONUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\LinearLayoutSoftKeyboardDetect.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\ScrollEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\CordovaLib\src\org\apache\cordova\SplashScreenInternal.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\assets\www\plugins\plugin.google.maps\www\googlemaps-cdv-plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\assets\www\plugins\plugin.http.request\www\http-request.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\custom_rules.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\libs\google-volley.jar" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\AsyncKmlParser.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\AsyncLicenseInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\AsyncLoadImage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\AsyncLoadImageInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\External.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\GoogleMaps.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\MyGeocoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\MyPlugin.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\MyPluginInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\MyPluginLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginAsyncInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginCircle.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginGroundOverlay.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginKmlOverlay.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginMap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginMarker.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginPolygon.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginPolyline.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginTileOverlay.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginTileProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\google\maps\PluginUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\http\request\HttpRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\platforms\android\src\plugin\http\request\StringRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\README.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\css\app.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\css\prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\images\hokkaido.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\images\welcome_img.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\js\async.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\js\example.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\js\jquery.fittext.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\js\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\js\jquery.tmpl.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\js\prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\kml\marker.kml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\kml\polygon.kml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\kml\polyline.kml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\kml\shizuoka.kml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\finish.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step10.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step11.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step12.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step2.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step3.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step4.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step5.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step6.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step7.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step8.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\step9.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp2\www\pages\welcome.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\action-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\action-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\alert-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\alert-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-d-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-d-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-d-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-d-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-d-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-d-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-u-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-u-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-u-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-u-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-u-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\arrow-u-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\audio-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\audio-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\back-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\back-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\bars-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\bars-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\bullets-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\bullets-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\calendar-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\calendar-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\camera-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\camera-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\carat-d-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\carat-d-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\carat-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\carat-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\carat-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\carat-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\carat-u-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\carat-u-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\check-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\check-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\clock-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\clock-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\cloud-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\cloud-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\comment-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\comment-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\delete-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\delete-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\edit-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\edit-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\eye-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\eye-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\forbidden-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\forbidden-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\forward-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\forward-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\gear-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\gear-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\grid-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\grid-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\heart-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\heart-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\home-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\home-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\info-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\info-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\location-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\location-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\lock-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\lock-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\mail-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\mail-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\minus-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\minus-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\navigation-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\navigation-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\phone-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\phone-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\plus-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\plus-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\power-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\power-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\recycle-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\recycle-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\refresh-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\refresh-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\search-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\search-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\shop-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\shop-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\star-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\star-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\tag-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\tag-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\user-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\user-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\video-black.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-png\video-white.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\action-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\action-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\alert-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\alert-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-d-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-d-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-d-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-d-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-d-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-d-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-u-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-u-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-u-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-u-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-u-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\arrow-u-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\audio-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\audio-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\back-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\back-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\bars-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\bars-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\bullets-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\bullets-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\calendar-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\calendar-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\camera-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\camera-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\carat-d-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\carat-d-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\carat-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\carat-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\carat-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\carat-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\carat-u-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\carat-u-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\check-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\check-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\clock-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\clock-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\cloud-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\cloud-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\comment-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\comment-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\delete-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\delete-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\edit-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\edit-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\eye-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\eye-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\forbidden-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\forbidden-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\forward-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\forward-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\gear-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\gear-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\grid-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\grid-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\heart-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\heart-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\home-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\home-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\info-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\info-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\location-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\location-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\lock-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\lock-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\mail-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\mail-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\minus-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\minus-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\navigation-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\navigation-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\phone-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\phone-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\plus-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\plus-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\power-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\power-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\recycle-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\recycle-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\refresh-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\refresh-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\search-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\search-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\shop-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\shop-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\star-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\star-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\tag-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\tag-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\user-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\user-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\video-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\images\icons-svg\video-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\jquery.mobile-1.4.4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\images\google_logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\images\google_tokyo_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\images\icon-yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\images\myinfo.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\js\async.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\js\example.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\js\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\js\jquery.mobile-1.4.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\js\jquery.mobile.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\js\prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\kml\marker.kml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\kml\polygon.kml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\kml\polyline.kml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\customInfoWindow.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\direction.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\drawOverlays.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\geocoding.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\getVisibleRegion.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\gotoGoogle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\groundOverlay.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\htmlOverlay.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\info_style.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\kmlOverlay.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\mapOptions.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\mapRemove.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\marker.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\marker1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\marker2.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\marker3.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\marker_advance.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\panBy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\reverse_geocoding.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\tileOverlay.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\welcome.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\example\DemoApp\www\pages\whereAreYou.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\AsyncKmlParser.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\AsyncLicenseInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\AsyncLoadImage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\AsyncLoadImageInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\External.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\GoogleMaps.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\MyGeocoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\MyPlugin.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\MyPluginInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\MyPluginLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginAsyncInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginCircle.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginGroundOverlay.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginKmlOverlay.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginMap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginMarker.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginPolygon.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginPolyline.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginTileOverlay.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginTileProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\android\plugin\google\maps\PluginUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Circle.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Circle.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\External.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\External.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Geocoder.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Geocoder.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\GoogleMaps.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\GoogleMaps.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\GoogleMapsViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\GoogleMapsViewController.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\GroundOverlay.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\GroundOverlay.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\KmlOverlay.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\KmlOverlay.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Map.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Map.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Marker.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Marker.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyPlgunProtocol.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyPluginLayer.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyPluginLayer.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyPluginLayerDebugView.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyPluginLayerDebugView.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyPluginScrollView.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyPluginScrollView.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyReachability.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\MyReachability.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\NSData-Base64\NSData+Base64.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\NSData-Base64\NSData+Base64.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\NSData-Base64\NSData+Base64.podspec" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\PluginUtil.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\PluginUtil.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Polygon.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Polygon.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Polyline.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\Polyline.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\TBXML.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\TBXML.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\TileOverlay.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\src\ios\GoogleMaps\TileOverlay.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.google.maps\www\googlemaps-cdv-plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\README.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\examle\www\css\index.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\examle\www\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\examle\www\js\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\examle\www\js\jquery-2.1.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\libs\android\google-volley.jar" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\android\plugin\http\request\HttpRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\android\plugin\http\request\StringRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\HttpRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\HttpRequest.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\BSD-LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest.xcodeproj\project.pbxproj" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest.xcodeproj\project.xcworkspace\contents.xcworkspacedata" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\R9HTTPRequestRedirectTest.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\R9HTTPRequestRedirectTest.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\R9HTTPRequestTests-Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\R9HTTPRequestTests.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\R9HTTPRequestTests.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\R9HTTPWSSERequestTest.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\R9HTTPWSSERequestTest.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\en.lproj\InfoPlist.strings" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\sample.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequestTests\sync.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\Extensions\NSData+Base64.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\Extensions\NSData+Base64.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\Extensions\NSData+Crypto.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\Extensions\NSData+Crypto.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\Extensions\NSString+Crypto.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\Extensions\NSString+Crypto.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\Extensions\R9HTTPWSSERequest.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\Extensions\R9HTTPWSSERequest.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\R9AppDelegate.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\R9AppDelegate.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\R9HTTPRequest-Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\R9HTTPRequest-Prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\R9HTTPRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\R9HTTPRequest.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\en.lproj\InfoPlist.strings" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\R9HTTPRequest\main.m" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\src\ios\HttpRequest\R9HTTPRequest\README" afterPath="" />
-      <change type="DELETED" beforePath="E:\Projectos\SDIS_Mobile\plugins\plugin.http.request\www\http-request.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gitignore" afterPath="$PROJECT_DIR$/platforms/android/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.project" afterPath="$PROJECT_DIR$/platforms/android/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaHttpAuthHandler.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaHttpAuthHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaClientCertRequest.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaClientCertRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaHttpAuthHandler.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaHttpAuthHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/src/com/ionicframework/sdis565965/MainActivity.java" afterPath="$PROJECT_DIR$/platforms/android/src/com/ionicframework/sdis565965/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/_where-is-www.txt" afterPath="$PROJECT_DIR$/platforms/android/assets/_where-is-www.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SDIS_Mobile.iml" afterPath="$PROJECT_DIR$/.idea/SDIS_Mobile.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/android_sdk_version.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/android_sdk_version.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/android_sdk_version" afterPath="$PROJECT_DIR$/platforms/android/cordova/android_sdk_version" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/appinfo.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/appinfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/build.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/build.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/build.gradle" afterPath="$PROJECT_DIR$/platforms/android/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build.gradle" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/build.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/build" afterPath="$PROJECT_DIR$/platforms/android/cordova/build" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/check_reqs.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/check_reqs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/check_reqs" afterPath="$PROJECT_DIR$/platforms/android/cordova/check_reqs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/clean.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/clean.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/clean" afterPath="$PROJECT_DIR$/platforms/android/cordova/clean" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/controllers.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/cordova.gradle" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/cordova.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova.js" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/defaults.xml" afterPath="$PROJECT_DIR$/platforms/android/cordova/defaults.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/device.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/device.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/emulator.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/emulator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/exec.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/exec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/home.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/home.html" afterPath="$PROJECT_DIR$/www/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/ionic.app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/log.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/log.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/log.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/log.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/log" afterPath="$PROJECT_DIR$/platforms/android/cordova/log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/menu.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/menu.html" afterPath="$PROJECT_DIR$/www/templates/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/plugin-build.gradle" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/plugin-build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/project.properties" afterPath="$PROJECT_DIR$/platforms/android/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/project.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/project.properties" afterPath="$PROJECT_DIR$/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/run.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/run.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/run.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/run.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/run" afterPath="$PROJECT_DIR$/platforms/android/cordova/run" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/spawn.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/spawn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/values/strings.xml" afterPath="$PROJECT_DIR$/platforms/android/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/version.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/version.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/version" afterPath="$PROJECT_DIR$/platforms/android/cordova/version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ionic.app.scss" afterPath="$PROJECT_DIR$/scss/ionic.app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SDIS_Mobile.iws" />
@@ -594,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".bowerrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -607,8 +55,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state vertical-scroll-proportion="-3.3333333">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -617,8 +65,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -627,7 +75,7 @@
       <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.137255">
+            <state vertical-scroll-proportion="0.0">
               <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
               <folding />
             </state>
@@ -637,18 +85,8 @@
       <file leaf-file-name="playlist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/playlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
+            <state vertical-scroll-proportion="0.0">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playlists.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/playlists.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -658,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -668,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -677,18 +115,28 @@
       <file leaf-file-name="ionic.app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state vertical-scroll-proportion="-10.076923">
+              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6061047">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="117" column="10" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directives.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2622721">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -713,13 +161,14 @@
         <option value="$PROJECT_DIR$/SDIS/scss/ionic.app.scss" />
         <option value="$PROJECT_DIR$/SDIS/www/js/app.js" />
         <option value="$PROJECT_DIR$/SDIS/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/templates/menu.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/www/templates/home.html" />
         <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
-        <option value="$PROJECT_DIR$/www/templates/menu.html" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -765,7 +214,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -812,24 +260,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -848,50 +278,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cordova-plugin-geolocation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ionic-starter-maps" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projectos\SDIS_Mobile\www\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projectos\SDIS_Mobile\www\js\controllers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -905,6 +312,13 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
@@ -941,27 +355,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08219178" sideWeight="0.5060729" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08113804" sideWeight="0.49392712" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08219178" sideWeight="0.5060729" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08746049" sideWeight="0.49392712" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5003358" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19891892" sideWeight="0.49966422" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19891892" sideWeight="0.49966422" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24855907" sideWeight="0.5006676" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -983,6 +397,246 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/playlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/playlists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/playlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/playlists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/playlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/playlists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
@@ -992,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,27 +681,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.137255">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
           <folding />
         </state>
@@ -1070,16 +706,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/playlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.076923">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1087,31 +747,31 @@
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6061047">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="10" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3333333">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2622721">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
