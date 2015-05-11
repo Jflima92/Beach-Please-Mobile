@@ -24,12 +24,6 @@
             "subdir": "."
         }
     },
-    "plugin.google.maps": {
-        "source": {
-            "type": "registry",
-            "id": "plugin.google.maps"
-        }
-    },
     "plugin.http.request": {
         "source": {
             "type": "registry",
