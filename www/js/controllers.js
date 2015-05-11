@@ -33,7 +33,7 @@ angular.module('starter.controllers', [])
         };
     })
 
-    .controller('HomeCtrl', function($scope, $ionicLoading, $compile, $ionicPlatform){
+    .controller('HomeCtrl', function($scope, $ionicLoading, $cordovaGeolocation){
 
         /*
          function initialize() {
@@ -108,14 +108,28 @@ angular.module('starter.controllers', [])
                 showBackdrop: false
             });
 
-            navigator.geolocation.getCurrentPosition(function (pos) {
-                console.log('Got pos', pos);
-                $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-                $scope.loading.hide();
-            }, function (error) {
-                alert('Unable to get location: ' + error.message);
-            });
-        };
+            /*    navigator.geolocation.getCurrentPosition(function (pos) {
+             console.log('Got pos', pos);
+             $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+             $scope.loading.hide();
+             }, function (error) {
+             alert('Unable to get location: ' + error.message);
+             });
+             */
+            var posOptions = {timeout: 10000, enableHighAccuracy: false};
+            $cordovaGeolocation
+                .getCurrentPosition(posOptions)
+                .then(function (position) {
+                    var lat = position.coords.latitude,
+                        long = position.coords.longitude,
+                        initialLocation = new google.maps.LatLng(lat, long);
+
+                    $scope.map.setCenter(initialLocation);
+                    $ionicLoading.hide();
+
+
+                });
+        }
         /* function initialize($coords) {
 
          var myLatlng = new google.maps.LatLng($coords.lat,$coords.long);

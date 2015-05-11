@@ -1,15 +1,15 @@
 angular.module('starter.directives', [])
 
-.directive('map', function() {
+.directive('map', function(geoLocation) {
   return {
     restrict: 'E',
     scope: {
       onCreate: '&'
     },
-    link: function ($scope, $element, $attr) {
+    link: function ($scope, $element) {
       function initialize() {
         var mapOptions = {
-          center: new google.maps.LatLng(43.07493, -89.381388),
+          center: new google.maps.LatLng(geoLocation.getGeolocation().lat, geoLocation.getGeolocation().lng),
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
