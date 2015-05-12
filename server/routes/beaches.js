@@ -30,19 +30,27 @@ router.get('/', function(req, res, next) {
                 data = JSON.parse(body);
 
                 var results = [];
+                console.log(req.params.dist);
 
                 console.log(data["rows"][0]["elements"]);
 
-                for(var i=0; i<data["rows"][0]["elements"].length;i++){
+                //Verifies de query to the beaches and applies it, according to the max distance chosen : localhost:3000/beaches?dist=10000
+                if (req.query.dist != undefined) {
 
-                    console.log("fora");
-                    console.log(data["rows"][0]["elements"][i]["distance"]["value"]);
+                    for (var i = 0; i < data["rows"][0]["elements"].length; i++) {
 
-                    if (data["rows"][0]["elements"][i]["distance"]["value"]<10000){
-                        console.log("entrou");
-                        results.push(todos[i]);
+                        console.log("fora");
+                        console.log(data["rows"][0]["elements"][i]["distance"]["value"]);
+
+                        if (data["rows"][0]["elements"][i]["distance"]["value"] < req.query.dist) {
+                            console.log("entrou");
+                            results.push(todos[i]);
+                        }
                     }
                 }
+                else
+                    results = todos;  //if no queries are sent in url, return all available beaches
+
                 res.json(results);
             }
         })
