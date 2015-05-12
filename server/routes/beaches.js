@@ -8,9 +8,59 @@ var beach = require('../models/beach.js');
 router.get('/', function(req, res, next) {
     beach.find(function (err, todos) {
         if (err) return next(err);
-        res.json(todos);
+
+        var coords= "";
+
+        for(i=0;i<todos.length-1;i++){
+
+            coords += todos[i]["lat"] + ","+todos[i]["lng"]+ "|" ;
+
+        }
+
+        coords += todos[todos.length-1]["lat"] + ","+todos[todos.length-1]["lng"] ;
+
+
+
+        var url = "http://maps.googleapis.com/maps/api/distancematrix/json?origins=" + "41.1778751,-8.597915999999941"+ "&destinations="+ coords;
+
+        var cenas ={
+            "coords": coords,
+            "url": url
+
+        };
+
+        var http = require("http");
+
+        var request = http.get(url, function (response) {
+            // data is streamed in chunks from the server
+            // so we have to handle the "data" event
+            var buffer = "",
+                data,
+                route;
+
+            response.on("data", function (chunk) {
+                buffer += chunk;
+            });
+
+            response.on("end", function (err) {
+                // finished transferring data
+                // dump the raw data
+
+                data = JSON.parse(buffer);
+
+
+                res.json(data);
+
+                // extract the distance and time
+
+            });
+        });
+
+
+        //res.json(cenas);
     });
 });
+
 
 router.post('/', function(req, res, next) {
     beach.create(req.body, function (err, post) {
