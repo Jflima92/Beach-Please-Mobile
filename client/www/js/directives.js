@@ -63,7 +63,7 @@ angular.module('starter.directives', [])
       if (document.readyState === "complete") {
         initialize();
       } else {
-        google.maps.event.addDomListener(window, 'load', initialize);
+        ionic.Platform.ready(initialize);
       }
     }
   }
