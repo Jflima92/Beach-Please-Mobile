@@ -48,8 +48,32 @@ router.get('/', function(req, res, next) {
 
                 data = JSON.parse(buffer);
 
+                var results = [];
 
-                res.json(data);
+
+                console.log(data["rows"][0]["elements"]);
+
+                //rows = JSON.parse(data["rows"]);
+
+
+
+
+
+                for(var i=0; i<data["rows"][0]["elements"].length;i++){
+
+
+                    console.log("fora");
+                    console.log(data["rows"][0]["elements"][i]["distance"]["value"]);
+                    if (data["rows"][0]["elements"][i]["distance"]["value"]<20000){
+
+                        console.log("entrou");
+                        results.push(todos[i]);
+
+                    }
+
+                }
+
+                res.json(results);
 
                 // extract the distance and time
 
