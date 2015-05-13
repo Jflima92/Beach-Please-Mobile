@@ -78,5 +78,16 @@ angular.module('starter.controllers', [])
         ];
     })
 
-    .controller('PlaylistCtrl', function($scope, $stateParams) {
+    .controller('SearchCtrl', function($scope, Beach) {
+        $scope.beaches = [];
+        Beach.getFirst(15000).then(function(beaches){
+            console.log(beaches);
+            $scope.beaches = beaches;
+        });
+    })
+
+
+
+    .controller('PreloadedCtrl', function($scope, Beach) {
+
     });

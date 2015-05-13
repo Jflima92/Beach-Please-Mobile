@@ -30,7 +30,6 @@ router.get('/', function(req, res, next) {
                 data = JSON.parse(body);
 
                 var results = [];
-                console.log(req.params.dist);
 
                 console.log(data["rows"][0]["elements"]);
 
@@ -45,11 +44,14 @@ router.get('/', function(req, res, next) {
                         if (data["rows"][0]["elements"][i]["distance"]["value"] < req.query.dist) {
                             console.log("entrou");
                             results.push(todos[i]);
+
                         }
                     }
                 }
-                else
+                else{
                     results = todos;  //if no queries are sent in url, return all available beaches
+                }
+                    console.log(results);
 
                 res.json(results);
             }

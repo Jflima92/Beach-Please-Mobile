@@ -43,7 +43,8 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.directives','
                 url: "/search",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/search.html"
+                        templateUrl: "templates/search.html",
+                        controller: 'SearchCtrl'
                     }
                 }
             })
