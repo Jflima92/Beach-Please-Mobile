@@ -41,11 +41,12 @@ angular.module('starter.services', [])
         self.getFirst = function(number) {
             var q = $q.defer();
 
-            var local = "http://192.168.108.57:3000/beaches";
+            var locali = "http://192.168.108.57:3000/beaches";
             var heroku = "https://beach-please.herokuapp.com/beaches";
+            var local = "http://192.168.1.79:3000/beaches";
             var string = local + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
-            var beaches = $http.get(heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng)
+            var beaches = $http.get(string)
                 .success(function(data) {
                     console.log('Got some data: ', data)
                     q.resolve(data);

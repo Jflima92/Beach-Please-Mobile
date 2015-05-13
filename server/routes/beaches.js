@@ -57,8 +57,8 @@ router.get('/', function(req, res, next) {
                                 "lng": aux[i].lng,
                                 "cond": aux[i].cond,
                                 "dist": dist,
-                                "picUrl": aux[i].picUrl,
-                                "urls": aux[i].urls
+                                "thumbUrl": aux[i].thumbUrl,
+                                "picUrls": aux[i].picUrls
                             });
                         }
                     }
@@ -77,14 +77,14 @@ router.get('/', function(req, res, next) {
                                 "lng": aux[i].lng,
                                 "cond": aux[i].cond,
                                 "dist": dist,
-                                "picUrl": aux[i].picUrl,
-                                "urls": aux[i].urls
+                                "thumbUrl": aux[i].thumbUrl,
+                                "picUrls": aux[i].picUrls
                             });
                         }
                     }
                 }
-
-                results.sort(function(a,b) { return b.dist - a.dist } );
+                console.log(results);
+                results.sort(function(a,b) { return a.dist - b.dist } );
 
                 res.json(results);
             }

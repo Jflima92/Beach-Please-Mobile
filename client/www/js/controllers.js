@@ -80,18 +80,18 @@ angular.module('starter.controllers', [])
 
     .controller('SearchCtrl', function($scope, Beach) {
         $scope.beaches = [];
-        Beach.getFirst(15000).then(function(beaches){
+        Beach.getFirst(35000).then(function(beaches){
             $scope.beaches = beaches;
         });
     })
 
 
 
-    .controller('BeachCtrl', function($scope, Beach, $stateParams) {
+    .controller('BeachCtrl', function($scope, Beach, $stateParams, $ionicSlideBoxDelegate) {
         $scope.name = $stateParams.beachId;
 
         var aux;
-        Beach.getFirst(15000).then(function(beaches){
+        Beach.getFirst(35000).then(function(beaches){
             aux = beaches;
             var beach = [];
             for(var i=0;i<aux.length;i++) {
@@ -100,5 +100,6 @@ angular.module('starter.controllers', [])
                 }
             }
         });
+        $ionicSlideBoxDelegate.update();
     });
 

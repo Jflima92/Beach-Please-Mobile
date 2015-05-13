@@ -5,8 +5,8 @@ var BeachSchema = new mongoose.Schema({
         lat: Number,
         lng: Number,
         cond : {type: mongoose.Schema.ObjectId, ref: 'weatherCond'},
-        picUrl: String,
-        urls: [String]
+        thumbUrl: String,
+        picUrls: {type : Array , "default" : []}
     },
     {collection : "beaches"}
 );

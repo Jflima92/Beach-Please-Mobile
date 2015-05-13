@@ -8,22 +8,17 @@
 
                     <div class="list">
                         <div class="item item-avatar">
-                            <img src="{{beach.picUrl}}">
+                            <img src="{{beach.thumbUrl}}">
                             <h2>Praia do {{beach.name}}</h2>
                             <p>Nine Inch Nails</p>
                         </div>
 
                         <div class="item item-image">
-                            <ion-slide-box show-pager="true" does-continue="true" slide-interval="5000" disable-scroll="false" ng-repeat="url in beach.urls">
-                                <ion-slide>
-                                    <img src="{{url}}">
+                            <ion-slide-box show-pager="true" does-continue="true" slide-interval="5000" disable-scroll="false" >
+                                <ion-slide ng-repeat="url in beach.picUrls">
+                                    <img ng-src="{{url.url}}">
                                 </ion-slide>
-                                <ion-slide>
-                                    <img src="http://i677.photobucket.com/albums/vv137/smileytrucker/cow-toy-car-stuck-head-1259518194w.jpg">
-                                </ion-slide>
-                                <ion-slide>
-                                    <img src="http://farm6.staticflickr.com/5226/5663664227_ba5e573930_z.jpg">
-                                </ion-slide>
+
                             </ion-slide-box>
                         </div>
 
