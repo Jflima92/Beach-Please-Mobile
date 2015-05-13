@@ -41,23 +41,21 @@ router.get('/', function(req, res, next) {
 
                     for (var i = 0; i < data["rows"][0]["elements"].length; i++) {
 
-                        console.log("fora");
-                        console.log(data["rows"][0]["elements"][i]["distance"]["value"]);
                         var dist = data["rows"][0]["elements"][i]["distance"]["value"];
 
-                        aux[i]['distance'] = dist;
-
-                        console.log("distancia: " + aux[i].distance);
-
-                        console.log(aux[i]);
 
                         if (data["rows"][0]["elements"][i]["distance"]["value"] < req.query.dist) {
-                            console.log("entrou");
 
+                            results.push({
+                                "_id": aux[i]._id,
+                                "name": aux[i].name,
+                                "lat": aux[i].lat,
+                                "lng": aux[i].lng,
+                                "cond": aux[i].cond,
+                                "dist": dist
+                            });
 
-                            results.push(aux[i]);
-
-                            console.log(aux[i]);
+                            //console.log(aux[i]);
                         }
                     }
                 }
@@ -66,7 +64,7 @@ router.get('/', function(req, res, next) {
                 }
                     console.log(results);
 
-                res.json(aux);
+                res.json(results);
             }
         })
         //res.json(cenas);
