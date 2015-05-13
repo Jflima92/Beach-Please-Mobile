@@ -2,11 +2,11 @@
   <ion-content>
     <div class="list">
       <div class="bar bar-header item-input-inset">
-        <ion-search placeholder="Search a user" filter="search"></ion-search>
+        <ion-search placeholder="Search for a beach" filter="search"></ion-search>
       </div>
-      <div ng-repeat="beach in beaches | filter:search.value" class="item">
+      <ion-item ng-repeat="beach in beaches | filter:search.value" class="item" href="#/app/search/{{beach.name}}">
         {{beach.name}}
-      </div>
+      </ion-item>
     </div>
   </ion-content>
 </ion-view>

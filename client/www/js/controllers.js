@@ -81,13 +81,12 @@ angular.module('starter.controllers', [])
     .controller('SearchCtrl', function($scope, Beach) {
         $scope.beaches = [];
         Beach.getFirst(15000).then(function(beaches){
-            console.log(beaches);
             $scope.beaches = beaches;
         });
     })
 
 
 
-    .controller('PreloadedCtrl', function($scope, Beach) {
-
+    .controller('BeachCtrl', function($scope, Beach, $stateParams) {
+        $scope.name = $stateParams.beachId;
     });

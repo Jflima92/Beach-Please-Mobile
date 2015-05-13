@@ -1,6 +1,6 @@
 angular.module('starter.directives', [])
 
-    .directive('map', function(geoLocation, $compile) {
+    .directive('map', function(geoLocation, $compile, Beach) {
       return {
         restrict: 'E',
         scope: {
@@ -23,24 +23,18 @@ angular.module('starter.directives', [])
               content: compiled[0]
             });
 
-            var portoBeaches = [
-              { title: 'Madalena', lat: 41.10512872157423, lng: -8.662505149841308},
-              { title: 'Aterro', lat: 41.207956238583904, lng: -8.715988397598266},
-              /* { title: 'Dubstep', id: 3 },
-               { title: 'Indie', id: 4 },
-               { title: 'Rap', id: 5 },
-               { title: 'Cowbell', id: 6 }*/
-            ];
+           Beach.getFirst(50000).then(function(allBeaches){      //in 50km range
+              for(var i = 0; i < allBeaches.length; i++){
+                var myLatlng = new google.maps.LatLng(parseFloat(allBeaches[i].lat),parseFloat(allBeaches[i].lng));
+                console.log(myLatlng);
+                new google.maps.Marker({
+                  position: myLatlng,
+                  map: map,
+                  title: allBeaches[i].name
+                });
+              }
+            });
 
-            for(var i = 0; i < portoBeaches.length; i++){
-              var myLatlng = new google.maps.LatLng(parseFloat(portoBeaches[i].lat),parseFloat(portoBeaches[i].lng));
-              console.log(myLatlng);
-              new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                title: portoBeaches[i].title
-              });
-            }
             var marker = new google.maps.Marker({
               position: geoLocation.getGeolocation(),
               map: map,

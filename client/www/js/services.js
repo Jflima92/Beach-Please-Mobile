@@ -54,10 +54,6 @@ angular.module('starter.services', [])
             return res;
         }
 
-
-
-
-
         self.getAllByName = function(name) {
             return DB.query("SELECT * FROM users WHERE name LIKE '%"+name.toLowerCase()+"%' ORDER BY name")
                 .then(function(result){

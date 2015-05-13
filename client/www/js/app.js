@@ -49,6 +49,17 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.directives','
                 }
             })
 
+            .state('app.beach', {
+                url: "/search/:beachId",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/beach.html",
+                        controller: 'BeachCtrl'
+                    }
+                }
+            })
+
+
             .state('app.browse', {
                 url: "/browse",
                 views: {

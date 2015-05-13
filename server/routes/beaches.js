@@ -113,27 +113,32 @@ router.put('/:id', function(req, res, next) {
 
 router.get('/weatherReq/:id', function(req, res, next) {
     //data2["data"]["weather"][0]["hourly"][0]["waterTemp_C"] temperatura da agua
-
     beach.findById(req.params.id, function (err, beach) {
         if (err) return next(err);
 
         weatherCond.findById(beach["cond"], function (err, cond) {
 
-
-            if(cond["temperature"] == undefined){
-                var url ="http://api.worldweatheronline.com/free/v2/marine.ashx?q="+beach["lat"]+"%2C"+beach["lng"]+"&format=json&includelocation=yes&key=f481a5493db3b99e22c792d558eae";
+            if(cond["temperature"] == undefined || (Date.now()-cond["time"]>=1800000)){//cond["temperature"] == undefined
+                var url ="http://a...content-available-to-author-only...e.com/free/v2/marine.ashx?q="+beach["lat"]+"%2C"+beach["lng"]+"&format=json&includelocation=yes&key=f481a5493db3b99e22c792d558eae";
                 request(url, function (error, response, apiret) {
                     if (!error && response.statusCode == 200) {
                         data2 = JSON.parse(apiret);
-                        console.log(data2["data"]["weather"][0]["hourly"][0]["waterTemp_C"]);
-                        console.log(data2["data"]["weather"][0]["hourly"][0]["tempC"]);
-
-                        res.json(apiret);
+                        cond.waterTemperature=data2["data"]["weather"][0]["hourly"][0]["waterTemp_C"];
+                        cond.temperature=data2["data"]["weather"][0]["hourly"][0]["tempC"];
+                        cond.windspeedKmph=data2["data"]["weather"][0]["hourly"][0]["windspeedKmph"];
+                        cond.swellHeight_m=data2["data"]["weather"][0]["hourly"][0]["swellHeight_m"];
+                        cond.time = Date.now();
+                        cond.save(function (err) {
+                            if(err) {
+                                console.error('ERROR!');
+                            } else {
+                                res.json(cond);
+                            }
+                        });
                     }else
-                        res.json(apiret);
+                        console.error('ERROR!');
                 });
-
-            }
+            }else res.json(cond);
         });
     });
 });
