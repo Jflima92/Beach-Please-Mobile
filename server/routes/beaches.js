@@ -3,7 +3,7 @@ var router = express.Router();
 
 var mongoose = require('mongoose');
 var beach = require('../models/beach.js');
-var beach = require('../models/weatherCond.js');
+var weatherCond = require('../models/weatherCond.js');
 var request = require('request');
 
 /* GET /todos listing. */
@@ -27,10 +27,13 @@ router.get('/', function(req, res, next) {
         };
 
         request(url, function (error, response, body) {
+
             if (!error && response.statusCode == 200) {
                 data = JSON.parse(body);
 
                 var results = [];
+                var aux = todos.slice();
+                var u = 0;
 
                 console.log(data["rows"][0]["elements"]);
 
@@ -41,10 +44,19 @@ router.get('/', function(req, res, next) {
 
                         console.log("fora");
                         console.log(data["rows"][0]["elements"][i]["distance"]["value"]);
+                        aux[i].distance = data["rows"][0]["elements"][i]["distance"]["value"];
+                        aux[i].merda = data["rows"][0]["elements"][i]["distance"]["value"];
+                        console.log(aux[i] + " e a dist!");
 
                         if (data["rows"][0]["elements"][i]["distance"]["value"] < req.query.dist) {
                             console.log("entrou");
-                            results.push(todos[i]);
+
+
+                            results.push(aux[i]);
+                            //results[u].distance = data["rows"][0]["elements"][i]["distance"]["value"];
+                            u++
+                            console.log(aux[i]);
+
 
                         }
                     }
@@ -54,7 +66,7 @@ router.get('/', function(req, res, next) {
                 }
                     console.log(results);
 
-                res.json(results);
+                res.json(aux);
             }
         })
         //res.json(cenas);
@@ -80,6 +92,33 @@ router.put('/:id', function(req, res, next) {
     beach.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
         if (err) return next(err);
         res.json(post);
+    });
+});
+
+router.get('/weatherReq/:id', function(req, res, next) {
+    //data2["data"]["weather"][0]["hourly"][0]["waterTemp_C"] temperatura da agua
+
+    beach.findById(req.params.id, function (err, beach) {
+        if (err) return next(err);
+
+        weatherCond.findById(beach["cond"], function (err, cond) {
+
+
+            if(cond["temperature"] == undefined){
+                var url ="http://api.worldweatheronline.com/free/v2/marine.ashx?q="+beach["lat"]+"%2C"+beach["lng"]+"&format=json&includelocation=yes&key=f481a5493db3b99e22c792d558eae";
+                request(url, function (error, response, apiret) {
+                    if (!error && response.statusCode == 200) {
+                        data2 = JSON.parse(apiret);
+                        console.log(data2["data"]["weather"][0]["hourly"][0]["waterTemp_C"]);
+                        console.log(data2["data"]["weather"][0]["hourly"][0]["tempC"]);
+
+                        res.json(apiret);
+                    }else
+                        res.json(apiret);
+                });
+
+            }
+        });
     });
 });
 
