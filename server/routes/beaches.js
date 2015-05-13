@@ -3,6 +3,7 @@ var router = express.Router();
 
 var mongoose = require('mongoose');
 var beach = require('../models/beach.js');
+var beach = require('../models/weatherCond.js');
 var request = require('request');
 
 /* GET /todos listing. */
