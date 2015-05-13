@@ -34,13 +34,13 @@ angular.module('starter.services', [])
         }
     })
 
-    .factory('Beach', function($http, $q) {
+    .factory('Beach', function($http, $q, geoLocation) {
         var self = this;
-
+        var location = geoLocation.getGeolocation();
         self.getFirst = function(number) {
             var q = $q.defer();
 
-            var beaches = $http.get('http://172.30.11.139:3000/beaches?dist='+number)
+            var beaches = $http.get('http://192.168.108.57:3000/beaches?dist='+number+'&lat='+location.lat+'&long='+location.lng)
                 .success(function(data) {
                     console.log('Got some data: ', data)
                     q.resolve(data);

@@ -19,7 +19,11 @@ router.get('/', function(req, res, next) {
 
         coords += todos[todos.length-1]["lat"] + ","+todos[todos.length-1]["lng"] ;
 
-        var url = "http://maps.googleapis.com/maps/api/distancematrix/json?origins=" + "41.1778751,-8.597915999999941"+ "&destinations="+ coords;
+        var url;
+
+        if(req.query.lat != undefined && req.query.long!= undefined){
+            url = "http://maps.googleapis.com/maps/api/distancematrix/json?origins=" + req.query.lat + "," + req.query.long + "&destinations="+ coords;
+        }
 
         var cenas ={
             "coords": coords,
@@ -42,7 +46,6 @@ router.get('/', function(req, res, next) {
                     for (var i = 0; i < data["rows"][0]["elements"].length; i++) {
 
                         var dist = data["rows"][0]["elements"][i]["distance"]["value"];
-
 
                         if (data["rows"][0]["elements"][i]["distance"]["value"] < req.query.dist) {
 
