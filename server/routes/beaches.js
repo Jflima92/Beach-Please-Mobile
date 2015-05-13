@@ -13,8 +13,8 @@ router.get('/', function(req, res, next) {
 
         var coords= "";
 
-        for(i=0;i<todos.length-1;i++){
-            coords += todos[i]["lat"] + ","+todos[i]["lng"]+ "|" ;
+        for(var u =0;u<todos.length-1;u++){
+            coords += todos[u]["lat"] + ","+todos[u]["lng"]+ "|" ;
         }
 
         coords += todos[todos.length-1]["lat"] + ","+todos[todos.length-1]["lng"] ;
@@ -33,7 +33,6 @@ router.get('/', function(req, res, next) {
 
                 var results = [];
                 var aux = todos.slice();
-                var u = 0;
 
                 console.log(data["rows"][0]["elements"]);
 
@@ -44,20 +43,21 @@ router.get('/', function(req, res, next) {
 
                         console.log("fora");
                         console.log(data["rows"][0]["elements"][i]["distance"]["value"]);
-                        aux[i].distance = data["rows"][0]["elements"][i]["distance"]["value"];
-                        aux[i].merda = data["rows"][0]["elements"][i]["distance"]["value"];
-                        console.log(aux[i] + " e a dist!");
+                        var dist = data["rows"][0]["elements"][i]["distance"]["value"];
+
+                        aux[i]['distance'] = dist;
+
+                        console.log("distancia: " + aux[i].distance);
+
+                        console.log(aux[i]);
 
                         if (data["rows"][0]["elements"][i]["distance"]["value"] < req.query.dist) {
                             console.log("entrou");
 
 
                             results.push(aux[i]);
-                            //results[u].distance = data["rows"][0]["elements"][i]["distance"]["value"];
-                            u++
+
                             console.log(aux[i]);
-
-
                         }
                     }
                 }
