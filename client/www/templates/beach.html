@@ -1,5 +1,52 @@
 <ion-view view-title="Praia do {{name}}">
     <ion-content>
-        <h1>Beach</h1>
+
+        <ion-tabs class="tabs-stable tabs-icon-only tabs-bottom">
+
+            <ion-tab title="Home" icon-on="ion-ios-people" icon-off="ion-ios-people-outline">
+                <ion-content has-header="true" padding="true">
+
+                    <div class="list">
+                        <div class="item item-avatar">
+                            <img src="{{beach.picUrl}}">
+                            <h2>Praia do {{beach.name}}</h2>
+                            <p>Nine Inch Nails</p>
+                        </div>
+
+                        <div class="item item-image">
+                            <ion-slide-box show-pager="true" does-continue="true" slide-interval="5000" disable-scroll="false" ng-repeat="url in beach.urls">
+                                <ion-slide>
+                                    <img src="{{url}}">
+                                </ion-slide>
+                                <ion-slide>
+                                    <img src="http://i677.photobucket.com/albums/vv137/smileytrucker/cow-toy-car-stuck-head-1259518194w.jpg">
+                                </ion-slide>
+                                <ion-slide>
+                                    <img src="http://farm6.staticflickr.com/5226/5663664227_ba5e573930_z.jpg">
+                                </ion-slide>
+                            </ion-slide-box>
+                        </div>
+
+                        <a class="item item-icon-left assertive" href="#">
+                            <i class="icon ion-music-note"></i>
+                            Start listening
+                        </a>
+                    </div>
+                </ion-content>
+            </ion-tab>
+
+            <ion-tab title="About" icon-on="ion-ios-information" icon-off="ion-ios-information-outline">
+                <ion-content has-header="true" padding="true">
+                    <h2>Tab 2 Content</h2>
+                </ion-content>
+            </ion-tab>
+
+            <ion-tab title="Settings" icon-on="ion-ios-cloud-upload" icon-off="ion-ios-cloud-upload-outline">
+                <ion-content has-header="true" padding="true">
+                    <h2>Tab 3 Content</h2>
+                </ion-content>
+            </ion-tab>
+
+        </ion-tabs>
     </ion-content>
 </ion-view>

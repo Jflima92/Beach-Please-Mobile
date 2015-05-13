@@ -56,7 +56,9 @@ router.get('/', function(req, res, next) {
                                 "lat": aux[i].lat,
                                 "lng": aux[i].lng,
                                 "cond": aux[i].cond,
-                                "dist": dist
+                                "dist": dist,
+                                "picUrl": aux[i].picUrl,
+                                "urls": aux[i].urls
                             });
                         }
                     }
@@ -74,7 +76,9 @@ router.get('/', function(req, res, next) {
                                 "lat": aux[i].lat,
                                 "lng": aux[i].lng,
                                 "cond": aux[i].cond,
-                                "dist": dist
+                                "dist": dist,
+                                "picUrl": aux[i].picUrl,
+                                "urls": aux[i].urls
                             });
                         }
                     }

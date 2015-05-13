@@ -29,7 +29,8 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.directives','
         })
     })
 
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+        $ionicConfigProvider.tabs.position('bottom');
         $stateProvider
 
             .state('app', {
@@ -43,10 +44,22 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.directives','
                 url: "/search",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/search.html"
+                        templateUrl: "templates/search.html",
+                        controller: 'SearchCtrl'
                     }
                 }
             })
+
+            .state('app.beach', {
+                url: "/search/:beachId",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/beach.html",
+                        controller: 'BeachCtrl'
+                    }
+                }
+            })
+
 
             .state('app.browse', {
                 url: "/browse",

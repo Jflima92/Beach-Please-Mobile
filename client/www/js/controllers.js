@@ -89,4 +89,16 @@ angular.module('starter.controllers', [])
 
     .controller('BeachCtrl', function($scope, Beach, $stateParams) {
         $scope.name = $stateParams.beachId;
+
+        var aux;
+        Beach.getFirst(15000).then(function(beaches){
+            aux = beaches;
+            var beach = [];
+            for(var i=0;i<aux.length;i++) {
+                if (aux[i].name === $scope.name) {
+                    $scope.beach = aux[i];
+                }
+            }
+        });
     });
+

@@ -35,64 +35,6 @@ angular.module('starter.controllers', [])
 
     .controller('HomeCtrl', function($scope, $ionicLoading, $cordovaGeolocation){
 
-        /*
-         function initialize() {
-         var myLatlng = new google.maps.LatLng(43.07493,-89.381388);
-
-         var mapOptions = {
-         center: myLatlng,
-         zoom: 16,
-         mapTypeId: google.maps.MapTypeId.ROADMAP
-         };
-         var map = new google.maps.Map(document.getElementById("map"),
-         mapOptions);
-
-         //Marker + infowindow + angularjs compiled ng-click
-         var contentString = "<div><a ng-click='clickTest()'>Click me!</a></div>";
-         var compiled = $compile(contentString)($scope);
-
-         var infowindow = new google.maps.InfoWindow({
-         content: compiled[0]
-         });
-
-         var marker = new google.maps.Marker({
-         position: myLatlng,
-         map: map,
-         title: 'Uluru (Ayers Rock)'
-         });
-
-         google.maps.event.addListener(marker, 'click', function() {
-         infowindow.open(map,marker);
-         });
-
-         $scope.map = map;
-         }
-
-         $ionicPlatform.ready(initialize);
-
-         $scope.centerOnMe = function() {
-         if(!$scope.map) {
-         return;
-         }
-
-         $scope.loading = $ionicLoading.show({
-         content: 'Getting current location...',
-         showBackdrop: false
-         });
-
-         navigator.geolocation.getCurrentPosition(function(pos) {
-         $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-         $scope.loading.hide();
-         }, function(error) {
-         alert('Unable to get location: ' + error.message);
-         });
-         };
-
-         $scope.clickTest = function() {
-         alert('Example of infowindow with ng-click')
-         };
-         */
-
         $scope.mapCreated = function(map) {
             $scope.map = map;
         };
@@ -108,14 +50,6 @@ angular.module('starter.controllers', [])
                 showBackdrop: false
             });
 
-            /*    navigator.geolocation.getCurrentPosition(function (pos) {
-             console.log('Got pos', pos);
-             $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-             $scope.loading.hide();
-             }, function (error) {
-             alert('Unable to get location: ' + error.message);
-             });
-             */
             var posOptions = {timeout: 10000, enableHighAccuracy: false};
             $cordovaGeolocation
                 .getCurrentPosition(posOptions)
@@ -130,79 +64,7 @@ angular.module('starter.controllers', [])
 
                 });
         }
-        /* function initialize($coords) {
 
-         var myLatlng = new google.maps.LatLng($coords.lat,$coords.long);
-
-         console.log("aqui");
-         var mapOptions = {
-         center: myLatlng,
-         zoom: 16,
-         mapTypeId: google.maps.MapTypeId.ROADMAP
-         };
-         var map = new google.maps.Map(document.getElementById("map"),
-         mapOptions);
-
-         //Marker + infowindow + angularjs compiled ng-click
-         var contentString = "<div><a ng-click='clickTest()'>Click me!</a></div>";
-         var compiled = $compile(contentString)($scope);
-
-         var infowindow = new google.maps.InfoWindow({
-         content: compiled[0]
-         });
-
-         var marker = new google.maps.Marker({
-         position: myLatlng,
-         map: map,
-         title: 'Uluru (Ayers Rock)'
-         });
-
-         google.maps.event.addListener(marker, 'click', function() {
-         infowindow.open(map,marker);
-         });
-
-         $scope.map = map;
-         }
-
-         navigator.geolocation.getCurrentPosition(function (pos) {
-         console.log('Position=')
-         console.log(pos);
-         latLong = {'lat': pos.coords.latitude, 'long': pos.coords.longitude};
-
-         $ionicPlatform.ready(initialize(latLong));
-
-         }, function (error) {
-         console.log('Got error!');
-         console.log(error);
-         latLong = null
-
-         });
-
-         //google.maps.event.addDomListener(window, 'load', initialize);
-
-
-         $scope.centerOnMe = function() {
-         if(!$scope.map) {
-         return;
-         }
-
-         $scope.loading = $ionicLoading.show({
-         content: 'Getting current location...',
-         showBackdrop: false
-         });
-
-         navigator.geolocation.getCurrentPosition(function(pos) {
-         $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-         $scope.loading.hide();
-         }, function(error) {
-         alert('Unable to get location: ' + error.message);
-         });
-         };
-
-         $scope.clickTest = function() {
-         alert('Example of infowindow with ng-click')
-         };
-         */
     })
 
     .controller('PlaylistsCtrl', function($scope) {
@@ -216,5 +78,26 @@ angular.module('starter.controllers', [])
         ];
     })
 
-    .controller('PlaylistCtrl', function($scope, $stateParams) {
+    .controller('SearchCtrl', function($scope, Beach) {
+        $scope.beaches = [];
+        Beach.getFirst(15000).then(function(beaches){
+            $scope.beaches = beaches;
+        });
+    })
+
+
+
+    .controller('BeachCtrl', function($scope, Beach, $stateParams) {
+        $scope.name = $stateParams.beachId;
+        var aux;
+        Beach.getFirst(15000).then(function(beaches){
+            aux = beaches;
+            var beach = [];
+            for(var i=0;i<aux.length;i++) {
+                if (aux[i].name === $scope.name) {
+                    $scope.beach = aux[i];
+                }
+            }
+        });
     });
+

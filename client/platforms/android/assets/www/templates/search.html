@@ -1,5 +1,14 @@
 <ion-view view-title="Search">
   <ion-content>
-    <h1>Search</h1>
+    <div class="list">
+      <div class="bar bar-header item-input-inset">
+        <ion-search placeholder="Search for a beach" filter="search"></ion-search>
+      </div>
+      <ion-item ng-repeat="beach in beaches | filter:search.value" class="item item-thumbnail-left" href="#/app/search/{{beach.name}}">
+        <img src={{beach.picUrl}}>
+        <h2>{{beach.name}}</h2>
+      </ion-item>
+    </div>
+
   </ion-content>
 </ion-view>
