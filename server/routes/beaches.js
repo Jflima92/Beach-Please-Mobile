@@ -24,6 +24,9 @@ router.get('/', function(req, res, next) {
         if(req.query.lat != undefined && req.query.long!= undefined){
             url = "http://maps.googleapis.com/maps/api/distancematrix/json?origins=" + req.query.lat + "," + req.query.long + "&destinations="+ coords;
         }
+        else{
+            url = "http://maps.googleapis.com/maps/api/distancematrix/json?origins=" + "41.1778751,-8.597915999999941"+ "&destinations="+ coords;
+        }
 
         var cenas ={
             "coords": coords,
@@ -63,7 +66,24 @@ router.get('/', function(req, res, next) {
                     }
                 }
                 else{
-                    results = todos;  //if no queries are sent in url, return all available beaches
+                    for (var i = 0; i < data["rows"][0]["elements"].length; i++) {
+
+                        var dist = data["rows"][0]["elements"][i]["distance"]["value"];
+
+                        if (data["rows"][0]["elements"][i]["distance"]["value"] < 50000) {
+
+                            results.push({
+                                "_id": aux[i]._id,
+                                "name": aux[i].name,
+                                "lat": aux[i].lat,
+                                "lng": aux[i].lng,
+                                "cond": aux[i].cond,
+                                "dist": dist
+                            });
+
+                            //console.log(aux[i]);
+                        }
+                    }
                 }
                     console.log(results);
 
