@@ -41,8 +41,6 @@ router.get('/', function(req, res, next) {
                 var results = [];
                 var aux = todos.slice();
 
-                console.log(data["rows"][0]["elements"]);
-
                 //Verifies de query to the beaches and applies it, according to the max distance chosen : localhost:3000/beaches?dist=10000
                 if (req.query.dist != undefined) {
 
@@ -60,8 +58,6 @@ router.get('/', function(req, res, next) {
                                 "cond": aux[i].cond,
                                 "dist": dist
                             });
-
-                            //console.log(aux[i]);
                         }
                     }
                 }
@@ -80,12 +76,11 @@ router.get('/', function(req, res, next) {
                                 "cond": aux[i].cond,
                                 "dist": dist
                             });
-
-                            //console.log(aux[i]);
                         }
                     }
                 }
-                    console.log(results);
+
+                results.sort(function(a,b) { return b.dist - a.dist } );
 
                 res.json(results);
             }
