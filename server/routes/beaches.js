@@ -83,7 +83,6 @@ router.get('/', function(req, res, next) {
                         }
                     }
                 }
-                console.log(results);
                 results.sort(function(a,b) { return a.dist - b.dist } );
 
                 res.json(results);

@@ -44,7 +44,7 @@ angular.module('starter.services', [])
             var locali = "http://192.168.108.57:3000/beaches";
             var heroku = "https://beach-please.herokuapp.com/beaches";
             var local = "http://192.168.1.79:3000/beaches";
-            var string = local + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
+            var string = locali + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
             var beaches = $http.get(string)
                 .success(function(data) {

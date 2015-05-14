@@ -8,29 +8,30 @@
 
                     <div class="list">
                         <div class="item item-avatar">
-                            <img src="{{beach.picUrl}}">
+                            <img src="{{beach.thumbUrl}}">
                             <h2>Praia do {{beach.name}}</h2>
-                            <p>Nine Inch Nails</p>
+                            <p>{{beach.lat}} | {{beach.lng}}</p>
                         </div>
 
                         <div class="item item-image">
-                            <slide-box show-pager="true" does-continue="true" slide-interval="5000" disable-scroll="false">
-                                <slide>
-                                    <img src="http://1.bp.blogspot.com/-kXS3MLcpTPw/T4rZBW2p8DI/AAAAAAAABqI/tR5aiO4Cj58/s1600/cows2.jpg">
-                                </slide>
-                                <slide>
-                                    <img src="http://i677.photobucket.com/albums/vv137/smileytrucker/cow-toy-car-stuck-head-1259518194w.jpg">
-                                </slide>
-                                <slide>
-                                    <img src="http://farm6.staticflickr.com/5226/5663664227_ba5e573930_z.jpg">
-                                </slide>
-                            </slide-box>
+                            <ion-slide-box show-pager="true" does-continue="true" slide-interval="5000" disable-scroll="false" >
+                                <ion-slide ng-repeat="url in beach.picUrls">
+                                    <img ng-src="{{url.url}}">
+                                </ion-slide>
+
+                            </ion-slide-box>
                         </div>
 
-                        <a class="item item-icon-left assertive" href="#">
-                            <i class="icon ion-music-note"></i>
-                            Start listening
-                        </a>
+                        <div class="item">
+                            <h2>Aqui vai ser o feed</h2>
+                        </div>
+
+
+
+                        <!--<a class="item item-icon-left assertive" href="#">-->
+                        <!--<i class="icon ion-music-note"></i>-->
+                        <!--Start listening-->
+                        <!--</a>-->
                     </div>
                 </ion-content>
             </ion-tab>

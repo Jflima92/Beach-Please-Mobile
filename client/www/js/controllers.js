@@ -99,7 +99,26 @@ angular.module('starter.controllers', [])
                     $scope.beach = aux[i];
                 }
             }
+            $ionicSlideBoxDelegate.update();
         });
-        $ionicSlideBoxDelegate.update();
+
+        $scope.doRefresh = function() {
+            if($scope.newItems.length > 0){
+                $scope.items = $scope.newItems.concat($scope.items);
+
+                //Stop the ion-refresher from spinning
+                $scope.$broadcast('scroll.refreshComplete');
+
+                $scope.newItems = [];
+            } else {
+                PersonService.GetNewUsers().then(function(items){
+                    $scope.items = items.concat($scope.items);
+
+                    //Stop the ion-refresher from spinning
+                    $scope.$broadcast('scroll.refreshComplete');
+                });
+            }
+        };
+
     });
 

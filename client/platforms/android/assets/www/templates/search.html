@@ -5,7 +5,7 @@
         <ion-search placeholder="Search for a beach" filter="search"></ion-search>
       </div>
       <ion-item ng-repeat="beach in beaches | filter:search.value" class="item item-thumbnail-left" href="#/app/search/{{beach.name}}">
-        <img src={{beach.picUrl}}>
+        <img src={{beach.thumbUrl}}>
         <h2>{{beach.name}}</h2>
       </ion-item>
     </div>
