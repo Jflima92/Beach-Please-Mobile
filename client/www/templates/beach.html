@@ -68,9 +68,22 @@
                             <h1 class="title">Meteorologia</h1>
                         </div>
                         <div class="item item-avatar" style="margin-top:14%;">
-                            <img src="{{beach.thumbUrl}}">
-                            <h2>Praia do {{beach.name}}</h2>
-                            <p>{{beach.lat}} | {{beach.lng}}</p>
+                            <img src="https://cdn2.iconfinder.com/data/icons/medicine-9/512/temperature-512.png">
+                            <h2>Temperaturas</h2>
+                            <p>Local: {{weatherConds.temperature}}</p>
+                            <p>Da Água: {{weatherConds.waterTemperature}}</p>
+                        </div>
+
+                        <div class="item item-avatar">
+                            <img src="http://www.toutestbleu.info/wp-content/uploads/2015/04/wind_storm-512.png">
+                            <h2>Vento</h2>
+                            <p>Velocidade: {{weatherConds.windspeedKmph}} Km/h</p>
+                        </div>
+
+                        <div class="item item-avatar">
+                            <img src="https://cdn3.iconfinder.com/data/icons/water-sports-and-recreation-tours/512/Water_sports_and_recreation_tours_Surfing-512.png">
+                            <h2>Ondulação</h2>
+                            <p>Altura: {{weatherConds.swellHeight_m}} metros</p>
                         </div>
 
 

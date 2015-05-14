@@ -90,17 +90,24 @@ angular.module('starter.controllers', [])
     .controller('BeachCtrl', function($scope, Beach, $stateParams, $ionicSlideBoxDelegate) {
         $scope.name = $stateParams.beachId;
 
-        var aux;
+        var auxBeaches;
+        var auxConds;
         Beach.getFirst(35000).then(function(beaches){
-            aux = beaches;
+            auxBeaches = beaches;
             var beach = [];
-            for(var i=0;i<aux.length;i++) {
-                if (aux[i].name === $scope.name) {
-                    $scope.beach = aux[i];
+            for(var i=0;i<auxBeaches.length;i++) {
+                if (auxBeaches[i].name === $scope.name) {
+                    $scope.beach = auxBeaches[i];
                 }
             }
+            Beach.getBeachConds($scope.beach._id).then(function(beaches){
+                auxConds = beaches;
+              $scope.weatherConds = auxConds;
+            });
             $ionicSlideBoxDelegate.update();
         });
+
+
 
         $scope.doRefresh = function() {
             if($scope.newItems.length > 0){

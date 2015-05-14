@@ -122,7 +122,7 @@ router.get('/weatherReq/:id', function(req, res, next) {
         weatherCond.findById(beach["cond"], function (err, cond) {
 
             if(cond["temperature"] == undefined || (Date.now()-cond["time"]>=1800000)){//cond["temperature"] == undefined
-                var url ="http://a...content-available-to-author-only...e.com/free/v2/marine.ashx?q="+beach["lat"]+"%2C"+beach["lng"]+"&format=json&includelocation=yes&key=f481a5493db3b99e22c792d558eae";
+                var url ="https://api.worldweatheronline.com/free/v2/marine.ashx?q="+beach["lat"]+"%2C"+beach["lng"]+"&format=json&includelocation=yes&key=f481a5493db3b99e22c792d558eae";
                 request(url, function (error, response, apiret) {
                     if (!error && response.statusCode == 200) {
                         data2 = JSON.parse(apiret);
@@ -139,7 +139,7 @@ router.get('/weatherReq/:id', function(req, res, next) {
                             }
                         });
                     }else
-                        console.error('ERROR!');
+                        console.error('ERROR1!');
                 });
             }else res.json(cond);
         });
