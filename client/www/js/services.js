@@ -44,7 +44,7 @@ angular.module('starter.services', [])
             var locali = "http://192.168.108.57:3000/beaches";
             var heroku = "https://beach-please.herokuapp.com/beaches";
             var local = "http://192.168.1.79:3000/beaches";
-            var string = locali + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
+            var string = heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
             var beaches = $http.get(string)
                 .success(function(data) {
@@ -66,7 +66,7 @@ angular.module('starter.services', [])
             var locali = "http://192.168.108.57:3000/beaches";
             var heroku = "https://beach-please.herokuapp.com/beaches";
             var local = "http://192.168.1.79:3000/beaches";
-            var string = locali + '/WeatherReq/'+id;
+            var string = heroku + '/WeatherReq/'+id;
             console.log(string);
             var beaches = $http.get(string)
                 .success(function(data) {
@@ -77,7 +77,7 @@ angular.module('starter.services', [])
                     console.log('Had an error')
                     q.reject(error);
                 })
-
+ 
             var res = q.promise;
             return res;
         }
