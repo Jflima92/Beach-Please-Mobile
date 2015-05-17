@@ -46,9 +46,10 @@ angular.module('starter.directives', [])
                   title: allBeaches[i].name
                 });
                 markers.push(marker2);
+                  var beach = allBeaches[i];
                 google.maps.event.addListener(marker2, 'click', (function(marker2) {
                   return function() {
-                    infowindow.setContent("<h1>"+marker2.title+"<h1>"+
+                    infowindow.setContent("<h1>"+marker2.title+"<h1>"+"<img src=\""+beach.thumbUrl+"\" >"+
                         "<a href=\"#/app/search/"+marker2.title+"\">Info</a>");
                    // location.replace("#/app/search/"+marker2.title);
                     infowindow.open(map, marker2);
