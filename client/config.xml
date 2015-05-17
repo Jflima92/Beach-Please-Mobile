@@ -16,8 +16,7 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
-  <access origin="*"/>
   <allow-intent href="*"/>
-  <allow-navigation href="*"/>
-  <platform name="android"></platform>
+  <allow-navigation href="http://*/*" />
+  <platform name="android"/>
 </widget>

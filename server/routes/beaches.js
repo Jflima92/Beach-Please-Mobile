@@ -10,7 +10,7 @@ var request = require('request');
 router.get('/', function(req, res, next) {
     beach.find(function (err, todos) {
         if (err) return next(err);
-
+        console.log(todos);
         var coords= "";
 
         for(var u =0;u<todos.length-1;u++){
@@ -22,9 +22,12 @@ router.get('/', function(req, res, next) {
         var url;
 
         if(req.query.lat != undefined && req.query.long!= undefined){
+            console.log("aqui");
             url = "http://maps.googleapis.com/maps/api/distancematrix/json?origins=" + req.query.lat + "," + req.query.long + "&destinations="+ coords;
+            console.log(url);
         }
         else{
+            console.log("aquiiii2");
             url = "http://maps.googleapis.com/maps/api/distancematrix/json?origins=" + "41.1778751,-8.597915999999941"+ "&destinations="+ coords;
         }
 
@@ -34,7 +37,7 @@ router.get('/', function(req, res, next) {
         };
 
         request(url, function (error, response, body) {
-
+                console.log(url);
             if (!error && response.statusCode == 200) {
                 data = JSON.parse(body);
 
@@ -46,7 +49,7 @@ router.get('/', function(req, res, next) {
 
                     for (var i = 0; i < data["rows"][0]["elements"].length; i++) {
 
-                        var dist = data["rows"][0]["elements"][i]["distance"]["value"];
+                         var dist = data["rows"][0]["elements"][i]["distance"]["value"];
 
                         if (data["rows"][0]["elements"][i]["distance"]["value"] < req.query.dist) {
 
@@ -126,6 +129,7 @@ router.get('/weatherReq/:id', function(req, res, next) {
                 request(url, function (error, response, apiret) {
                     if (!error && response.statusCode == 200) {
                         data2 = JSON.parse(apiret);
+                        console.log(data2);
                         cond.waterTemperature=data2["data"]["weather"][0]["hourly"][0]["waterTemp_C"];
                         cond.temperature=data2["data"]["weather"][0]["hourly"][0]["tempC"];
                         cond.windspeedKmph=data2["data"]["weather"][0]["hourly"][0]["windspeedKmph"];

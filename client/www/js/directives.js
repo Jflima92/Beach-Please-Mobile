@@ -8,9 +8,11 @@ angular.module('starter.directives', [])
         },
         link: function ($scope, $element) {
           function initialize() {
+            console.log(geoLocation.getGeolocation().lat);
+
             var mapOptions = {
               center: new google.maps.LatLng(geoLocation.getGeolocation().lat, geoLocation.getGeolocation().lng),
-              zoom: 16,
+              zoom: 10,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             var map = new google.maps.Map($element[0], mapOptions);
@@ -21,7 +23,7 @@ angular.module('starter.directives', [])
 
             var infowindow = new google.maps.InfoWindow({
               content: compiled[0]
-            });
+            });  
 
            Beach.getFirst(50000).then(function(allBeaches){      //in 50km range
               for(var i = 0; i < allBeaches.length; i++){

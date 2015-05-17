@@ -87,8 +87,21 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, Beach, $stateParams, $ionicSlideBoxDelegate) {
+    .controller('BeachCtrl', function($scope, Beach, $stateParams, $ionicSlideBoxDelegate, Camera, Upload) {
         $scope.name = $stateParams.beachId;
+
+        ionic.Platform.ready(function() {
+            //console.log("ready get camera types");
+            if (!navigator.camera)
+            {
+                // error handling
+                return;
+            }
+            //pictureSource=navigator.camera.PictureSourceType.PHOTOLIBRARY;
+            pictureSource=navigator.camera.PictureSourceType.CAMERA;
+            destinationType=navigator.camera.DestinationType.FILE_URI;
+        });
+
 
         var auxBeaches;
         var auxConds;
@@ -102,12 +115,59 @@ angular.module('starter.controllers', [])
             }
             Beach.getBeachConds($scope.beach._id).then(function(beaches){
                 auxConds = beaches;
-              $scope.weatherConds = auxConds;
+                $scope.weatherConds = auxConds;
             });
             $ionicSlideBoxDelegate.update();
+
         });
 
+        $scope.getPhoto = function() {
+            var local = "http://172.30.20.64:3000/beaches";
+            var locali = "http://192.168.108.57:3000/beaches";
+            var geny = "192.168.56.1:3000/beaches";
+            console.log('Getting camera');
+            Camera.getPicture({
+                quality: 75,
+                targetWidth: 320,
+                targetHeight: 320,
+                saveToPhotoAlbum: false
+            }).then(function(imageURI) {
+                console.log(imageURI);
+                $scope.lastPhoto = imageURI;
+              //Upload.fileTo(local, imageURI);
+            }, function(err) {
+                console.err(err);
+            })
+        };
 
+        $scope.upload = function() {
+            var local = "http://172.30.20.64:3000/beaches";
+            var locali = "http://192.168.108.57:3000/upload";
+            var geny = "192.168.56.1:3000/beaches";
+            var url = '';
+            var fd = new FormData();
+
+            //previously I had this
+            //angular.forEach($scope.files, function(file){
+            //fd.append('image',file)
+            //});
+
+            fd.append('image', $scope.lastPhoto);
+
+            $http.post(local, fd, {
+
+                transformRequest: angular.identity,
+                headers: {
+                    'Content-Type': 'image/jpeg'
+                }
+            })
+                .success(function (data, status, headers) {
+                    $scope.imageURL = data.resource_uri; //set it to the response we get
+                })
+                .error(function (data, status, headers) {
+
+                })
+        }
 
         $scope.doRefresh = function() {
             if($scope.newItems.length > 0){
@@ -127,5 +187,7 @@ angular.module('starter.controllers', [])
             }
         };
 
-    });
+    })
+
+
 

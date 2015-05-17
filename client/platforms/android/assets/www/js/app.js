@@ -29,6 +29,10 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.directives','
         })
     })
 
+    .config(function($compileProvider){
+        $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
+    })
+
     .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
         $ionicConfigProvider.tabs.position('bottom');
         $stateProvider

@@ -21,6 +21,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 3
                         }
                     ]
                 }
@@ -33,11 +37,23 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -55,13 +71,22 @@
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.ionicframework.sdis565965"
         },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.sdis565965"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.ionicframework.sdis565965"
+        },
         "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.ionicframework.sdis565965"
         },
         "org.apache.cordova.device": {
             "PACKAGE_NAME": "com.ionicframework.sdis565965"
         },
-        "cordova-plugin-whitelist": {
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.ionicframework.sdis565965"
+        },
+        "org.apache.cordova.file-transfer": {
             "PACKAGE_NAME": "com.ionicframework.sdis565965"
         }
     },
