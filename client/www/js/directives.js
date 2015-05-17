@@ -8,7 +8,6 @@ angular.module('starter.directives', [])
         },
         link: function ($scope, $element) {
           function initialize() {
-            console.log(geoLocation.getGeolocation().lat);
 
             var mapOptions = {
               center: new google.maps.LatLng(geoLocation.getGeolocation().lat, geoLocation.getGeolocation().lng),
@@ -21,21 +20,44 @@ angular.module('starter.directives', [])
             var contentString = "<div><a ng-click='clickTest()'>Click me!</a></div>";
             var compiled = $compile(contentString)($scope);
 
+            var cenas = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+                '<div id="bodyContent">'+compiled[0]+
+                '</div>'+
+                '</div>';
+            //compiled[0]
+            var markers = new Array();
             var infowindow = new google.maps.InfoWindow({
-              content: compiled[0]
-            });  
+
+              content: cenas
+            });
+
 
            Beach.getFirst(50000).then(function(allBeaches){      //in 50km range
               for(var i = 0; i < allBeaches.length; i++){
+
                 var myLatlng = new google.maps.LatLng(parseFloat(allBeaches[i].lat),parseFloat(allBeaches[i].lng));
                 console.log(myLatlng);
-                new google.maps.Marker({
+                var marker2 = new google.maps.Marker({
                   position: myLatlng,
                   map: map,
                   title: allBeaches[i].name
                 });
+                markers.push(marker2);
+                google.maps.event.addListener(marker2, 'click', (function(marker2) {
+                  return function() {
+                    infowindow.setContent("<h1>"+marker2.title+"<h1>"+
+                        "<a href=\"#/app/search/"+marker2.title+"\">Info</a>");
+                   // location.replace("#/app/search/"+marker2.title);
+                    infowindow.open(map, marker2);
+                  }
+                })(marker2));
               }
             });
+
+
 
             var marker = new google.maps.Marker({
               position: geoLocation.getGeolocation(),
@@ -43,17 +65,21 @@ angular.module('starter.directives', [])
               title: 'Uluru (Ayers Rock)'
             });
 
-            google.maps.event.addListener(marker, 'click', function() {
-              infowindow.open(map,marker);
-            });
 
             $scope.onCreate({map: map});
+
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent("Voc� est� Aqui!!");
+              infowindow.open(map,marker);
+            });
 
             // Stop the side bar from dragging when mousedown/tapdown on the map
             google.maps.event.addDomListener($element[0], 'mousedown', function (e) {
               e.preventDefault();
               return false;
             });
+
+
           }
 
           if (document.readyState === "complete") {
