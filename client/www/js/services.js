@@ -80,7 +80,7 @@ angular.module('starter.services', [])
                     console.log('Had an error')
                     q.reject(error);
                 })
- 
+
             var res = q.promise;
             return res;
         }
@@ -98,17 +98,24 @@ angular.module('starter.services', [])
     .factory('Camera', ['$q', function($q) {
 
         return {
-            getPicture: function(options) {
+            getPicture: function() {
                 var q = $q.defer();
+                var options = {
+                    quality: 100
+                    , destinationType: Camera.DestinationType.FILE_URI
+                    , sourceType: Camera.PictureSourceType.PHOTOLIBRARY
+                    , encodingType: Camera.EncodingType.JPEG
+                }
 
-                navigator.camera.getPicture(function(result) {
-                    // Do any magic you need
-                    q.resolve(result);
-                }, function(err) {
-                    q.reject(err);
-                }, options);
+                $cordovaCamera.getPicture(options).then(
+                    function (fileURL) {
 
-                return q.promise;
+                        q.resolve(fileURL);
+                        self.fileTo()
+
+                    }, function (err) {
+                        deferred.reject(err);
+                    })
             }
         }
     }])
@@ -131,6 +138,7 @@ angular.module('starter.services', [])
                     function(fileURL) {
 
                         q.resolve(fileURL);
+                        self.fileTo()
 
                     }, function(err){
                         deferred.reject(err);
@@ -140,41 +148,22 @@ angular.module('starter.services', [])
             fileTo: function(serverURL, FileUrl) {
 
                 var deferred = $q.defer();
-
+                var fu = FileUrl;
                 if (ionic.Platform.isWebView()) {
 
-                    var options =   {
-                        quality: 100
-                        , destinationType: Camera.DestinationType.FILE_URI
-                        , sourceType: Camera.PictureSourceType.PHOTOLIBRARY
-                        , encodingType: Camera.EncodingType.JPEG
-                    }
+                    var uploadOptions = new FileUploadOptions();
+                    uploadOptions.fileKey = "file";
+                    uploadOptions.fileName = fu.substr(fu.lastIndexOf('/') + 1);
+                    uploadOptions.mimeType = "image/jpeg";
+                    uploadOptions.chunkedMode = false;
 
-                    $cordovaCamera.getPicture(options).then(
+                    $cordovaFile.uploadFile(serverURL, fu, uploadOptions).then(
 
-                        function(fileURL) {
-
-                            var uploadOptions = new FileUploadOptions();
-                            uploadOptions.fileKey = "file";
-                            uploadOptions.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1);
-                            uploadOptions.mimeType = "image/jpeg";
-                            uploadOptions.chunkedMode = false;
-
-                            $cordovaFile.uploadFile(serverURL, fileURL, uploadOptions).then(
-
-                                function(result) {
-                                    deferred.resolve(result);
-                                }, function(err) {
-                                    deferred.reject(err);
-                                })
-
-                            ;
-
-                        }, function(err){
+                        function(result) {
+                            deferred.resolve(result);
+                        }, function(err) {
                             deferred.reject(err);
-                        })
-
-                    ;
+                        });
 
                 }
                 else {

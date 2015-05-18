@@ -134,7 +134,7 @@ angular.module('starter.controllers', [])
             }).then(function(imageURI) {
                 console.log(imageURI);
                 $scope.lastPhoto = imageURI;
-              //Upload.fileTo(local, imageURI);
+                Upload.fileTo(local, imageURI);
             }, function(err) {
                 console.err(err);
             })
