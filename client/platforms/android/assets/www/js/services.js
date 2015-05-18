@@ -16,6 +16,7 @@ angular.module('starter.services', [])
             }
         }
     }])
+
     .factory('geoLocation', function ($localStorage) {
         return {
             setGeolocation: function (latitude, longitude) {
@@ -44,7 +45,7 @@ angular.module('starter.services', [])
 
             var locali = "http://192.168.108.57:3000/beaches";
             var heroku = "https://beach-please.herokuapp.com/beaches";
-            var local = "172.30.20.64:3000/beaches";
+            var local = "192.168.1.79:3000/beaches";
             var geny = "192.168.56.1:3000/beaches";
             var string = heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
@@ -67,7 +68,7 @@ angular.module('starter.services', [])
 
             var locali = "http://192.168.108.57:3000/beaches";
             var heroku = "https://beach-please.herokuapp.com/beaches";
-            var local = "http://172.30.20.64:3000/beaches";
+            var local = "http://192.168.1.79 :3000/beaches";
             var geny = "192.168.56.1:3000/beaches";
             var string = heroku + '/WeatherReq/'+id;
             console.log(string);
@@ -80,7 +81,7 @@ angular.module('starter.services', [])
                     console.log('Had an error')
                     q.reject(error);
                 })
- 
+
             var res = q.promise;
             return res;
         }
@@ -98,17 +99,44 @@ angular.module('starter.services', [])
     .factory('Camera', ['$q', function($q) {
 
         return {
-            getPicture: function(options) {
+            getPicture: function() {
                 var q = $q.defer();
+                var options = {
+                    quality: 100
+                    , destinationType: Camera.DestinationType.FILE_URI
+                    , sourceType: Camera.PictureSourceType.PHOTOLIBRARY
+                    , encodingType: Camera.EncodingType.JPEG
+                }
 
-                navigator.camera.getPicture(function(result) {
-                    // Do any magic you need
-                    q.resolve(result);
-                }, function(err) {
-                    q.reject(err);
-                }, options);
+                function onCapturePhoto(fileURI) {
+                    var win = function (r) {
+                        clearCache();
+                        retries = 0;
+                        alert('Done!');
+                    }
 
-                return q.promise;
+                    var fail = function (error) {
+                        if (retries == 0) {
+                            retries++
+                            setTimeout(function () {
+                                onCapturePhoto(fileURI)
+                            }, 1000)
+                        } else {
+                            retries = 0;
+                            clearCache();
+                            alert('Ups. Something wrong happens!');
+                        }
+                    }
+                }
+
+                    navigator.camera.getPicture(onCapturePhoto,options).then(
+                    function (fileURL) {
+
+                        q.resolve(fileURL);
+
+                    }, function (err) {
+                        deferred.reject(err);
+                    })
             }
         }
     }])
@@ -140,41 +168,22 @@ angular.module('starter.services', [])
             fileTo: function(serverURL, FileUrl) {
 
                 var deferred = $q.defer();
-
+                var fu = FileUrl;
                 if (ionic.Platform.isWebView()) {
 
-                    var options =   {
-                        quality: 100
-                        , destinationType: Camera.DestinationType.FILE_URI
-                        , sourceType: Camera.PictureSourceType.PHOTOLIBRARY
-                        , encodingType: Camera.EncodingType.JPEG
-                    }
+                    var uploadOptions = new FileUploadOptions();
+                    uploadOptions.fileKey = "file";
+                    uploadOptions.fileName = fu.substr(fu.lastIndexOf('/') + 1);
+                    uploadOptions.mimeType = "image/jpeg";
+                    uploadOptions.chunkedMode = false;
 
-                    $cordovaCamera.getPicture(options).then(
+                    $cordovaFile.uploadFile(serverURL, fu, uploadOptions).then(
 
-                        function(fileURL) {
-
-                            var uploadOptions = new FileUploadOptions();
-                            uploadOptions.fileKey = "file";
-                            uploadOptions.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1);
-                            uploadOptions.mimeType = "image/jpeg";
-                            uploadOptions.chunkedMode = false;
-
-                            $cordovaFile.uploadFile(serverURL, fileURL, uploadOptions).then(
-
-                                function(result) {
-                                    deferred.resolve(result);
-                                }, function(err) {
-                                    deferred.reject(err);
-                                })
-
-                            ;
-
-                        }, function(err){
+                        function(result) {
+                            deferred.resolve(result);
+                        }, function(err) {
                             deferred.reject(err);
-                        })
-
-                    ;
+                        });
 
                 }
                 else {

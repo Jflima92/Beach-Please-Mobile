@@ -36,5 +36,5 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
     <allow-intent href="*" />
-    <allow-navigation href="http://*/*" />
+    <allow-navigation href="*" />
 </widget>

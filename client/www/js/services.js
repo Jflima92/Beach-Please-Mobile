@@ -16,6 +16,7 @@ angular.module('starter.services', [])
             }
         }
     }])
+
     .factory('geoLocation', function ($localStorage) {
         return {
             setGeolocation: function (latitude, longitude) {
@@ -44,7 +45,7 @@ angular.module('starter.services', [])
 
             var locali = "http://192.168.108.57:3000/beaches";
             var heroku = "https://beach-please.herokuapp.com/beaches";
-            var local = "172.30.20.64:3000/beaches";
+            var local = "192.168.1.79:3000/beaches";
             var geny = "192.168.56.1:3000/beaches";
             var string = heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
@@ -67,7 +68,7 @@ angular.module('starter.services', [])
 
             var locali = "http://192.168.108.57:3000/beaches";
             var heroku = "https://beach-please.herokuapp.com/beaches";
-            var local = "http://172.30.20.64:3000/beaches";
+            var local = "http://192.168.1.79 :3000/beaches";
             var geny = "192.168.56.1:3000/beaches";
             var string = heroku + '/WeatherReq/'+id;
             console.log(string);
@@ -107,11 +108,31 @@ angular.module('starter.services', [])
                     , encodingType: Camera.EncodingType.JPEG
                 }
 
-                $cordovaCamera.getPicture(options).then(
+                function onCapturePhoto(fileURI) {
+                    var win = function (r) {
+                        clearCache();
+                        retries = 0;
+                        alert('Done!');
+                    }
+
+                    var fail = function (error) {
+                        if (retries == 0) {
+                            retries++
+                            setTimeout(function () {
+                                onCapturePhoto(fileURI)
+                            }, 1000)
+                        } else {
+                            retries = 0;
+                            clearCache();
+                            alert('Ups. Something wrong happens!');
+                        }
+                    }
+                }
+
+                    navigator.camera.getPicture(onCapturePhoto,options).then(
                     function (fileURL) {
 
                         q.resolve(fileURL);
-                        self.fileTo()
 
                     }, function (err) {
                         deferred.reject(err);
@@ -138,7 +159,6 @@ angular.module('starter.services', [])
                     function(fileURL) {
 
                         q.resolve(fileURL);
-                        self.fileTo()
 
                     }, function(err){
                         deferred.reject(err);

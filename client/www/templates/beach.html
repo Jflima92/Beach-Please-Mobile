@@ -10,7 +10,7 @@
                         <h1 class="title">Novidades</h1>
                     </div>
 
-                    <div class="list card" style="margin-top: 14%;">
+                    <div class="list card">
 
                         <div class="item item-body">
                             <div class="item item-avatar">
@@ -19,7 +19,7 @@
                                 <p>6 de Maio de 2015</p>
                             </div>
                             <p>
-                               curti esta praia ao molhe, incrivel mesmo, do caralho
+                                curti esta praia ao molhe, incrivel mesmo, do caralho
                             </p>
                             <p>
                                 <a href="#" class="subdued">1 Upvote</a>
@@ -99,13 +99,27 @@
 
             <ion-tab title="Settings" icon-on="ion-ios-cloud-upload" icon-off="ion-ios-cloud-upload-outline">
                 <ion-content has-header="true" padding="true">
-                    <ion-header-bar>
-                        <h1 class="title">Photos</h1>
-                    </ion-header-bar>
-                    <ion-content padding="true">
-                        <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
-                        <img ng-src="data:image/jpeg;base64,{{lastPhoto}}" style="max-width: 100%">
+                    <div class="bar bar-header bar-energized" >
+                        <h1 class="title">Fotografias</h1>
+                    </div>
+                    <ion-content class="has-header has-bottom" padding="true">
+                        <!-- <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
+                         <img ng-src="data:image/jpeg;base64,{{lastPhoto}}" style="max-width: 100%">-->
+                        <div class="button-bar">
+                            <a class="button button-assertive" ng-click="takePicture();">Take photo</a>
+                            <a class="button button-assertive" ng-click="selectPicture()">Choose photo</a>
+                            <a class="button button-assertive" ng-click="viewPictures();">View loaded</a>
+                        </div>
+                        <div ng-show="picData" class="item item-image">
+                            When pics loaded click to upload!
+                            <img id="myImage" class="item" ng-src="{{picData}}" ng-click="uploadPicture()" style="max-width: 100%"/>
+                        </div>
+                        <div class="home-sq" ng-show=photos>
+                            <p><i class="icon ion-alert-circled" style="color:#F60"></i> Click to set photo like avatar, or lon click to delete!<p>
+                            <div ng-repeat="photo in photos track by $index" ng-click="setPhoto($index, photo.name, profilo.user_id)" on-hold="delPhoto($index, photo.name)" style="background-image:url({{photo.file}});background-size:120% auto"></div>
+                        </div>
                     </ion-content>
+
                 </ion-content>
             </ion-tab>
 
