@@ -1,8 +1,16 @@
 angular.module('starter.controllers', [])
 
-    .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+    .controller('AppCtrl', function($scope, $ionicModal, $timeout, $localStorage) {
         // Form data for the login modal
         $scope.loginData = {};
+
+        $scope.init = function(){
+            if($localStorage.hasOwnProperty('access_token')){
+                alert("logado")
+            }
+            else
+                alert("notlogado");
+        }
 
         // Create the login modal that we will use later
         $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -33,7 +41,7 @@ angular.module('starter.controllers', [])
         };
     })
 
-    .controller('HomeCtrl', function($scope, $ionicLoading, $cordovaGeolocation){
+    .controller('HomeCtrl', function($scope, $ionicLoading, $cordovaGeolocation, $cordovaFacebook, $localStorage){
 
         $scope.mapCreated = function(map) {
             $scope.map = map;
@@ -65,8 +73,21 @@ angular.module('starter.controllers', [])
                 });
         }
 
-        $scope.facebookLogin = function(){
+        $scope.facebookLogin = function() {
 
+            if (!$localStorage.hasOwnProperty('access_token')) {
+
+                $cordovaFacebook.login(["public_profile", "email"]).then(function (success) {
+                    alert("nice: " + success.lastName);
+
+                })
+
+                $cordovaFacebook.getAccessToken().then(function (success) {
+                    $localStorage.access_token = success;
+                })
+            }
+            else
+            alert("ESTAS LOGADO");
         }
 
     })
@@ -192,7 +213,7 @@ angular.module('starter.controllers', [])
          }
          };*/
 
-        
+
         $scope.data = { "ImageURI" :  "Select Image" };
         $scope.takePicture = function() {
             var options = {
