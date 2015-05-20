@@ -7621,6 +7621,9 @@ map {
 .search-wrapper-light input, .search-wrapper-light input::-webkit-input-placeholder {
   color: #ffffff; }
 
+.logged_in {
+  min-height: 35px !important; }
+
 /*
 
 #scroll{

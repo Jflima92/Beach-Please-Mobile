@@ -33,6 +33,14 @@
         <ion-item nav-clear menu-close href="#/app/playlists">
           Playlists
         </ion-item>
+        <ion-item nav-clear menu-close href="#/app/home" ng-show="$root.is_logged">
+          <div class="item-avatar logged_in" >
+            <img src="https://graph.facebook.com/10152808516781921/picture?width=270&height=270">
+           <!-- <img src={{profile_pic}}>-->
+            <a>Logged in as</a>
+            <p>Jorge Lima</p>
+          </div>
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>

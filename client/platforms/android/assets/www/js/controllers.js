@@ -1,16 +1,15 @@
 angular.module('starter.controllers', [])
 
-    .controller('AppCtrl', function($scope, $ionicModal, $timeout, $localStorage) {
+    .controller('AppCtrl', function($rootScope, $scope, $ionicModal, $timeout, $localStorage, $ionicSideMenuDelegate) {
         // Form data for the login modal
         $scope.loginData = {};
 
-        $scope.init = function(){
-            if($localStorage.hasOwnProperty('access_token')){
-                alert("logado")
-            }
-            else
-                alert("notlogado");
-        }
+        $scope.$on('login_suc', function (event, data){
+                console.log("entrei...");
+                $scope.$root.is_logged = true;
+
+        })
+
 
         // Create the login modal that we will use later
         $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -39,10 +38,11 @@ angular.module('starter.controllers', [])
                 $scope.closeLogin();
             }, 1000);
         };
+
+        // $scope.profile_pic = $localStorage.user['profile_picture'];
     })
 
-    .controller('HomeCtrl', function($scope, $ionicLoading, $cordovaGeolocation, $cordovaFacebook, $localStorage){
-
+    .controller('HomeCtrl', function($scope, $rootScope, $state, $ionicLoading, $cordovaGeolocation, $cordovaFacebook, $localStorage){
         $scope.mapCreated = function(map) {
             $scope.map = map;
         };
@@ -77,17 +77,38 @@ angular.module('starter.controllers', [])
 
             if (!$localStorage.hasOwnProperty('access_token')) {
 
-                $cordovaFacebook.login(["public_profile", "email"]).then(function (success) {
-                    alert("nice: " + success.lastName);
+                $cordovaFacebook.login(["public_profile"]).then(function (success) {
+                    $localStorage.access_token = success.authResponse.accessToken;
 
-                })
+                    $cordovaFacebook.api("me",["public_profile"]).then(function(success){
+                        $localStorage.user = success;
+                        var pic_link = 'http://graph.facebook.com/' + success.id + '/picture?width=270&height=270';
+                        console.log(angular.toJson($scope.profile_pic));
+                        $localStorage.user['profile_picture'] = pic_link;
+                        $localStorage.user['is_logged'] = true;
+                        $scope.$root.user = $localStorage.user; //root scope changing several views
+                        $scope.$broadcast('login_suc', $localStorage.user);
+                        console.log(angular.toJson(($scope.$root.user)));
+                    })
 
-                $cordovaFacebook.getAccessToken().then(function (success) {
-                    $localStorage.access_token = success;
                 })
             }
             else
-            alert("ESTAS LOGADO");
+                alert("ESTAS LOGADO");
+        }
+
+        $scope.logout = function(){
+            // if ($localStorage.hasOwnProperty('access_token')) {
+            $cordovaFacebook.logout().then(function(success){
+                delete $localStorage.access_token;
+                delete $localStorage.user;
+                $scope.$root.user = undefined;
+                $state.go($state.$current, {}, {reload: true});
+                console.log(success);
+            })
+            /*}
+             else
+             alert("faz login primeiro");*/
         }
 
     })

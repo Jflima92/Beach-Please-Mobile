@@ -36,7 +36,6 @@ angular.module('starter.services', [])
         }
     })
 
-
     .factory('Beach', function($http, $q, geoLocation) {
         var self = this;
         var location = geoLocation.getGeolocation();
