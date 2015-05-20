@@ -27,8 +27,9 @@ angular.module('starter.services', [])
                 $localStorage.geoLocation = _position;
             },
             getGeolocation: function () {
+
                 return glocation = {
-                    lat: $localStorage.geoLocation.latitude,
+                    lat: $localStorage.geoLocation['latitude'],
                     lng: $localStorage.geoLocation.longitude
                 }
             }

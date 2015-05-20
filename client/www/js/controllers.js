@@ -5,7 +5,7 @@ angular.module('starter.controllers', [])
         $scope.loginData = {};
 
         $scope.init = function(){
-            if($localStorage.hasOwnProperty('access_token')){
+            if($localStorage.access_token != undefined){
                 alert("logado")
             }
             else
@@ -42,8 +42,7 @@ angular.module('starter.controllers', [])
     })
 
     .controller('HomeCtrl', function($scope, $ionicLoading, $cordovaGeolocation, $cordovaFacebook, $localStorage){
-
-        $scope.mapCreated = function(map) {
+            $scope.mapCreated = function(map) {
             $scope.map = map;
         };
 
@@ -77,17 +76,30 @@ angular.module('starter.controllers', [])
 
             if (!$localStorage.hasOwnProperty('access_token')) {
 
-                $cordovaFacebook.login(["public_profile", "email"]).then(function (success) {
-                    alert("nice: " + success.lastName);
+                $cordovaFacebook.login(["public_profile"]).then(function (success) {
+                    $localStorage.access_token = success.authResponse.accessToken;
 
-                })
+                    $cordovaFacebook.api("me",["public_profile"]).then(function(success){
+                        $localStorage.user = success;
+                        console.log(angular.toJson($localStorage.user));
+                    })
 
-                $cordovaFacebook.getAccessToken().then(function (success) {
-                    $localStorage.access_token = success;
                 })
             }
             else
             alert("ESTAS LOGADO");
+        }
+
+        $scope.logout = function(){
+           // if ($localStorage.hasOwnProperty('access_token')) {
+
+                $cordovaFacebook.logout().then(function(success){
+                   delete $localStorage.access_token;
+                    console.log(success);
+                })
+            /*}
+            else
+                alert("faz login primeiro");*/
         }
 
     })

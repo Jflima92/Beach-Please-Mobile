@@ -1,6 +1,6 @@
 angular.module('starter.services', [])
 
-    .factory('$localStorage', ['$window', function ($window) {
+    .factory('$localstorage', ['$window', function ($window) {
         return {
             set: function (key, value) {
                 $window.localStorage[key] = value;
@@ -24,12 +24,12 @@ angular.module('starter.services', [])
                     latitude: latitude,
                     longitude: longitude
                 }
-                $localStorage.setObject('geoLocation', _position)
+                $localStorage.geoLocation = _position;
             },
             getGeolocation: function () {
                 return glocation = {
-                    lat: $localStorage.getObject('geoLocation').latitude,
-                    lng: $localStorage.getObject('geoLocation').longitude
+                    lat: $localStorage.geoLocation.latitude,
+                    lng: $localStorage.geoLocation.longitude
                 }
             }
         }
