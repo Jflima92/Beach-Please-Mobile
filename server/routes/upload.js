@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var multer = require('multer');
-
+var beach = require('../models/beach.js');
 
 router.get('/', function(req, res) {
 
@@ -10,9 +10,26 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
-    console.log(req.body);
+    //console.log(req.body);
     console.log(req.files)
     res.sendStatus(200);
 }]);
 
 module.exports = router;
+
+/*
+{ file:{
+    fieldname: 'file',
+    originalname: '1432121034860.jpg',
+    name: 'c01ae21aba06d90d84b133748e7f8563.jpg',
+    mimetype: 'image/jpeg',
+    path: 'uploads/c01ae21aba06d90d84b133748e7f8563.jpg',
+    encoding: '7bit',
+    extension: 'jpg',
+    size: 616194,
+    truncated: false,
+    buffer: null }
+}
+
+    */
+
