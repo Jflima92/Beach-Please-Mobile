@@ -65,6 +65,10 @@ angular.module('starter.controllers', [])
                 });
         }
 
+        $scope.facebookLogin = function(){
+
+        }
+
     })
 
     .controller('PlaylistsCtrl', function($scope) {
@@ -122,76 +126,73 @@ angular.module('starter.controllers', [])
         });
 
 
+        /*
+         $scope.getPhoto = function() {
+         var local = "http://172.30.20.64:3000/beaches";
+         var locali = "http://192.168.108.57:3000/beaches";
+         var geny = "192.168.56.1:3000/beaches";
+         console.log('Getting camera');
+         Upload.getPicture({
+         quality: 75,
+         targetWidth: 320,
+         targetHeight: 320,
+         saveToPhotoAlbum: false
+         }).then(function(imageURI) {
+         console.log(imageURI);
+         $scope.lastPhoto = imageURI;
+         }, function(err) {
+         console.err(err);
+         })
+         };
 
-        $scope.getPhoto = function() {
-            var local = "http://172.30.20.64:3000/beaches";
-            var locali = "http://192.168.108.57:3000/beaches";
-            var geny = "192.168.56.1:3000/beaches";
-            console.log('Getting camera');
-            Upload.getPicture({
-                quality: 75,
-                targetWidth: 320,
-                targetHeight: 320,
-                saveToPhotoAlbum: false
-            }).then(function(imageURI) {
-                console.log(imageURI);
-                $scope.lastPhoto = imageURI;
-            }, function(err) {
-                console.err(err);
-            })
-        };
+         $scope.upload = function() {
+         var local = "http://172.30.20.64:3000/beaches";
+         var locali = "http://192.168.108.57:3000/upload";
+         var geny = "192.168.56.1:3000/beaches";
+         var url = '';
+         var fd = new FormData();
 
-        $scope.upload = function() {
-            var local = "http://172.30.20.64:3000/beaches";
-            var locali = "http://192.168.108.57:3000/upload";
-            var geny = "192.168.56.1:3000/beaches";
-            var url = '';
-            var fd = new FormData();
+         //previously I had this
+         //angular.forEach($scope.files, function(file){
+         //fd.append('image',file)
+         //});
 
-            //previously I had this
-            //angular.forEach($scope.files, function(file){
-            //fd.append('image',file)
-            //});
+         fd.append('image', $scope.lastPhoto);
 
-            fd.append('image', $scope.lastPhoto);
+         $http.post(local, fd, {
 
-            $http.post(local, fd, {
+         transformRequest: angular.identity,
+         headers: {
+         'Content-Type': 'image/jpeg'
+         }
+         })
+         .success(function (data, status, headers) {
+         $scope.imageURL = data.resource_uri; //set it to the response we get
+         })
+         .error(function (data, status, headers) {
 
-                transformRequest: angular.identity,
-                headers: {
-                    'Content-Type': 'image/jpeg'
-                }
-            })
-                .success(function (data, status, headers) {
-                    $scope.imageURL = data.resource_uri; //set it to the response we get
-                })
-                .error(function (data, status, headers) {
+         })
+         }
 
-                })
-        }
+         $scope.doRefresh = function() {
+         if($scope.newItems.length > 0){
+         $scope.items = $scope.newItems.concat($scope.items);
 
-        $scope.doRefresh = function() {
-            if($scope.newItems.length > 0){
-                $scope.items = $scope.newItems.concat($scope.items);
+         //Stop the ion-refresher from spinning
+         $scope.$broadcast('scroll.refreshComplete');
 
-                //Stop the ion-refresher from spinning
-                $scope.$broadcast('scroll.refreshComplete');
+         $scope.newItems = [];
+         } else {
+         PersonService.GetNewUsers().then(function(items){
+         $scope.items = items.concat($scope.items);
 
-                $scope.newItems = [];
-            } else {
-                PersonService.GetNewUsers().then(function(items){
-                    $scope.items = items.concat($scope.items);
+         //Stop the ion-refresher from spinning
+         $scope.$broadcast('scroll.refreshComplete');
+         });
+         }
+         };*/
 
-                    //Stop the ion-refresher from spinning
-                    $scope.$broadcast('scroll.refreshComplete');
-                });
-            }
-        };
-
-
-
-
-
+        
         $scope.data = { "ImageURI" :  "Select Image" };
         $scope.takePicture = function() {
             var options = {
@@ -204,10 +205,10 @@ angular.module('starter.controllers', [])
                     $scope.picData = imageData;
                     $scope.ftLoad = true;
                     $localStorage.set('fotoUp', imageData);
-                    $ionicLoading.show({template: 'Foto acquisita...', duration:500});
+                    $ionicLoading.show({template: 'Fotografia adquirida...', duration:500});
                 },
                 function(err){
-                    $ionicLoading.show({template: 'Errore di caricamento...', duration:500});
+                    $ionicLoading.show({template: 'Erro na câmara...', duration:500});
                 })
         }
 
@@ -226,15 +227,15 @@ angular.module('starter.controllers', [])
                         var image = document.getElementById('myImage');
                         image.src = fileEntry.nativeURL;
                     });
-                    $ionicLoading.show({template: 'Foto acquisita...', duration:500});
+                    $ionicLoading.show({template: 'Fotografia adquirida...', duration:500});
                 },
                 function(err){
-                    $ionicLoading.show({template: 'Errore di caricamento...', duration:500});
+                    $ionicLoading.show({template: 'Erro na câmara...', duration:500});
                 })
         };
 
         $scope.uploadPicture = function() {
-            $ionicLoading.show({template: 'Sto inviando la foto...'});
+            $ionicLoading.show({template: 'A enviar...'});
             var fileURL = $scope.picData;
             var options = new FileUploadOptions();
             options.fileKey = "file";
@@ -250,13 +251,13 @@ angular.module('starter.controllers', [])
 
             var ft = new FileTransfer();
             var heroku = "https://beach-please.herokuapp.com/upload";
-            ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Errore di connessione...'});
+            ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
                 $ionicLoading.hide();}, options);
         }
 
         var viewUploadedPictures = function() {
             var heroku = "https://beach-please.herokuapp.com/upload";
-            $ionicLoading.show({template: 'Sto cercando le tue foto...'});
+            $ionicLoading.show({template: 'A recolher fotografias...'});
             server = "http://192.168.1.79:3000/upload";
             if (heroku) {
                 var xmlhttp = new XMLHttpRequest();

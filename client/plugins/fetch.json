@@ -63,5 +63,17 @@
             "type": "registry",
             "id": "org.apache.cordova.file"
         }
+    },
+    "com.phonegap.plugins.facebookconnect": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Wizcorp/phonegap-facebook-plugin",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "1028453483866622",
+            "APP_NAME": "Beach-Please"
+        }
     }
 }

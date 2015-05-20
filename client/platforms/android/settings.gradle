@@ -2,3 +2,4 @@
 include ":"
 include ":CordovaLib"
 include ":com.google.playservices:sdis565965-google-play-services_lib"
+include ":com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib"

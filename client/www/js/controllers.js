@@ -65,6 +65,10 @@ angular.module('starter.controllers', [])
                 });
         }
 
+        $scope.facebookLogin = function(){
+
+        }
+
     })
 
     .controller('PlaylistsCtrl', function($scope) {

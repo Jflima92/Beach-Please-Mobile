@@ -250,6 +250,8 @@ dependencies {
     releaseCompile project(path: ":CordovaLib", configuration: "release")
     debugCompile project(path: ":com.google.playservices:sdis565965-google-play-services_lib", configuration: "debug")
     releaseCompile project(path: ":com.google.playservices:sdis565965-google-play-services_lib", configuration: "release")
+    debugCompile project(path: ":com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib", configuration: "debug")
+    releaseCompile project(path: ":com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib", configuration: "release")
     // SUB-PROJECT DEPENDENCIES END
 }
 
