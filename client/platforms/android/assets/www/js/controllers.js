@@ -4,9 +4,14 @@ angular.module('starter.controllers', [])
         // Form data for the login modal
         $scope.loginData = {};
 
+        //event listeners to update login mode
         $scope.$on('login_suc', function (event, data){
-                console.log("entrei...");
-                $scope.$root.is_logged = true;
+            $scope.$root.is_logged = true;
+
+        })
+
+        $scope.$on('logout', function (event, data){
+            $scope.$root.is_logged = false;
 
         })
 
@@ -42,7 +47,7 @@ angular.module('starter.controllers', [])
         // $scope.profile_pic = $localStorage.user['profile_picture'];
     })
 
-    .controller('HomeCtrl', function($scope, $rootScope, $state, $ionicLoading, $cordovaGeolocation, $cordovaFacebook, $localStorage){
+    .controller('HomeCtrl', function($scope, $rootScope, $state, $timeout, $ionicLoading, $cordovaGeolocation, $cordovaFacebook, $localStorage){
         $scope.mapCreated = function(map) {
             $scope.map = map;
         };
@@ -83,18 +88,19 @@ angular.module('starter.controllers', [])
                     $cordovaFacebook.api("me",["public_profile"]).then(function(success){
                         $localStorage.user = success;
                         var pic_link = 'http://graph.facebook.com/' + success.id + '/picture?width=270&height=270';
-                        console.log(angular.toJson($scope.profile_pic));
                         $localStorage.user['profile_picture'] = pic_link;
                         $localStorage.user['is_logged'] = true;
                         $scope.$root.user = $localStorage.user; //root scope changing several views
-                        $scope.$broadcast('login_suc', $localStorage.user);
-                        console.log(angular.toJson(($scope.$root.user)));
+
+                        $timeout(function(){
+                            $rootScope.$broadcast('login_suc', {});
+                            $scope.$apply();
+
+                        })
                     })
 
                 })
             }
-            else
-                alert("ESTAS LOGADO");
         }
 
         $scope.logout = function(){
@@ -103,7 +109,12 @@ angular.module('starter.controllers', [])
                 delete $localStorage.access_token;
                 delete $localStorage.user;
                 $scope.$root.user = undefined;
-                $state.go($state.$current, {}, {reload: true});
+                $timeout(function(){
+                    $rootScope.$broadcast('logout', {});
+                    $scope.$apply();
+
+
+                })
                 console.log(success);
             })
             /*}

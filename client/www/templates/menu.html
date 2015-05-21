@@ -35,10 +35,9 @@
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/home" ng-show="$root.is_logged">
           <div class="item-avatar logged_in" >
-            <img src="https://graph.facebook.com/10152808516781921/picture?width=270&height=270">
-           <!-- <img src={{profile_pic}}>-->
+            <img src={{user.profile_picture}}>
             <a>Logged in as</a>
-            <p>Jorge Lima</p>
+            <p>{{user.name}}</p>
           </div>
         </ion-item>
       </ion-list>
