@@ -21,9 +21,6 @@
         <ion-item nav-clear menu-close href="#/app/home">
           Início
         </ion-item>
-        <ion-item nav-clear menu-close ng-click="login()">
-          Login
-        </ion-item>
         <ion-item nav-clear menu-close href="#/app/search">
           Pesquisa
         </ion-item>
@@ -31,15 +28,20 @@
           Favoritos
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/playlists">
-          Playlists
+          Histórico
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="login()" ng-hide="$root.is_logged">
+          Login
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/home" ng-show="$root.is_logged">
           <div class="item-avatar logged_in" >
-            <img src="https://graph.facebook.com/10152808516781921/picture?width=270&height=270">
-           <!-- <img src={{profile_pic}}>-->
+            <img src={{user.profile_picture}}>
             <a>Logged in as</a>
-            <p>Jorge Lima</p>
+            <p>{{user.name}}</p>
           </div>
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="logout()" ng-show="$root.is_logged">
+          Logout
         </ion-item>
       </ion-list>
     </ion-content>

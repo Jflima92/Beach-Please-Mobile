@@ -21,9 +21,6 @@
         <ion-item nav-clear menu-close href="#/app/home">
           Início
         </ion-item>
-        <ion-item nav-clear menu-close ng-click="login()">
-          Login
-        </ion-item>
         <ion-item nav-clear menu-close href="#/app/search">
           Pesquisa
         </ion-item>
@@ -31,7 +28,10 @@
           Favoritos
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/playlists">
-          Playlists
+          Histórico
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="login()" ng-hide="$root.is_logged">
+          Login
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/home" ng-show="$root.is_logged">
           <div class="item-avatar logged_in" >

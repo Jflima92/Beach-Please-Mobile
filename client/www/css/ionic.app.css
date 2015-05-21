@@ -7624,6 +7624,10 @@ map {
 .logged_in {
   min-height: 35px !important; }
 
+.btn-social {
+  padding: 10px 6px 4px 27px;
+  margin-right: 3%; }
+
 /*
 
 #scroll{

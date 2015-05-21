@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-    .controller('AppCtrl', function($rootScope, $scope, $ionicModal, $timeout, $localStorage, $ionicSideMenuDelegate) {
+    .controller('AppCtrl', function($rootScope, $scope, $ionicModal, $timeout, $localStorage, $cordovaFacebook) {
         // Form data for the login modal
         $scope.loginData = {};
 
@@ -53,42 +53,6 @@ angular.module('starter.controllers', [])
             }, 1000);
         };
 
-        // $scope.profile_pic = $localStorage.user['profile_picture'];
-    })
-
-    .controller('HomeCtrl', function($scope, $ionicPlatform, $rootScope, $state, $timeout, $ionicLoading, $cordovaGeolocation, $cordovaFacebook, $localStorage){
-        $scope.mapCreated = function(map) {
-            $scope.map = map;
-        };
-
-        $scope.centerOnMe = function () {
-            console.log("Centering");
-            if (!$scope.map) {
-                return;
-            }
-
-            $scope.loading = $ionicLoading.show({
-                content: 'Getting current location...',
-                showBackdrop: false
-            });
-
-            var posOptions = {timeout: 10000, enableHighAccuracy: false};
-
-            $ionicPlatform.ready(function(){
-                $cordovaGeolocation
-                    .getCurrentPosition(posOptions)
-                    .then(function (position) {
-                        var lat = position.coords.latitude,
-                            long = position.coords.longitude,
-                            initialLocation = new google.maps.LatLng(lat, long);
-
-                        $scope.map.setCenter(initialLocation);
-                        $ionicLoading.hide();
-                    });
-            })
-
-        }
-
         $scope.facebookLogin = function() {
 
             if (!$localStorage.hasOwnProperty('access_token')) {
@@ -129,6 +93,44 @@ angular.module('starter.controllers', [])
              else
              alert("faz login primeiro");*/
         }
+
+        // $scope.profile_pic = $localStorage.user['profile_picture'];
+    })
+
+    .controller('HomeCtrl', function($scope, $ionicPlatform, $rootScope, $state, $timeout, $ionicLoading, $cordovaGeolocation, $cordovaFacebook, $localStorage){
+        $scope.mapCreated = function(map) {
+            $scope.map = map;
+        };
+
+        $scope.centerOnMe = function () {
+            console.log("Centering");
+            if (!$scope.map) {
+                return;
+            }
+
+            $scope.loading = $ionicLoading.show({
+                content: 'Getting current location...',
+                showBackdrop: false
+            });
+
+            var posOptions = {timeout: 10000, enableHighAccuracy: false};
+
+            $ionicPlatform.ready(function(){
+                $cordovaGeolocation
+                    .getCurrentPosition(posOptions)
+                    .then(function (position) {
+                        var lat = position.coords.latitude,
+                            long = position.coords.longitude,
+                            initialLocation = new google.maps.LatLng(lat, long);
+
+                        $scope.map.setCenter(initialLocation);
+                        $ionicLoading.hide();
+                    });
+            })
+
+        }
+
+
 
     })
 
