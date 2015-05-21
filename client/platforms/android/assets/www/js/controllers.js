@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-    .controller('AppCtrl', function($rootScope, $scope, $ionicModal, $timeout, $localStorage, $ionicSideMenuDelegate) {
+    .controller('AppCtrl', function($rootScope, $scope, $ionicModal, $timeout, $localStorage, $cordovaFacebook) {
         // Form data for the login modal
         $scope.loginData = {};
 

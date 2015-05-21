@@ -69,12 +69,13 @@ angular.module('starter.controllers', [])
                             $rootScope.$broadcast('login_suc', $localStorage.user);
                             $scope.$apply();
 
-                        })
+                        });
+                        $scope.modal.hide();
                     })
 
                 })
             }
-        }
+        };
 
         $scope.logout = function(){
             // if ($localStorage.hasOwnProperty('access_token')) {
@@ -92,7 +93,9 @@ angular.module('starter.controllers', [])
             /*}
              else
              alert("faz login primeiro");*/
-        }
+        };
+
+
 
         // $scope.profile_pic = $localStorage.user['profile_picture'];
     })
