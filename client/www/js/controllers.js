@@ -112,13 +112,12 @@ angular.module('starter.controllers', [])
             }
 
             $scope.loading = $ionicLoading.show({
-                content: 'Getting current location...',
+                template: 'A localizar...',
                 showBackdrop: false
             });
 
             var posOptions = {timeout: 10000, enableHighAccuracy: false};
 
-            $ionicPlatform.ready(function(){
                 $cordovaGeolocation
                     .getCurrentPosition(posOptions)
                     .then(function (position) {
@@ -129,7 +128,7 @@ angular.module('starter.controllers', [])
                         $scope.map.setCenter(initialLocation);
                         $ionicLoading.hide();
                     });
-            })
+
 
         }
 

@@ -69,12 +69,13 @@ angular.module('starter.controllers', [])
                             $rootScope.$broadcast('login_suc', $localStorage.user);
                             $scope.$apply();
 
-                        })
+                        });
+                        $scope.modal.hide();
                     })
 
                 })
             }
-        }
+        };
 
         $scope.logout = function(){
             // if ($localStorage.hasOwnProperty('access_token')) {
@@ -92,7 +93,9 @@ angular.module('starter.controllers', [])
             /*}
              else
              alert("faz login primeiro");*/
-        }
+        };
+
+
 
         // $scope.profile_pic = $localStorage.user['profile_picture'];
     })
@@ -109,13 +112,12 @@ angular.module('starter.controllers', [])
             }
 
             $scope.loading = $ionicLoading.show({
-                content: 'Getting current location...',
+                template: 'A localizar...',
                 showBackdrop: false
             });
 
             var posOptions = {timeout: 10000, enableHighAccuracy: false};
 
-            $ionicPlatform.ready(function(){
                 $cordovaGeolocation
                     .getCurrentPosition(posOptions)
                     .then(function (position) {
@@ -126,7 +128,7 @@ angular.module('starter.controllers', [])
                         $scope.map.setCenter(initialLocation);
                         $ionicLoading.hide();
                     });
-            })
+
 
         }
 

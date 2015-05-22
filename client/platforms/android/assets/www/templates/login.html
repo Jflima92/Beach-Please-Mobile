@@ -6,7 +6,7 @@
     </div>
   </ion-header-bar>
   <ion-content>
-    <form ng-submit="doLogin()">
+    <form> <!--ng-submit="doLogin()"-->
       <div class="list">
         <label class="item item-input">
           <span class="input-label">Username</span>
@@ -20,23 +20,8 @@
           <button class="button button-block button-positive" type="submit">Log in</button>
         </label>
         <label class="item">
-          <a class="btn btn-block btn-social btn-facebook" ng-click="facebookLogin()">
-            <i class="fa fa-facebook"></i>
-          </a>
-
-          <a class="btn btn-block btn-social btn-google">
-            <i class="fa fa-google"></i>
-          </a>
-
-          <a class="btn btn-block btn-social btn-twitter">
-            <i class="fa fa-twitter"></i>
-          </a>
-
-          <a class="btn btn-block btn-social btn-instagram">
-            <i class="fa fa-instagram"></i>
-          </a>
+          <button ng-click="facebookLogin()" class="button button-dark ion-social-facebook" ></button>
         </label>
-
       </div>
     </form>
 
