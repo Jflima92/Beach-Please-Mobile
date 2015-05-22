@@ -13,7 +13,7 @@ router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     //console.log(req.body);
     console.log(req.files);
     beach.findOne().exec(function (err, query) {
-        console.log(query.name);
+       console.log(query.name);
     });
     res.sendStatus(200);
 }]);
