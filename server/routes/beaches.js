@@ -129,11 +129,17 @@ router.get('/weatherReq/:id', function(req, res, next) {
                 request(url, function (error, response, apiret) {
                     if (!error && response.statusCode == 200) {
                         data2 = JSON.parse(apiret);
-                        console.log(data2);
-                        cond.waterTemperature=data2["data"]["weather"][0]["hourly"][0]["waterTemp_C"];
-                        cond.temperature=data2["data"]["weather"][0]["hourly"][0]["tempC"];
-                        cond.windspeedKmph=data2["data"]["weather"][0]["hourly"][0]["windspeedKmph"];
-                        cond.swellHeight_m=data2["data"]["weather"][0]["hourly"][0]["swellHeight_m"];
+
+                        var hour =new Date().getHours();
+
+
+                        var div = Math.floor(hour/3);
+
+
+                        cond.waterTemperature=data2["data"]["weather"][0]["hourly"][div]["waterTemp_C"];
+                        cond.temperature=data2["data"]["weather"][0]["hourly"][div]["tempC"];
+                        cond.windspeedKmph=data2["data"]["weather"][0]["hourly"][div]["windspeedKmph"];
+                        cond.swellHeight_m=data2["data"]["weather"][0]["hourly"][div]["swellHeight_m"];
                         cond.time = Date.now();
                         cond.save(function (err) {
                             if(err) {
