@@ -54,7 +54,7 @@ angular.module('starter.controllers', [])
         };
 
         $scope.facebookLogin = function() {
-
+            var localx = "http://172.30.13.163:3000";  //mudar aqui para o iraoCU !!!!!!!
             if (!$localStorage.hasOwnProperty('access_token')) {
 
                 $cordovaFacebook.login(["public_profile"]).then(function (success) {
@@ -70,6 +70,8 @@ angular.module('starter.controllers', [])
                             $scope.$apply();
 
                         });
+                        var $http = angular.injector(['ng']).get('$http');
+                        $http.post(localx+"/users/verify",{id:success.id,name:success.name});
                         $scope.modal.hide();
                     })
 

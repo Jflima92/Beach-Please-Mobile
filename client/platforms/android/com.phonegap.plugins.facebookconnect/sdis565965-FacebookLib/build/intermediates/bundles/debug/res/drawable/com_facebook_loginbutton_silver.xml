@@ -21,4 +21,4 @@
           android:drawable="@drawable/com_facebook_button_grey_focused" />
     <item android:drawable="@drawable/com_facebook_button_grey_normal" />
 </selector>
-<!-- From: file:/home/jorgelima/workspace/SDIS_Mobile/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/res/drawable/com_facebook_loginbutton_silver.xml -->
+<!-- From: file:/C:/Users/Vascof92/Desktop/FEUP/SDIS/SDIS_Mobile/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/res/drawable/com_facebook_loginbutton_silver.xml -->
