@@ -309,8 +309,8 @@ angular.module('starter.controllers', [])
             options.chunkedMode = true;
 
             var params = {};
-            params.value1 = "someparams";
-            params.value2 = "otherparams";
+            params.beach = $scope.name;
+            params.user = $scope.user;
 
             options.params = params;
 
