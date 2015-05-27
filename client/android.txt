@@ -1,0 +1,24 @@
+[32mUpdated the hooks directory to have execute permissions[39m
+Adding android project...
+Creating Cordova project for the Android platform:
+	Path: platforms\android
+	Package: com.ionicframework.sdis565965
+	Name: SDIS
+	Activity: MainActivity
+	Android target: android-22
+Copying template files...
+Android project created with cordova-android@4.0.0
+Running command: "C:\Program Files\nodejs\node.exe" C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\hooks\after_prepare\010_add_platform_class.js C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client
+add to body class: platform-android
+Installing "com.google.playservices" for android
+Installing "com.ionic.keyboard" for android
+Installing "com.phonegap.plugins.facebookconnect" for android
+Installing "cordova-plugin-geolocation" for android
+Installing "cordova-plugin-whitelist" for android
+Installing "org.apache.cordova.camera" for android
+Installing "org.apache.cordova.console" for android
+Installing "org.apache.cordova.device" for android
+Installing "org.apache.cordova.file" for android
+Installing "org.apache.cordova.file-transfer" for android
+Installing "org.apache.cordova.inappbrowser" for android
+[34mSaving platform to package.json file[39m

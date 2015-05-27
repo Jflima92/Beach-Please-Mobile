@@ -1,15 +1,208 @@
-Usage: heroku logs
-
- display recent log output
-
- -n, --num NUM        # the number of lines to display
- -p, --ps PS          # only display logs from the given process
- -s, --source SOURCE  # only display logs from the given source
- -t, --tail           # continually stream logs
-
-Example:
-
- $ heroku logs
- 2012-01-01T12:00:00+00:00 heroku[api]: Config add EXAMPLE by email@example.com
- 2012-01-01T12:00:01+00:00 heroku[api]: Release v1 created by email@example.com
-
+2015-05-24T00:10:07.436175+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/2009-07-08_11-30-30_0103_resize.JPG',
+2015-05-24T00:10:07.436177+00:00 app[web.1]:     comments: [],
+2015-05-24T00:10:07.436179+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:10:07.436180+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/2009-07-08_11-29-31_0099_resize.JPG' },
+2015-05-24T00:10:07.436182+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/2009-05-28_15-29-54_0242_resize.JPG' },
+2015-05-24T00:10:07.436183+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/2009-05-28_15-29-39_0241_resize.JPG' } ] },
+2015-05-24T00:10:07.436185+00:00 app[web.1]:   { _id: 5551e17ae4b073c90a918f98,
+2015-05-24T00:10:07.436186+00:00 app[web.1]:     name: 'Aterro',
+2015-05-24T00:10:07.436187+00:00 app[web.1]:     lat: 41.207956,
+2015-05-24T00:10:07.436189+00:00 app[web.1]:     lng: -8.715988,
+2015-05-24T00:10:07.436193+00:00 app[web.1]:     comments: [],
+2015-05-24T00:10:07.436190+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0124_resize_34.JPG',
+2015-05-24T00:10:07.436192+00:00 app[web.1]:     cond: 555368c5e4b0f3d509aeda6e,
+2015-05-24T00:10:07.436194+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:10:07.436197+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0122_resize_28.JPG' },
+2015-05-24T00:10:07.436195+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0129_resize_28.JPG' },
+2015-05-24T00:10:07.436198+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0124_resize_34.JPG' } ] },
+2015-05-24T00:10:07.436199+00:00 app[web.1]:   { _id: 5551e136e4b073c90a918f82,
+2015-05-24T00:10:07.436201+00:00 app[web.1]:     name: 'Madalena',
+2015-05-24T00:10:07.436202+00:00 app[web.1]:     lat: 41.1051,
+2015-05-24T00:10:07.436204+00:00 app[web.1]:     lng: -8.662505,
+2015-05-24T00:10:07.436205+00:00 app[web.1]:     thumbUrl: 'http://estatiscos2.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0268_resize_9.JPG',
+2015-05-24T00:10:07.436208+00:00 app[web.1]:     comments: [],
+2015-05-24T00:10:07.436207+00:00 app[web.1]:     cond: 555368f5e4b0f3d509aeda7c,
+2015-05-24T00:10:07.436209+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:10:07.436211+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0264_resize_8.JPG' },
+2015-05-24T00:10:07.436212+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0265_resize_9.JPG' },
+2015-05-24T00:10:07.436213+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0266_resize_9.JPG' } ] },
+2015-05-24T00:10:07.436215+00:00 app[web.1]:   { _id: 5551fe91e4b073c90a9195ff,
+2015-05-24T00:10:07.436216+00:00 app[web.1]:     name: 'Lavadores',
+2015-05-24T00:10:07.436217+00:00 app[web.1]:     lat: 41.129187,
+2015-05-24T00:10:07.436218+00:00 app[web.1]:     lng: -8.668578,
+2015-05-24T00:10:07.436220+00:00 app[web.1]:     thumbUrl: 'http://estatiscos2.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0243_resize_11.JPG',
+2015-05-24T00:10:07.436221+00:00 app[web.1]:     cond: 555366c9e4b0f3d509aeda07,
+2015-05-24T00:10:07.436222+00:00 app[web.1]:     comments: [],
+2015-05-24T00:10:07.436224+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0244_resize_10.JPG' },
+2015-05-24T00:10:07.436223+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:10:07.436226+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0243_resize_11.JPG' },
+2015-05-24T00:10:07.436227+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0247_resize_11.JPG' } ] },
+2015-05-24T00:10:07.436228+00:00 app[web.1]:   { _id: 5551fd7be4b073c90a9195d2,
+2015-05-24T00:10:07.436229+00:00 app[web.1]:     name: 'Aguda',
+2015-05-24T00:10:07.436230+00:00 app[web.1]:     lat: 41.049542,
+2015-05-24T00:10:07.436232+00:00 app[web.1]:     lng: -8.655338,
+2015-05-24T00:10:07.436233+00:00 app[web.1]:     cond: 555367f3e4b0f3d509aeda42,
+2015-05-24T00:10:07.436234+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0268_resize_9.JPG',
+2015-05-24T00:10:07.436235+00:00 app[web.1]:     comments: [],
+2015-05-24T00:10:07.436236+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:10:07.436239+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0003_resize_65.JPG' },
+2015-05-24T00:10:07.436238+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0356_resize_3.JPG' },
+2015-05-24T00:10:07.436241+00:00 app[web.1]:   { _id: 5551fef7e4b073c90a919611,
+2015-05-24T00:10:07.436240+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0360_resize_3.JPG' } ] },
+2015-05-24T00:10:07.436257+00:00 app[web.1]:     name: 'Molhe',
+2015-05-24T00:10:07.436259+00:00 app[web.1]:     lat: 41.159642,
+2015-05-24T00:10:07.436260+00:00 app[web.1]:     lng: -8.685433,
+2015-05-24T00:10:07.436261+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0189_resize_14.JPG',
+2015-05-24T00:10:07.436263+00:00 app[web.1]:     cond: 55528769e4b066132a038d9b,
+2015-05-24T00:10:07.436265+00:00 app[web.1]:     comments: 
+2015-05-24T00:10:07.436268+00:00 app[web.1]:        5560d7695a099fd13ef29948,
+2015-05-24T00:10:07.436267+00:00 app[web.1]:      [ 5560d72146a55cb83eefc45d,
+2015-05-24T00:10:07.436269+00:00 app[web.1]:        5560ea50b4634a6d40c35526,
+2015-05-24T00:10:07.436270+00:00 app[web.1]:        5560ea60b4634a6d40c35527,
+2015-05-24T00:10:07.436273+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:10:07.436272+00:00 app[web.1]:        5560ec614e72c07941b933c7 ],
+2015-05-24T00:10:07.436274+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0187_resize_15.JPG' },
+2015-05-24T00:10:07.436275+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0192_resize_14.JPG' },
+2015-05-24T00:10:07.436276+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0184_resize_17.JPG' } ] },
+2015-05-24T00:10:07.436279+00:00 app[web.1]:     name: 'Azul',
+2015-05-24T00:10:07.436278+00:00 app[web.1]:   { _id: 5551fe18e4b073c90a9195ea,
+2015-05-24T00:10:07.436280+00:00 app[web.1]:     lat: 41.267703,
+2015-05-24T00:10:07.436281+00:00 app[web.1]:     lng: -8.727307,
+2015-05-24T00:10:07.436283+00:00 app[web.1]:     cond: 555367b5e4b0f3d509aeda36,
+2015-05-24T00:10:07.436284+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0358_resize_2.JPG',
+2015-05-24T00:10:07.436285+00:00 app[web.1]:     comments: [],
+2015-05-24T00:10:07.436286+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:10:07.436288+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0068_resize_43.JPG' },
+2015-05-24T00:10:07.436289+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0065_resize_42.JPG' },
+2015-05-24T00:10:07.436290+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0067_resize_44.JPG' } ] },
+2015-05-24T00:10:07.436291+00:00 app[web.1]:   { _id: 5551fca0e4b073c90a9195ac,
+2015-05-24T00:10:07.436293+00:00 app[web.1]:     name: 'Leça da Palmeira',
+2015-05-24T00:10:07.436294+00:00 app[web.1]:     lat: 41.188888,
+2015-05-24T00:10:07.436295+00:00 app[web.1]:     lng: -8.706134,
+2015-05-24T00:10:07.436296+00:00 app[web.1]:     cond: 55536855e4b0f3d509aeda5a,
+2015-05-24T00:10:07.436303+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0152_resize_29.JPG',
+2015-05-24T00:10:07.436305+00:00 app[web.1]:     comments: [],
+2015-05-24T00:10:07.436306+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:10:07.436307+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0150_resize_32.JPG' },
+2015-05-24T00:10:07.436309+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0149_resize_29.JPG' },
+2015-05-24T00:10:07.436311+00:00 app[web.1]: aqui
+2015-05-24T00:10:07.436310+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0148_resize_27.JPG' } ] } ]
+2015-05-24T00:10:07.436355+00:00 app[web.1]: http://maps.googleapis.com/maps/api/distancematrix/json?origins=41.1783531,-8.5951027&destinations=41.193111,-8.7071|41.207956,-8.715988|41.1051,-8.662505|41.129187,-8.668578|41.049542,-8.655338|41.159642,-8.685433|41.267703,-8.727307|41.188888,-8.706134
+2015-05-24T00:10:07.546659+00:00 app[web.1]: http://maps.googleapis.com/maps/api/distancematrix/json?origins=41.1783531,-8.5951027&destinations=41.193111,-8.7071|41.207956,-8.715988|41.1051,-8.662505|41.129187,-8.668578|41.049542,-8.655338|41.159642,-8.685433|41.267703,-8.727307|41.188888,-8.706134
+2015-05-24T00:10:07.551501+00:00 heroku[router]: at=info method=GET path="/beaches?dist=35000&lat=41.1783531&long=-8.5951027" host=beach-please.herokuapp.com request_id=19d171a1-a736-4969-9878-181a4deb2f69 fwd="193.136.33.133" dyno=web.1 connect=1ms service=248ms status=304 bytes=254
+2015-05-24T00:10:07.549371+00:00 app[web.1]: [0mGET /beaches?dist=35000&lat=41.1783531&long=-8.5951027 [36m304 [0m247.140 ms - -[0m
+2015-05-24T00:10:08.135590+00:00 heroku[router]: at=info method=GET path="/beaches/WeatherReq/5551fef7e4b073c90a919611" host=beach-please.herokuapp.com request_id=c295cc4c-4dbc-47ca-a91a-3c18f7360b9a fwd="193.136.33.133" dyno=web.1 connect=1ms service=243ms status=200 bytes=445
+2015-05-24T00:10:08.133072+00:00 app[web.1]: [0mGET /beaches/WeatherReq/5551fef7e4b073c90a919611 [32m200 [0m242.262 ms - 146[0m
+2015-05-24T00:10:32.375415+00:00 app[web.1]: { beach: 'Molhe' }
+2015-05-24T00:10:32.378655+00:00 app[web.1]: [0mPOST /upload [32m200 [0m533.943 ms - 2[0m
+2015-05-24T00:10:32.375190+00:00 app[web.1]: req
+2015-05-24T00:10:32.427697+00:00 heroku[router]: at=info method=POST path="/upload" host=beach-please.herokuapp.com request_id=90901083-8edf-452c-bb1a-02f2bd9acf52 fwd="193.136.33.133" dyno=web.1 connect=0ms service=584ms status=200 bytes=270
+2015-05-24T00:10:32.542430+00:00 heroku[router]: at=info method=GET path="/upload" host=beach-please.herokuapp.com request_id=155018af-2a06-445a-957e-29bb8afec27f fwd="193.136.33.133" dyno=web.1 connect=0ms service=11ms status=200 bytes=292
+2015-05-24T00:10:32.540891+00:00 app[web.1]: [0mGET /upload [32m200 [0m9.356 ms - 3[0m
+2015-05-24T00:12:28.311769+00:00 heroku[router]: at=info method=GET path="/beaches?dist=35000&lat=41.1783531&long=-8.5951027" host=beach-please.herokuapp.com request_id=51d63d2b-a1ff-4166-a650-8db82bc1bc9e fwd="193.136.33.133" dyno=web.1 connect=0ms service=330ms status=304 bytes=254
+2015-05-24T00:12:28.181793+00:00 app[web.1]: [ { _id: 5551fd3ce4b073c90a9195c9,
+2015-05-24T00:12:28.181799+00:00 app[web.1]:     name: 'Piscina das Marés',
+2015-05-24T00:12:28.181801+00:00 app[web.1]:     lat: 41.193111,
+2015-05-24T00:12:28.181802+00:00 app[web.1]:     lng: -8.7071,
+2015-05-24T00:12:28.181805+00:00 app[web.1]:     cond: 55536834e4b0f3d509aeda53,
+2015-05-24T00:12:28.181807+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/2009-07-08_11-30-30_0103_resize.JPG',
+2015-05-24T00:12:28.181809+00:00 app[web.1]:     comments: [],
+2015-05-24T00:12:28.181811+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:12:28.181812+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/2009-07-08_11-29-31_0099_resize.JPG' },
+2015-05-24T00:12:28.181814+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/2009-05-28_15-29-54_0242_resize.JPG' },
+2015-05-24T00:12:28.181815+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/2009-05-28_15-29-39_0241_resize.JPG' } ] },
+2015-05-24T00:12:28.181816+00:00 app[web.1]:   { _id: 5551e17ae4b073c90a918f98,
+2015-05-24T00:12:28.181818+00:00 app[web.1]:     name: 'Aterro',
+2015-05-24T00:12:28.181819+00:00 app[web.1]:     lat: 41.207956,
+2015-05-24T00:12:28.181820+00:00 app[web.1]:     lng: -8.715988,
+2015-05-24T00:12:28.181823+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0124_resize_34.JPG',
+2015-05-24T00:12:28.181824+00:00 app[web.1]:     cond: 555368c5e4b0f3d509aeda6e,
+2015-05-24T00:12:28.181825+00:00 app[web.1]:     comments: [],
+2015-05-24T00:12:28.181827+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:12:28.181828+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0129_resize_28.JPG' },
+2015-05-24T00:12:28.181829+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0122_resize_28.JPG' },
+2015-05-24T00:12:28.181831+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0124_resize_34.JPG' } ] },
+2015-05-24T00:12:28.181832+00:00 app[web.1]:   { _id: 5551e136e4b073c90a918f82,
+2015-05-24T00:12:28.181833+00:00 app[web.1]:     name: 'Madalena',
+2015-05-24T00:12:28.181834+00:00 app[web.1]:     lat: 41.1051,
+2015-05-24T00:12:28.181836+00:00 app[web.1]:     lng: -8.662505,
+2015-05-24T00:12:28.181837+00:00 app[web.1]:     thumbUrl: 'http://estatiscos2.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0268_resize_9.JPG',
+2015-05-24T00:12:28.181838+00:00 app[web.1]:     cond: 555368f5e4b0f3d509aeda7c,
+2015-05-24T00:12:28.181840+00:00 app[web.1]:     comments: [],
+2015-05-24T00:12:28.181841+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:12:28.181842+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0264_resize_8.JPG' },
+2015-05-24T00:12:28.181844+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0265_resize_9.JPG' },
+2015-05-24T00:12:28.181845+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0266_resize_9.JPG' } ] },
+2015-05-24T00:12:28.181846+00:00 app[web.1]:   { _id: 5551fe91e4b073c90a9195ff,
+2015-05-24T00:12:28.181848+00:00 app[web.1]:     name: 'Lavadores',
+2015-05-24T00:12:28.181849+00:00 app[web.1]:     lat: 41.129187,
+2015-05-24T00:12:28.181850+00:00 app[web.1]:     lng: -8.668578,
+2015-05-24T00:12:28.181851+00:00 app[web.1]:     thumbUrl: 'http://estatiscos2.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0243_resize_11.JPG',
+2015-05-24T00:12:28.181853+00:00 app[web.1]:     cond: 555366c9e4b0f3d509aeda07,
+2015-05-24T00:12:28.181870+00:00 app[web.1]:     comments: [],
+2015-05-24T00:12:28.181872+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:12:28.181873+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0244_resize_10.JPG' },
+2015-05-24T00:12:28.181874+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0243_resize_11.JPG' },
+2015-05-24T00:12:28.181875+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0247_resize_11.JPG' } ] },
+2015-05-24T00:12:28.181877+00:00 app[web.1]:   { _id: 5551fd7be4b073c90a9195d2,
+2015-05-24T00:12:28.181878+00:00 app[web.1]:     name: 'Aguda',
+2015-05-24T00:12:28.181879+00:00 app[web.1]:     lat: 41.049542,
+2015-05-24T00:12:28.181880+00:00 app[web.1]:     lng: -8.655338,
+2015-05-24T00:12:28.181882+00:00 app[web.1]:     cond: 555367f3e4b0f3d509aeda42,
+2015-05-24T00:12:28.181883+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0268_resize_9.JPG',
+2015-05-24T00:12:28.181884+00:00 app[web.1]:     comments: [],
+2015-05-24T00:12:28.181886+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:12:28.181887+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0356_resize_3.JPG' },
+2015-05-24T00:12:28.181888+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0003_resize_65.JPG' },
+2015-05-24T00:12:28.181890+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0360_resize_3.JPG' } ] },
+2015-05-24T00:12:28.181891+00:00 app[web.1]:   { _id: 5551fef7e4b073c90a919611,
+2015-05-24T00:12:28.181892+00:00 app[web.1]:     name: 'Molhe',
+2015-05-24T00:12:28.181893+00:00 app[web.1]:     lat: 41.159642,
+2015-05-24T00:12:28.181895+00:00 app[web.1]:     lng: -8.685433,
+2015-05-24T00:12:28.181896+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0189_resize_14.JPG',
+2015-05-24T00:12:28.181897+00:00 app[web.1]:     cond: 55528769e4b066132a038d9b,
+2015-05-24T00:12:28.181898+00:00 app[web.1]:     comments: 
+2015-05-24T00:12:28.181900+00:00 app[web.1]:      [ 5560d72146a55cb83eefc45d,
+2015-05-24T00:12:28.181901+00:00 app[web.1]:        5560d7695a099fd13ef29948,
+2015-05-24T00:12:28.181902+00:00 app[web.1]:        5560ea50b4634a6d40c35526,
+2015-05-24T00:12:28.181903+00:00 app[web.1]:        5560ea60b4634a6d40c35527,
+2015-05-24T00:12:28.181905+00:00 app[web.1]:        5560ec614e72c07941b933c7 ],
+2015-05-24T00:12:28.181906+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:12:28.181907+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0187_resize_15.JPG' },
+2015-05-24T00:12:28.181909+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0192_resize_14.JPG' },
+2015-05-24T00:12:28.181910+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0184_resize_17.JPG' } ] },
+2015-05-24T00:12:28.181911+00:00 app[web.1]:   { _id: 5551fe18e4b073c90a9195ea,
+2015-05-24T00:12:28.181912+00:00 app[web.1]:     name: 'Azul',
+2015-05-24T00:12:28.181914+00:00 app[web.1]:     lat: 41.267703,
+2015-05-24T00:12:28.181915+00:00 app[web.1]:     lng: -8.727307,
+2015-05-24T00:12:28.181916+00:00 app[web.1]:     cond: 555367b5e4b0f3d509aeda36,
+2015-05-24T00:12:28.181917+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0358_resize_2.JPG',
+2015-05-24T00:12:28.181919+00:00 app[web.1]:     comments: [],
+2015-05-24T00:12:28.181920+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:12:28.181921+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0068_resize_43.JPG' },
+2015-05-24T00:12:28.181922+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0065_resize_42.JPG' },
+2015-05-24T00:12:28.181923+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0067_resize_44.JPG' } ] },
+2015-05-24T00:12:28.181925+00:00 app[web.1]:   { _id: 5551fca0e4b073c90a9195ac,
+2015-05-24T00:12:28.181926+00:00 app[web.1]:     name: 'Leça da Palmeira',
+2015-05-24T00:12:28.181927+00:00 app[web.1]:     lat: 41.188888,
+2015-05-24T00:12:28.181928+00:00 app[web.1]:     lng: -8.706134,
+2015-05-24T00:12:28.181930+00:00 app[web.1]:     cond: 55536855e4b0f3d509aeda5a,
+2015-05-24T00:12:28.181938+00:00 app[web.1]:     thumbUrl: 'http://www.guiadacidade.pt/foto2/data/thumbnails/4/DSC_0152_resize_29.JPG',
+2015-05-24T00:12:28.181939+00:00 app[web.1]:     comments: [],
+2015-05-24T00:12:28.181940+00:00 app[web.1]:     picUrls: 
+2015-05-24T00:12:28.181942+00:00 app[web.1]:      [ { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0150_resize_32.JPG' },
+2015-05-24T00:12:28.181943+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0149_resize_29.JPG' },
+2015-05-24T00:12:28.181944+00:00 app[web.1]:        { url: 'http://www.guiadacidade.pt/foto2/data/media/4/DSC_0148_resize_27.JPG' } ] } ]
+2015-05-24T00:12:28.181945+00:00 app[web.1]: aqui
+2015-05-24T00:12:28.181948+00:00 app[web.1]: http://maps.googleapis.com/maps/api/distancematrix/json?origins=41.1783531,-8.5951027&destinations=41.193111,-8.7071|41.207956,-8.715988|41.1051,-8.662505|41.129187,-8.668578|41.049542,-8.655338|41.159642,-8.685433|41.267703,-8.727307|41.188888,-8.706134
+2015-05-24T00:12:28.301071+00:00 app[web.1]: http://maps.googleapis.com/maps/api/distancematrix/json?origins=41.1783531,-8.5951027&destinations=41.193111,-8.7071|41.207956,-8.715988|41.1051,-8.662505|41.129187,-8.668578|41.049542,-8.655338|41.159642,-8.685433|41.267703,-8.727307|41.188888,-8.706134
+2015-05-24T00:12:28.306272+00:00 app[web.1]: [0mGET /beaches?dist=35000&lat=41.1783531&long=-8.5951027 [36m304 [0m256.150 ms - -[0m
+2015-05-24T00:12:28.714231+00:00 heroku[router]: at=info method=GET path="/beaches/WeatherReq/5551fef7e4b073c90a919611" host=beach-please.herokuapp.com request_id=eb146111-2bf0-4aec-9be7-38061d4eb08f fwd="193.136.33.133" dyno=web.1 connect=3ms service=233ms status=304 bytes=241
+2015-05-24T00:12:28.708630+00:00 app[web.1]: [0mGET /beaches/WeatherReq/5551fef7e4b073c90a919611 [36m304 [0m231.849 ms - -[0m
+2015-05-24T00:12:43.731322+00:00 heroku[router]: at=info method=POST path="/upload" host=beach-please.herokuapp.com request_id=0bfaa8dd-5d08-4019-aeb1-aeb46fcb785e fwd="193.136.33.133" dyno=web.1 connect=0ms service=317ms status=200 bytes=270
+2015-05-24T00:12:43.845010+00:00 heroku[router]: at=info method=GET path="/upload" host=beach-please.herokuapp.com request_id=4535f564-8d15-47ec-9c11-413677b631de fwd="193.136.33.133" dyno=web.1 connect=0ms service=6ms status=304 bytes=240
+2015-05-24T00:12:43.727571+00:00 app[web.1]: { user: '{"id":"944860658898488","first_name":"Vasco","profile_picture":"http:\\/\\/graph.facebook.com\\/944860658898488\\/picture?width=270&height=270","timezone":1,"email":"vascof92@gmail.com","verified":true,"is_logged":true,"link":"https:\\/\\/www.facebook.com\\/app_scoped_user_id\\/944860658898488\\/","locale":"pt_PT","name":"Vasco Filipe","last_name":"Filipe","gender":"male","updated_time":"2013-01-22T23:43:18+0000"}',
+2015-05-24T00:12:43.727574+00:00 app[web.1]:   beach: 'Molhe' }
+2015-05-24T00:12:43.729276+00:00 app[web.1]: [0mPOST /upload [32m200 [0m313.345 ms - 2[0m
+2015-05-24T00:12:43.727151+00:00 app[web.1]: req
+2015-05-24T00:12:43.840089+00:00 app[web.1]: [0mGET /upload [36m304 [0m3.042 ms - -[0m

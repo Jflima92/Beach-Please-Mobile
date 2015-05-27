@@ -2,10 +2,405 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="716d342b-18aa-45e2-92fb-0022348493b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SDIS_Mobile.iml" afterPath="$PROJECT_DIR$/.idea/SDIS_Mobile.iml" />
+      <change type="DELETED" beforePath="C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\logs.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/outputs/aar/sdis565965-FacebookLib-debug.aar" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/outputs/aar/sdis565965-FacebookLib-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/outputs/aar/sdis565965-google-play-services_lib-debug.aar" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/outputs/aar/sdis565965-google-play-services_lib-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/.gitignore" afterPath="$PROJECT_DIR$/client/platforms/android/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/.project" afterPath="$PROJECT_DIR$/client/platforms/android/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/client/platforms/android/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/AndroidManifest.xml" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/intermediates/bundles/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/generated/source/buildConfig/debug/org/apache/cordova/BuildConfig.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/generated/source/buildConfig/debug/org/apache/cordova/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/generated/source/buildConfig/debug/com/google/android/gms/BuildConfig.java" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/generated/source/buildConfig/debug/com/google/android/gms/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/generated/source/buildConfig/debug/com/facebook/android/BuildConfig.java" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/generated/source/buildConfig/debug/com/facebook/android/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/Camera.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/Camera.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraConstants.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraConstants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaDialogsHelper.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaDialogsHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaHttpAuthHandler.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaHttpAuthHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterfaceImpl.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterfaceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewEngine.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewImpl.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CoreAndroid.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/CoreAndroid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryReader.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryReader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Entry.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Entry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/File.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/File.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileEntry.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileEntry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileError.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileReader.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileReader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileSystem.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileSystem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android/FileSystem.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android/FileSystem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransfer.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransfer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransferError.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransferError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadResult.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadResult.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileWriter.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileWriter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Flags.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Flags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaClientCertRequest.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaClientCertRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaCookieManager.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaCookieManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaHttpAuthHandler.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaHttpAuthHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/src/com/ionicframework/sdis565965/MainActivity.java" afterPath="$PROJECT_DIR$/client/platforms/android/src/com/ionicframework/sdis565965/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Metadata.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Metadata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/ProgressEvent.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/ProgressEvent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SDIS_Mobile_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SDIS_Mobile_node_modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/www/js/controllers.js" afterPath="$PROJECT_DIR$/client/www/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemCookieManager.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemCookieManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemExposedJsApi.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemExposedJsApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebView.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/_where-is-www.txt" afterPath="$PROJECT_DIR$/client/platforms/android/assets/_where-is-www.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/plugins/android.json" afterPath="$PROJECT_DIR$/client/plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/android_sdk_version.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/android_sdk_version.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/android_sdk_version" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/android_sdk_version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/www/js/app.js" afterPath="$PROJECT_DIR$/client/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/appinfo.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/appinfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/build.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/build.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/build.gradle" afterPath="$PROJECT_DIR$/client/platforms/android/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build.gradle" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build.gradle" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build.gradle" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/build.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/build" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/build" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/client/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/check_reqs.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/check_reqs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/check_reqs" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/check_reqs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/clean.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/clean.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/clean" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/clean" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_button_blue.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_button_blue.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_button_blue.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_button_blue.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_button_check.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_button_check.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_button_check.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_button_check.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_button_like.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_button_like.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_button_like.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_button_like.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_button_like_selected.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_button_like_selected.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_button_like_selected.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_button_like_selected.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_friendpickerfragment.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_friendpickerfragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_friendpickerfragment.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_friendpickerfragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_login_activity_layout.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_login_activity_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_login_activity_layout.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_login_activity_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_loginbutton_silver.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_loginbutton_silver.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_loginbutton_silver.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_loginbutton_silver.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_activity_circle_row.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_activity_circle_row.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_activity_circle_row.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_activity_circle_row.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_checkbox.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_checkbox.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_checkbox.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_checkbox.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_image.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_image.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_image.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_image.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_item_background.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_item_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_picker_item_background.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_picker_item_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_list_row.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_list_row.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_list_row.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_list_row.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_list_section_header.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_list_section_header.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_list_section_header.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_list_section_header.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_list_selector.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_list_selector.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_picker_list_selector.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_picker_list_selector.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_list_selector_background_transition.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_list_selector_background_transition.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_picker_list_selector_background_transition.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_picker_list_selector_background_transition.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_search_box.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_search_box.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_search_box.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_search_box.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_title_bar.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_title_bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_title_bar.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_title_bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_title_bar_stub.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_picker_title_bar_stub.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_title_bar_stub.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_picker_title_bar_stub.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_top_button.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_top_button.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_picker_top_button.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_picker_top_button.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_placepickerfragment.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_placepickerfragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_placepickerfragment.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_placepickerfragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_placepickerfragment_list_row.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_placepickerfragment_list_row.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_placepickerfragment_list_row.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_placepickerfragment_list_row.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_search_bar_layout.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_search_bar_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_search_bar_layout.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_search_bar_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_tooltip_bubble.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_tooltip_bubble.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_tooltip_bubble.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_tooltip_bubble.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_top_background.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_top_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_top_background.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_top_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_top_button.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_top_button.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_top_button.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_top_button.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_usersettingsfragment.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/layout/com_facebook_usersettingsfragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_usersettingsfragment.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/layout/com_facebook_usersettingsfragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_usersettingsfragment_background_gradient.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/drawable/com_facebook_usersettingsfragment_background_gradient.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/drawable/common_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/drawable/common_signin_btn_icon_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/drawable/common_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/drawable/common_signin_btn_icon_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/drawable/common_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/drawable/common_signin_btn_icon_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/drawable/common_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/drawable/common_signin_btn_icon_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/color/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/color/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/drawable/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/drawable/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/color/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/color/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/drawable/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/drawable/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/color/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/color/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/drawable/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/drawable/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/color/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/color/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/drawable/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/drawable/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/client/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/js/controllers.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/cordova.gradle" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/cordova.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/cordova.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/platform_www/cordova.js" afterPath="$PROJECT_DIR$/client/platforms/android/platform_www/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/defaults.xml" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/defaults.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/device.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/device.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/emulator.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/emulator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/exec.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/exec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/com.phonegap.plugins.facebookconnect/facebookConnectPlugin.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/com.phonegap.plugins.facebookconnect/facebookConnectPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/res/values/facebookconnect.xml" afterPath="$PROJECT_DIR$/client/platforms/android/res/values/facebookconnect.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/install-device.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/install-device.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/install-device" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/install-device" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/install-emulator.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/install-emulator.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/install-emulator" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/install-emulator" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-devices.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-devices.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-devices" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-devices" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-emulator-images.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-emulator-images.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-emulator-images" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-emulator-images" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-started-emulators.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-started-emulators.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-started-emulators" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/list-started-emulators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/log.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/log.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/log.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/log.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/log" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/logs.txt" afterPath="$PROJECT_DIR$/server/logs.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/templates/menu.html" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/templates/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/debug/merger.xml" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/incremental/mergeResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/incremental/packageResources/debug/merger.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/incremental/packageResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/incremental/mergeResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/incremental/packageResources/debug/merger.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/incremental/packageResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/platforms.json" afterPath="$PROJECT_DIR$/client/platforms/platforms.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/plugin-build.gradle" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/plugin-build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/project.properties" afterPath="$PROJECT_DIR$/client/platforms/android/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/CordovaLib/project.properties" afterPath="$PROJECT_DIR$/client/platforms/android/CordovaLib/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/requestFileSystem.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/requestFileSystem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/run.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/run.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/run.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/run.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/run" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/run" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/settings.gradle" afterPath="$PROJECT_DIR$/client/platforms/android/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/spawn.js" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/spawn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/start-emulator.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/start-emulator.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/lib/start-emulator" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/lib/start-emulator" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/res/values/strings.xml" afterPath="$PROJECT_DIR$/client/platforms/android/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/upload.js" afterPath="$PROJECT_DIR$/server/routes/upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-af/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-af/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-am/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-am/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ar/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ar/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-bg/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-bg/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-bn-rBD/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-bn-rBD/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ca/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ca/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-cs/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-cs/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-da/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-da/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-de/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-de/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-el/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-el/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-en-rGB/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-en-rGB/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-en-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-en-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-es/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-es/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-es-rUS/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-es-rUS/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-et-rEE/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-et-rEE/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-eu-rES/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-eu-rES/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-fa/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-fa/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-fi/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-fi/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-fr/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-fr/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-fr-rCA/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-fr-rCA/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-gl-rES/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-gl-rES/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-hi/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-hi/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-hr/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-hr/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-hu/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-hu/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-hy-rAM/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-hy-rAM/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-in/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-in/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-is-rIS/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-is-rIS/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-it/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-it/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-iw/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-iw/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ja/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ja/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ka-rGE/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ka-rGE/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-kk-rKZ/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-kk-rKZ/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-km-rKH/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-km-rKH/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-kn-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-kn-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ko/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ko/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ky-rKG/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ky-rKG/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-lo-rLA/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-lo-rLA/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-lt/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-lt/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-lv/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-lv/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-mk-rMK/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-mk-rMK/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ml-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ml-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-mn-rMN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-mn-rMN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-mr-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-mr-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ms-rMY/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ms-rMY/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-my-rMM/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-my-rMM/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-nb/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-nb/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ne-rNP/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ne-rNP/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-nl/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-nl/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-pl/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-pl/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-pt/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-pt/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-pt-rBR/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-pt-rBR/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-pt-rPT/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-pt-rPT/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ro/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ro/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ru/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ru/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-si-rLK/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-si-rLK/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sk/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sk/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sl/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sl/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sr/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sr/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sv/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sv/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sw/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-sw/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ta-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ta-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-te-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-te-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-th/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-th/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-tl/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-tl/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-tr/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-tr/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-uk/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-uk/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ur-rPK/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-ur-rPK/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-uz-rUZ/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-uz-rUZ/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-vi/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-vi/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-zh-rCN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-zh-rCN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-zh-rHK/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-zh-rHK/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-zh-rTW/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-zh-rTW/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-zu/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/values-zu/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-af/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-af/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-am/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-am/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ar/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ar/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-bg/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-bg/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-bn-rBD/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-bn-rBD/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ca/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ca/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-cs/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-cs/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-da/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-da/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-de/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-de/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-el/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-el/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-en-rGB/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-en-rGB/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-en-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-en-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-es/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-es/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-es-rUS/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-es-rUS/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-et-rEE/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-et-rEE/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-eu-rES/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-eu-rES/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-fa/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-fa/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-fi/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-fi/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-fr/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-fr/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-fr-rCA/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-fr-rCA/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-gl-rES/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-gl-rES/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-hi/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-hi/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-hr/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-hr/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-hu/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-hu/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-hy-rAM/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-hy-rAM/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-in/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-in/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-is-rIS/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-is-rIS/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-it/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-it/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-iw/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-iw/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ja/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ja/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ka-rGE/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ka-rGE/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-kk-rKZ/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-kk-rKZ/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-km-rKH/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-km-rKH/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-kn-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-kn-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ko/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ko/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ky-rKG/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ky-rKG/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-lo-rLA/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-lo-rLA/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-lt/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-lt/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-lv/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-lv/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-mk-rMK/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-mk-rMK/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ml-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ml-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-mn-rMN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-mn-rMN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-mr-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-mr-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ms-rMY/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ms-rMY/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-my-rMM/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-my-rMM/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-nb/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-nb/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ne-rNP/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ne-rNP/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-nl/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-nl/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-pl/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-pl/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-pt/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-pt/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-pt-rBR/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-pt-rBR/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-pt-rPT/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-pt-rPT/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ro/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ro/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ru/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ru/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-si-rLK/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-si-rLK/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sk/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sk/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sl/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sl/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sr/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sr/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sv/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sv/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sw/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-sw/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ta-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ta-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-te-rIN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-te-rIN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-th/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-th/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-tl/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-tl/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-tr/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-tr/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-uk/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-uk/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ur-rPK/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-ur-rPK/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-uz-rUZ/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-uz-rUZ/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-vi/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-vi/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-zh-rCN/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-zh-rCN/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-zh-rHK/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-zh-rHK/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-zh-rTW/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-zh-rTW/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-zu/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/values-zu/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-es/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-es/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-hdpi-v4/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-hdpi-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-he/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-he/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-iw/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-iw/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-ldpi-v4/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-ldpi-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-mdpi-v4/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-mdpi-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-xhdpi-v4/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/bundles/debug/res/values-xhdpi-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-es/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-es/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-hdpi-v4/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-hdpi-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-he/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-he/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-iw/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-iw/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-ldpi-v4/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-ldpi-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-mdpi-v4/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-mdpi-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-xhdpi-v4/values.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/build/intermediates/res/debug/values-xhdpi-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/version.bat" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/version.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/cordova/version" afterPath="$PROJECT_DIR$/client/platforms/android/cordova/version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/color/wallet_primary_text_holo_light.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/color/wallet_primary_text_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/color/wallet_primary_text_holo_light.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/color/wallet_primary_text_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/color/wallet_secondary_text_holo_dark.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/bundles/debug/res/color/wallet_secondary_text_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/color/wallet_secondary_text_holo_dark.xml" afterPath="$PROJECT_DIR$/client/platforms/android/com.google.playservices/sdis565965-google-play-services_lib/build/intermediates/res/debug/color/wallet_secondary_text_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/cordova-plugin-whitelist/whitelist.js" afterPath="$PROJECT_DIR$/client/platforms/android/assets/www/plugins/cordova-plugin-whitelist/whitelist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SDIS_Mobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,41 +426,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="upload.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25975975">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beaches.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -74,8 +439,8 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.5">
-              <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="103" column="43" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -85,7 +450,27 @@
         <entry file="file://$PROJECT_DIR$/client/www/js/directives.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beaches.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38325283">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -95,17 +480,7 @@
         <entry file="file://$PROJECT_DIR$/client/www/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -114,7 +489,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/server" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -127,6 +502,7 @@
         <option value="$PROJECT_DIR$/server/routes/beaches.js" />
         <option value="$PROJECT_DIR$/client/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/server/routes/upload.js" />
+        <option value="$PROJECT_DIR$/client/www/js/app.js" />
       </list>
     </option>
   </component>
@@ -137,6 +513,7 @@
   <component name="NamedScopeManager">
     <order />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
@@ -166,8 +543,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -197,38 +572,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDIS_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -247,7 +590,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="platforms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,36 +608,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="platforms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="sdis_mobile" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -310,6 +691,100 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -333,6 +808,14 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
@@ -342,6 +825,12 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -372,6 +861,21 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -385,11 +889,24 @@
       <updated>1432332602227</updated>
       <workItem from="1432332602491" duration="6766000" />
       <workItem from="1432399749471" duration="2012000" />
+      <workItem from="1432417157687" duration="2015000" />
+      <workItem from="1432420202775" duration="652000" />
+      <workItem from="1432420990629" duration="737000" />
+      <workItem from="1432422067312" duration="295000" />
+      <workItem from="1432422561744" duration="101000" />
+      <workItem from="1432422677769" duration="4542000" />
+      <workItem from="1432490845623" duration="531000" />
+      <workItem from="1432504969865" duration="1247000" />
+      <workItem from="1432549211057" duration="12000" />
+      <workItem from="1432552316829" duration="709000" />
+      <workItem from="1432554481453" duration="4000" />
+      <workItem from="1432560473365" duration="636000" />
+      <workItem from="1432721251508" duration="343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8778000" />
+    <option name="totallyTimeSpent" value="20602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -398,26 +915,27 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2227027" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22333333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29297298" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" x="25" y="254" width="1870" height="524" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -435,20 +953,51 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="138" column="82" selection-start-line="138" selection-start-column="82" selection-end-line="138" selection-end-column="82" />
-          <folding />
+          <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -456,7 +1005,238 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="82" selection-start-line="138" selection-start-column="82" selection-end-line="138" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -480,7 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,7 +1267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -496,23 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/www/js/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/www/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,22 +1281,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.5">
-          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="43" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -543,15 +1295,39 @@
     <entry file="file://$PROJECT_DIR$/client/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/beaches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25975975">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.38325283">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding />
         </state>
       </provider>

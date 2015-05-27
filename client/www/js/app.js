@@ -25,7 +25,6 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.directives','
                 }, function (err) {
                     geoLocation.setGeolocation(41.1783982, -8.5951453)
                 });
-
         })
     })
 

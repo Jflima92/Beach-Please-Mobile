@@ -1,0 +1,121 @@
+[32mUpdated the hooks directory to have execute permissions[39m
+Running command: "C:\Program Files\nodejs\node.exe" C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\hooks\after_prepare\010_add_platform_class.js C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client
+add to body class: platform-android
+Running command: C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\platforms\android\cordova\build.bat 
+ANDROID_HOME=C:\Users\Vascof92\AppData\Local\Android\sdk
+JAVA_HOME=C:\Program Files\java\jdk1.7.0_79
+Running: C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\platforms\android\gradlew cdvBuildDebug -b C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\platforms\android\build.gradle -Dorg.gradle.daemon=true
+:preBuild
+:compileDebugNdk UP-TO-DATE
+:preDebugBuild
+:checkDebugManifest
+:CordovaLib:compileLint
+:CordovaLib:copyDebugLint UP-TO-DATE
+:CordovaLib:mergeDebugProguardFiles UP-TO-DATE
+:CordovaLib:preBuild
+:CordovaLib:preDebugBuild
+:CordovaLib:checkDebugManifest
+:CordovaLib:prepareDebugDependencies
+:CordovaLib:compileDebugAidl UP-TO-DATE
+:CordovaLib:compileDebugRenderscript UP-TO-DATE
+:CordovaLib:generateDebugBuildConfig UP-TO-DATE
+:CordovaLib:generateDebugAssets UP-TO-DATE
+:CordovaLib:mergeDebugAssets UP-TO-DATE
+:CordovaLib:generateDebugResValues UP-TO-DATE
+:CordovaLib:generateDebugResources UP-TO-DATE
+:CordovaLib:packageDebugResources UP-TO-DATE
+:CordovaLib:processDebugManifest UP-TO-DATE
+:CordovaLib:processDebugResources UP-TO-DATE
+:CordovaLib:generateDebugSources UP-TO-DATE
+:CordovaLib:compileDebugJava UP-TO-DATE
+:CordovaLib:processDebugJavaRes UP-TO-DATE
+:CordovaLib:packageDebugJar UP-TO-DATE
+:CordovaLib:compileDebugNdk UP-TO-DATE
+:CordovaLib:packageDebugJniLibs UP-TO-DATE
+:CordovaLib:packageDebugLocalJar UP-TO-DATE
+:CordovaLib:packageDebugRenderscript UP-TO-DATE
+:CordovaLib:bundleDebug UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:compileLint
+:com.google.playservices:sdis565965-google-play-services_lib:copyDebugLint UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:mergeDebugProguardFiles UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:preBuild
+:com.google.playservices:sdis565965-google-play-services_lib:preDebugBuild
+:com.google.playservices:sdis565965-google-play-services_lib:checkDebugManifest
+:com.google.playservices:sdis565965-google-play-services_lib:preDebugTestBuild
+:com.google.playservices:sdis565965-google-play-services_lib:prepareAndroidCordovaLibUnspecifiedDebugLibrary UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:prepareDebugDependencies
+:com.google.playservices:sdis565965-google-play-services_lib:compileDebugAidl UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:compileDebugRenderscript UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:generateDebugBuildConfig UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:generateDebugAssets UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:mergeDebugAssets UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:generateDebugResValues UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:generateDebugResources UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:mergeDebugResources UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:processDebugManifest UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:processDebugResources UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:generateDebugSources UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:compileDebugJava UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:processDebugJavaRes UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:packageDebugJar UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:compileDebugNdk UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:packageDebugJniLibs UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:packageDebugLocalJar UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:packageDebugRenderscript UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:packageDebugResources UP-TO-DATE
+:com.google.playservices:sdis565965-google-play-services_lib:bundleDebug UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:compileLint
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:copyDebugLint UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:mergeDebugProguardFiles UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:preBuild
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:preDebugBuild
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:checkDebugManifest
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:preDebugTestBuild
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:prepareAndroidCordovaLibUnspecifiedDebugLibrary UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:prepareDebugDependencies
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:compileDebugAidl UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:compileDebugRenderscript UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:generateDebugBuildConfig UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:generateDebugAssets UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:mergeDebugAssets UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:generateDebugResValues UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:generateDebugResources UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:mergeDebugResources UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:processDebugManifest UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:processDebugResources UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:generateDebugSources UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:compileDebugJava UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:processDebugJavaRes UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:packageDebugJar UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:compileDebugNdk UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:packageDebugJniLibs UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:packageDebugLocalJar UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:packageDebugRenderscript UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:packageDebugResources UP-TO-DATE
+:com.phonegap.plugins.facebookconnect:sdis565965-FacebookLib:bundleDebug UP-TO-DATE
+:prepareAndroidComGooglePlayservicesSdis565965GooglePlayServices_libUnspecifiedDebugLibrary UP-TO-DATE
+:prepareAndroidComPhonegapPluginsFacebookconnectSdis565965FacebookLibUnspecifiedDebugLibrary UP-TO-DATE
+:prepareAndroidCordovaLibUnspecifiedDebugLibrary UP-TO-DATE
+:prepareDebugDependencies
+:compileDebugAidl UP-TO-DATE
+:compileDebugRenderscript UP-TO-DATE
+:generateDebugBuildConfig UP-TO-DATE
+:generateDebugAssets UP-TO-DATE
+:mergeDebugAssets UP-TO-DATE
+:generateDebugResValues UP-TO-DATE
+:generateDebugResources UP-TO-DATE
+:mergeDebugResources
+Error: Failed to run command:
+	C:\Users\Vascof92\AppData\Local\Android\sdk\build-tools\22.0.1\aapt.exe s -i C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\platforms\android\build\intermediates\exploded-aar\android.com.phonegap.plugins.facebookconnect\sdis565965-FacebookLib\unspecified\debug\res\drawable-xxhdpi-v4\com_facebook_button_like_background_selected.png -o C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\platforms\android\build\intermediates\res\debug\drawable-xxhdpi-v4\com_facebook_button_like_background_selected.png
+Error Code:
+	42
+Output:
+	C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\platforms\android\build\intermediates\exploded-aar\android.com.phonegap.plugins.facebookconnect\sdis565965-FacebookLib\unspecified\debug\res\drawable-xxhdpi-v4\com_facebook_button_like_background_selected.png ERROR: Unable to open PNG file
+
+:mergeDebugResources FAILED
+
+BUILD FAILED
+
+Total time: 5.138 secs
+ERROR building one of the platforms: Error: C:\Users\Vascof92\Desktop\FEUP\SDIS\SDIS_Mobile\client\platforms\android\cordova\build.bat: Command failed with exit code 1
+You may not have the required environment or OS to build this project
