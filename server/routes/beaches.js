@@ -247,5 +247,30 @@ router.post('/comment/addlike', function(req, res) {
     });
 
 });
+router.post('/comment/removecomment', function(req, res) {
+    var _cmntid = req.body.cmntid;
+    var _usrid = req.body.usrid;
+
+    comment.findOneAndRemove({_id:_cmntid},function(err, model, next){
+        if(err) return next(err);
+        if(model.usrid == _usrid){
+
+            model.likes.forEach(function(like){
+
+                like.findOneAndRemove({_id : like._id},function(err){
+                    if(err) return console.log(err);
+
+                });
+            });
+
+
+        }
+        res.send("comment deleted");
+
+    });
+
+}
+
+
 
 module.exports = router;
