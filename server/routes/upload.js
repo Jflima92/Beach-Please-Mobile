@@ -18,6 +18,15 @@ router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     res.sendStatus(200);
 }]);
 
+router.post('/', [ multer({ dest: './uploads/usrpics/'}), function (req, res) {
+    //console.log(req.body);
+    console.log(req.files);
+    beach.findOne().exec(function (err, query) {
+        console.log(query.name);
+    });
+    res.sendStatus(200);
+}]);
+
 module.exports = router;
 
 /*
