@@ -5,6 +5,11 @@ var mongoose = require('mongoose');
 var beach = require('../models/beach.js');
 var weatherCond = require('../models/weatherCond.js');
 var request = require('request');
+var comment = require('../models/comment.js');
+var usr = require('../models/user.js');
+var like = require('../models/like.js');
+var async = require('async');
+
 
 /* GET /todos listing. */
 router.get('/', function(req, res, next) {
@@ -129,17 +134,11 @@ router.get('/weatherReq/:id', function(req, res, next) {
                 request(url, function (error, response, apiret) {
                     if (!error && response.statusCode == 200) {
                         data2 = JSON.parse(apiret);
-
-                        var hour =new Date().getHours();
-
-
-                        var div = Math.floor(hour/3);
-
-
-                        cond.waterTemperature=data2["data"]["weather"][0]["hourly"][div]["waterTemp_C"];
-                        cond.temperature=data2["data"]["weather"][0]["hourly"][div]["tempC"];
-                        cond.windspeedKmph=data2["data"]["weather"][0]["hourly"][div]["windspeedKmph"];
-                        cond.swellHeight_m=data2["data"]["weather"][0]["hourly"][div]["swellHeight_m"];
+                        console.log(data2);
+                        cond.waterTemperature=data2["data"]["weather"][0]["hourly"][0]["waterTemp_C"];
+                        cond.temperature=data2["data"]["weather"][0]["hourly"][0]["tempC"];
+                        cond.windspeedKmph=data2["data"]["weather"][0]["hourly"][0]["windspeedKmph"];
+                        cond.swellHeight_m=data2["data"]["weather"][0]["hourly"][0]["swellHeight_m"];
                         cond.time = Date.now();
                         cond.save(function (err) {
                             if(err) {
@@ -154,6 +153,99 @@ router.get('/weatherReq/:id', function(req, res, next) {
             }else res.json(cond);
         });
     });
+});
+
+
+
+router.post('/getFeedMsg', function(req, res) {
+    var coursename = req.body.course;
+    var messages = [];
+
+    Course.findOne({name : coursename}).exec(function (err, course) {
+        Feed.findById(course.feed).populate('messages').exec( function (err, feed) {
+            async.forEach(feed.messages, function(item,callback) {
+                FeedMessage
+                    .populate(item, {'path': 'answers'}, function(err,output){
+                        if(err) throw err;
+                        callback();
+                    });
+            }, function(err){
+                res.send(feed.messages);
+            });
+        });
+    });
+});
+
+
+router.get('/:name/comments', function(req, res, next) {
+    beach.findOne({name:req.params.name}).populate("comments").exec(function(err,beach) {
+        if (err) return next(err);
+        res.send(beach.comments);
+    });
+});
+
+router.post('/comment', function(req, res) {
+    var _data = req.body.data;
+    var _usrid = req.body.usrid;
+    var _name = req.body.name;
+
+   var cenas = new comment({
+        name : _name,
+        usrid : _usrid,
+        commenttext : _data
+    });
+    cenas.save();
+
+
+    beach.findOneAndUpdate({name:_name},{$push :{comments:cenas}},{safe: true,upsert: true},
+        function(err, model) {
+            console.log(err);
+            console.log(model);
+        });
+    res.send("success");
+    });
+
+
+router.post('/comment/addlike', function(req, res) {
+
+    var _cmntid = req.body.cmntid;
+    var _usrid = req.body.usrid;
+
+
+
+
+        comment.findOne({_id:_cmntid},function(err, model, next){
+           if(err) return next(err);
+            var repeated = false;
+
+            usr.findById(_usrid,function(err,userret){
+                if(err) return console.log(err);
+
+                model.likes.forEach(function(like){
+                if(like.usr._id == _usrid) {
+                    repeated = true;
+                    return;
+                }
+                });
+
+                if(!repeated) {
+                    var _like = new like({
+                        usr: userret
+                    });
+
+                    _like.save();
+
+
+                    model.update({$push: {likes: _like}}, {safe: true, upsert: true}, function (err) {
+                        console.log("feite1");
+                    });
+                    res.send("feite2");
+                }
+                else res.send("repeated");
+        });
+
+    });
+
 });
 
 module.exports = router;

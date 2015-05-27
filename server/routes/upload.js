@@ -10,6 +10,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
+<<<<<<< HEAD
     /*console.log("pintou");
     console.log(req.files);*/
     console.log("req");
@@ -17,6 +18,21 @@ router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     var praia =  req.body.beach;
     beach.findOne({name:praia }).exec(function (err, query) {
        //console.log(query.name);
+=======
+    //console.log(req.body);
+    console.log(req.files);
+    beach.findOne().exec(function (err, query) {
+       console.log(query.name);
+    });
+    res.sendStatus(200);
+}]);
+
+router.post('/', [ multer({ dest: './uploads/usrpics/'}), function (req, res) {
+    //console.log(req.body);
+    console.log(req.files);
+    beach.findOne().exec(function (err, query) {
+        console.log(query.name);
+>>>>>>> 8639affee4e95edb716e78660a326889879cc394
     });
     res.sendStatus(200);
 }]);
