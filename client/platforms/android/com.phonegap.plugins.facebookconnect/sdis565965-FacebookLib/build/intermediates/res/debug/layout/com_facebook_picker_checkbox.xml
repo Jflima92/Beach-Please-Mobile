@@ -23,4 +23,4 @@
     android:focusable="false"
     android:clickable="false"
     android:button="@drawable/com_facebook_button_check" />
-<!-- From: file:/C:/Users/Vascof92/Desktop/FEUP/SDIS/SDIS_Mobile/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/res/layout/com_facebook_picker_checkbox.xml -->
+<!-- From: file:/home/jorgelima/workspace/SDIS_Mobile/client/platforms/android/com.phonegap.plugins.facebookconnect/sdis565965-FacebookLib/res/layout/com_facebook_picker_checkbox.xml -->

@@ -271,7 +271,7 @@ angular.module('starter.controllers', [])
                 function(imageData) {
                     $scope.picData = imageData;
                     $scope.ftLoad = true;
-                    $localStorage.set('fotoUp', imageData);
+                    $localStorage.setObject('fotoUp', imageData);
                     $ionicLoading.show({template: 'Fotografia adquirida...', duration:500});
                 },
                 function(err){
@@ -290,6 +290,7 @@ angular.module('starter.controllers', [])
                 function(imageURI) {
                     window.resolveLocalFileSystemURI(imageURI, function(fileEntry) {
                         $scope.picData = fileEntry.nativeURL;
+                        console.log(picData);
                         $scope.ftLoad = true;
                         var image = document.getElementById('myImage');
                         image.src = fileEntry.nativeURL;
@@ -318,7 +319,8 @@ angular.module('starter.controllers', [])
 
             var ft = new FileTransfer();
             var heroku = "https://beach-please.herokuapp.com/upload";
-            ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
+            var local = "http://localhost:3000/upload";
+            ft.upload(fileURL, encodeURI(local), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
                 $ionicLoading.hide();}, options);
         }
 

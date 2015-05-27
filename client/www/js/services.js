@@ -1,6 +1,6 @@
 angular.module('starter.services', [])
 
-    .factory('$localstorage', ['$window', function ($window) {
+    .factory('$localStorage', ['$window', function ($window) {
         return {
             set: function (key, value) {
                 $window.localStorage[key] = value;
@@ -24,13 +24,13 @@ angular.module('starter.services', [])
                     latitude: latitude,
                     longitude: longitude
                 }
-                $localStorage.geoLocation = _position;
+                $localStorage.setObject('geoLocation', _position);
             },
             getGeolocation: function () {
-
+                var geo = $localStorage.getObject('geoLocation');
                 return glocation = {
-                    lat: $localStorage.geoLocation['latitude'],
-                    lng: $localStorage.geoLocation.longitude
+                    lat: geo.latitude,
+                    lng: geo.longitude
                 }
             }
         }
@@ -48,7 +48,7 @@ angular.module('starter.services', [])
             var local = "192.168.1.79:3000/beaches";
             var geny = "192.168.56.1:3000/beaches";
             var localx = "http://172.30.13.163:3000/beaches";
-            var string = localx + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
+            var string = heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
             var beaches = $http.get(string)
                 .success(function(data) {
@@ -72,7 +72,7 @@ angular.module('starter.services', [])
             var local = "http://192.168.1.79 :3000/beaches";
             var geny = "192.168.56.1:3000/beaches";
             var localx = "http://172.30.13.163:3000/beaches";
-            var string = localx + '/WeatherReq/'+id;
+            var string = heroku + '/WeatherReq/'+id;
             console.log(string);
             var beaches = $http.get(string)
                 .success(function(data) {

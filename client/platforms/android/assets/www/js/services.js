@@ -47,7 +47,8 @@ angular.module('starter.services', [])
             var heroku = "https://beach-please.herokuapp.com/beaches";
             var local = "192.168.1.79:3000/beaches";
             var geny = "192.168.56.1:3000/beaches";
-            var string = heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
+            var localx = "http://172.30.13.163:3000/beaches";
+            var string = localx + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
             var beaches = $http.get(string)
                 .success(function(data) {
@@ -70,7 +71,8 @@ angular.module('starter.services', [])
             var heroku = "https://beach-please.herokuapp.com/beaches";
             var local = "http://192.168.1.79 :3000/beaches";
             var geny = "192.168.56.1:3000/beaches";
-            var string = heroku + '/WeatherReq/'+id;
+            var localx = "http://172.30.13.163:3000/beaches";
+            var string = localx + '/WeatherReq/'+id;
             console.log(string);
             var beaches = $http.get(string)
                 .success(function(data) {

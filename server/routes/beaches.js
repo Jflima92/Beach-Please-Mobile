@@ -8,7 +8,6 @@ var request = require('request');
 var comment = require('../models/comment.js');
 var usr = require('../models/user.js');
 var like = require('../models/like.js');
-var async = require('async');
 
 
 /* GET /todos listing. */
