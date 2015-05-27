@@ -247,6 +247,7 @@ router.post('/comment/addlike', function(req, res) {
     });
 
 });
+
 router.post('/comment/removecomment', function(req, res) {
     var _cmntid = req.body.cmntid;
     var _usrid = req.body.usrid;
@@ -269,7 +270,7 @@ router.post('/comment/removecomment', function(req, res) {
 
     });
 
-}
+});
 
 
 
