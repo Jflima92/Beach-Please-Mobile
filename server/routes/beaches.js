@@ -8,6 +8,7 @@ var request = require('request');
 var comment = require('../models/comment.js');
 var usr = require('../models/user.js');
 var like = require('../models/like.js');
+var async = require('async');
 /* GET /todos listing. */
 router.get('/', function(req, res, next) {
     beach.find(function (err, todos) {
@@ -180,8 +181,18 @@ router.post('/getFeedMsg', function(req, res) {
 
 router.get('/:name/comments', function(req, res, next) {
     beach.findOne({name:req.params.name}).populate("comments").exec(function(err,beach) {
-        if (err) return next(err);
+        if (err) return err;
+
+        async.forEach(beach.comments,function(item,callback){
+            comment
+                .populate(item, {'path': 'user'}, function(err,output){
+                    if(err) throw err;
+                    callback();
+                });
+        },function(error){
         res.send(beach.comments);
+        })
+
     });
 });
 
@@ -195,8 +206,6 @@ router.post('/comment', function(req, res) {
     usr.findById(_usrid,function(err,userret){
         if(err) return next(err);
 
-        console.log("user: " + userret);
-
         var cenas = new comment({
             name : _name,
             user: userret,
@@ -208,7 +217,7 @@ router.post('/comment', function(req, res) {
             function(err, model) {
                 console.log(err);
             });
-    }).populate()
+    })
 
     res.send("success");
 });
