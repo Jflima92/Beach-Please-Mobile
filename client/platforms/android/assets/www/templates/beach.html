@@ -65,12 +65,12 @@
                         <h1 class="title">Novidades</h1>
                     </div>
 
-                    <div class="list card">
+                    <div class="list card" ng-repeat="comment in beachComments">
 
                         <div class="item item-body">
                             <div class="item item-avatar">
                                 <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t31.0-1/c282.0.960.960/p960x960/10506738_10150004552801856_220367501106153455_o.jpg">
-                                <h2>Vasco Filipe</h2>
+                                <h2>{{comment.commenttext}}</h2>
                                 <p>6 de Maio de 2015</p>
                             </div>
                             <p>

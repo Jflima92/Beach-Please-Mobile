@@ -8,8 +8,6 @@ var request = require('request');
 var comment = require('../models/comment.js');
 var usr = require('../models/user.js');
 var like = require('../models/like.js');
-
-
 /* GET /todos listing. */
 router.get('/', function(req, res, next) {
     beach.find(function (err, todos) {
@@ -41,7 +39,7 @@ router.get('/', function(req, res, next) {
         };
 
         request(url, function (error, response, body) {
-                console.log(url);
+            console.log(url);
             if (!error && response.statusCode == 200) {
                 data = JSON.parse(body);
 
@@ -53,7 +51,7 @@ router.get('/', function(req, res, next) {
 
                     for (var i = 0; i < data["rows"][0]["elements"].length; i++) {
 
-                         var dist = data["rows"][0]["elements"][i]["distance"]["value"];
+                        var dist = data["rows"][0]["elements"][i]["distance"]["value"];
 
                         if (data["rows"][0]["elements"][i]["distance"]["value"] < req.query.dist) {
 
@@ -133,8 +131,10 @@ router.get('/weatherReq/:id', function(req, res, next) {
                 request(url, function (error, response, apiret) {
                     if (!error && response.statusCode == 200) {
                         data2 = JSON.parse(apiret);
+
                         var hour =new Date().getHours();
                         var div = Math.floor((hour+1.5)/3);
+
                         cond.waterTemperature=data2["data"]["weather"][0]["hourly"][div]["waterTemp_C"];
                         cond.temperature=data2["data"]["weather"][0]["hourly"][div]["tempC"];
                         cond.windspeedKmph=data2["data"]["weather"][0]["hourly"][div]["windspeedKmph"];
@@ -154,6 +154,7 @@ router.get('/weatherReq/:id', function(req, res, next) {
         });
     });
 });
+
 
 
 
@@ -185,24 +186,32 @@ router.get('/:name/comments', function(req, res, next) {
 });
 
 router.post('/comment', function(req, res) {
+
+    console.log(req.body);
     var _data = req.body.data;
     var _usrid = req.body.usrid;
     var _name = req.body.name;
 
-   var cenas = new comment({
-        name : _name,
-        usrid : _usrid,
-        commenttext : _data
-    });
-    cenas.save();
+    usr.findById(_usrid,function(err,userret){
+        if(err) return next(err);
 
+        console.log("user: " + userret);
 
-    beach.findOneAndUpdate({name:_name},{$push :{comments:cenas}},{safe: true,upsert: true},
-        function(err, model) {
-            console.log(err);
+        var cenas = new comment({
+            name : _name,
+            user: userret,
+            commenttext : _data
         });
+        cenas.save();
+
+        beach.findOneAndUpdate({name:_name},{$push :{comments:cenas}},{safe: true,upsert: true},
+            function(err, model) {
+                console.log(err);
+            });
+    }).populate()
+
     res.send("success");
-    });
+});
 
 
 router.post('/comment/addlike', function(req, res) {
@@ -213,14 +222,14 @@ router.post('/comment/addlike', function(req, res) {
 
 
 
-        comment.findOne({_id:_cmntid},function(err, model, next){
-           if(err) return next(err);
-            var repeated = false;
-            var likeid;
-            usr.findById(_usrid,function(err,userret){
-                if(err) return console.log(err);
+    comment.findOne({_id:_cmntid},function(err, model, next){
+        if(err) return next(err);
+        var repeated = false;
+        var likeid;
+        usr.findById(_usrid,function(err,userret){
+            if(err) return console.log(err);
 
-                model.likes.forEach(function(likee){
+            model.likes.forEach(function(likee){
                 if(likee.usr._id == _usrid) {
                     repeated = true;
                     like.findOneAndRemove({_id: likee._id},function(err){
@@ -229,25 +238,25 @@ router.post('/comment/addlike', function(req, res) {
                     likeid = likee._id;
                     return;
                 }
+            });
+
+            if(!repeated) {
+                var _like = new like({
+                    usr: userret
                 });
 
-                if(!repeated) {
-                    var _like = new like({
-                        usr: userret
-                    });
-
-                    _like.save();
+                _like.save();
 
 
-                    model.update({$push: {likes: _like}}, {safe: true, upsert: true}, function (err) {
-                        console.log("feite1");
-                    });
-                    res.send("feite2");
-                }
-                else{
-                    model.update({$pull:{ likes:  {_id: likeid}}}, function (err) {
-                        if(err) return console.log("erro");
-                    });
+                model.update({$push: {likes: _like}}, {safe: true, upsert: true}, function (err) {
+                    console.log("feite1");
+                });
+                res.send("feite2");
+            }
+            else{
+                model.update({$pull:{ likes:  {_id: likeid}}}, function (err) {
+                    if(err) return console.log("erro");
+                });
                 res.send("repeated");}
         });
 
@@ -256,7 +265,6 @@ router.post('/comment/addlike', function(req, res) {
 });
 
 router.post('/comment/removecomment', function(req, res) {
-
     var _cmntid = req.body.cmntid;
     var _usrid = req.body.usrid;
 
@@ -266,7 +274,7 @@ router.post('/comment/removecomment', function(req, res) {
 
         model.likes.forEach(function(likee){
             like.findOneAndRemove({_id: likee._id},function(err){
-               if(err) return console.log("like remove error");
+                if(err) return console.log("like remove error");
             });
         });
         model.remove();

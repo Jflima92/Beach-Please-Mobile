@@ -56,6 +56,7 @@ angular.module('starter.controllers', [])
         $scope.facebookLogin = function() {
             var localx = "http://172.30.13.163:3000";  //mudar aqui para o iraoCU !!!!!!!
             var local = "http://192.168.1.79:3000/upload";
+            var heroku = "http://beach-please.herokuapp.com";
             if (!$localStorage.hasOwnProperty('access_token')) {
 
                 $cordovaFacebook.login(["public_profile"]).then(function (success) {
@@ -71,8 +72,8 @@ angular.module('starter.controllers', [])
                             $scope.$apply();
 
                         });
-                        var $http = angular.injector(['ng']).get('$http');
-                        $http.post(local+"/users/verify",{id:success.id,name:success.name});
+
+                        $http.post(heroku+"/users/verify",{id:success.id,name:success.name});
                         $scope.modal.hide();
                     })
 
@@ -127,7 +128,7 @@ angular.module('starter.controllers', [])
                         var lat = position.coords.latitude,
                             long = position.coords.longitude,
                             initialLocation = new google.maps.LatLng(lat, long);
-
+                        console.log(angular.toJson(position));
                         $scope.map.setCenter(initialLocation);
                         $ionicLoading.hide();
                     });
@@ -193,7 +194,13 @@ angular.module('starter.controllers', [])
 
         });
 
+        console.log($scope.name);
+        Beach.getCommentsByBeach($scope.name).then(function(comments){
 
+            console.log("comments: " + angular.toJson(comments));
+
+            $scope.beachComments = comments;
+        });
         /*
          $scope.getPhoto = function() {
          var local = "http://172.30.20.64:3000/beaches";
@@ -321,7 +328,7 @@ angular.module('starter.controllers', [])
             var ft = new FileTransfer();
             var heroku = "https://beach-please.herokuapp.com/upload";
             var local = "http://localhost:3000/upload";
-            ft.upload(fileURL, encodeURI(local), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
+            ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
                 $ionicLoading.hide();}, options);
         }
 

@@ -14,8 +14,10 @@ router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     console.log(req.files);*/
     console.log("req");
     console.log(req.body);
+
     var praia =  req.body.beach;
     beach.findOne({name:praia }).exec(function (err, query) {
+
 
     });
     res.sendStatus(200);

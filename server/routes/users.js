@@ -1,10 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var user = require('../models/user')
 
 /* GET users listing. */
 router.get('/', function(req, res) {
   res.send('respond with a resource');
-});
+})
 
 router.get('/:id', function(req, res) {
   user.findById(req.params.id, function (err, post) {
@@ -16,6 +17,7 @@ router.get('/:id', function(req, res) {
 router.post('/verify', function(req, res) {
 var name = req.body.name;
   var _id = req.body.id;
+
   /*user.findById(req.body.fbid, function (err,post) {
     if (err) res.json(err);
 /*

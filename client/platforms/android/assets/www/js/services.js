@@ -50,6 +50,7 @@ angular.module('starter.services', [])
             var localx = "http://172.30.13.163:3000/beaches";
             var string = heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
+
             var beaches = $http.get(string)
                 .success(function(data) {
                     console.log('Got some data: ', data)
@@ -86,6 +87,31 @@ angular.module('starter.services', [])
 
             var res = q.promise;
             return res;
+        }
+
+        self.getCommentsByBeach = function(name){
+            console.log("NAME : " + name);
+            var q = $q.defer();
+            var locali = "http://192.168.108.57:3000/beaches";
+            var heroku = "https://beach-please.herokuapp.com/beaches";
+            var local = "http://192.168.1.79 :3000/beaches";
+            var geny = "192.168.56.1:3000/beaches";
+            var localx = "http://172.30.13.163:3000/beaches";
+
+            var string = heroku + '/' + name + '/comments';
+            console.log(string);
+            var comments = $http.get(string).
+                success(function(data){
+                    q.resolve(data);
+                })
+                .error(function(error){
+                    console.log("Had an error");
+                    q.reject(error);
+                })
+
+            var res = q.promise;
+            return res;
+
         }
 
 
