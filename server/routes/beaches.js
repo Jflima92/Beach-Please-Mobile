@@ -235,11 +235,11 @@ router.post('/comment/addlike', function(req, res) {
         if(err) return next(err);
         var repeated = false;
         var likeid;
-        usr.findById(_usrid,function(err,userret){
+        usr.findOne({id:_usrid},function(err,userret){
             if(err) return console.log(err);
 
             model.likes.forEach(function(likee){
-                if(likee.usr._id == _usrid) {
+                if(likee.usr.id == _usrid) {
                     repeated = true;
                     like.findOneAndRemove({_id: likee._id},function(err){
                         if(err) return console.log("like remove error");
@@ -277,15 +277,16 @@ router.post('/comment/removecomment', function(req, res) {
     var _cmntid = req.body.cmntid;
     var _usrid = req.body.usrid;
 
-    comment.findOne({_id:_cmntid,usrid:_usrid},function(err, model, next) {
+    comment.findOne({_id:_cmntid,'user':_usrid},function(err, model, next) {
         if (err) return next(err);
         console.log(model);
 
-        model.likes.forEach(function(likee){
-            like.findOneAndRemove({_id: likee._id},function(err){
-                if(err) return console.log("like remove error");
+
+            model.likes.forEach(function (likee) {
+                like.findOneAndRemove({_id: likee._id}, function (err) {
+                    if (err) return console.log("like remove error");
+                });
             });
-        });
         model.remove();
         res.send("comment removed");
     });
