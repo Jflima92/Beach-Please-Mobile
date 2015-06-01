@@ -83,7 +83,7 @@
     <author email="hi@ionicframework" href="http://ionicframework.com/">
       Ionic Framework Team
     </author>
-    <content original-src="index.html" src="http://172.30.13.163:8100" />
+    <content original-src="index.html" src="http://172.30.26.156:8100" />
     <access origin="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />

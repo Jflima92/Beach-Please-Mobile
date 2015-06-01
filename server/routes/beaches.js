@@ -200,7 +200,6 @@ router.post('/comment', function(req, res) {
     beach.findOneAndUpdate({name:_name},{$push :{comments:cenas}},{safe: true,upsert: true},
         function(err, model) {
             console.log(err);
-            console.log(model);
         });
     res.send("success");
     });
@@ -217,13 +216,17 @@ router.post('/comment/addlike', function(req, res) {
         comment.findOne({_id:_cmntid},function(err, model, next){
            if(err) return next(err);
             var repeated = false;
-
+            var likeid;
             usr.findById(_usrid,function(err,userret){
                 if(err) return console.log(err);
 
-                model.likes.forEach(function(like){
-                if(like.usr._id == _usrid) {
+                model.likes.forEach(function(likee){
+                if(likee.usr._id == _usrid) {
                     repeated = true;
+                    like.findOneAndRemove({_id: likee._id},function(err){
+                        if(err) return console.log("like remove error");
+                    });
+                    likeid = likee._id;
                     return;
                 }
                 });
@@ -241,7 +244,11 @@ router.post('/comment/addlike', function(req, res) {
                     });
                     res.send("feite2");
                 }
-                else res.send("repeated");
+                else{
+                    model.update({$pull:{ likes:  {_id: likeid}}}, function (err) {
+                        if(err) return console.log("erro");
+                    });
+                res.send("repeated");}
         });
 
     });
@@ -249,29 +256,22 @@ router.post('/comment/addlike', function(req, res) {
 });
 
 router.post('/comment/removecomment', function(req, res) {
+
     var _cmntid = req.body.cmntid;
     var _usrid = req.body.usrid;
 
-    comment.findOneAndRemove({_id:_cmntid},function(err, model, next){
-        if(err) return next(err);
-        if(model.usrid == _usrid){
+    comment.findOne({_id:_cmntid},function(err, model, next) {
+        if (err) return next(err);
+        console.log(model);
 
-            model.likes.forEach(function(like){
-
-                like.findOneAndRemove({_id : like._id},function(err){
-                    if(err) return console.log(err);
-
-                });
+        model.likes.forEach(function(likee){
+            like.findOneAndRemove({_id: likee._id},function(err){
+               if(err) return console.log("like remove error");
             });
-
-
-        }
-        res.send("comment deleted");
-
+        });
+        model.remove();
+        res.send("comment removed");
     });
-
 });
-
-
 
 module.exports = router;
