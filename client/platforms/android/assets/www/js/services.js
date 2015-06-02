@@ -13,6 +13,9 @@ angular.module('starter.services', [])
             },
             getObject: function (key) {
                 return JSON.parse($window.localStorage[key] || '{}');
+            },
+            delete: function(key){
+                delete $window.localStorage[key];
             }
         }
     }])

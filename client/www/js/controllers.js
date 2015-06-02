@@ -208,28 +208,22 @@ angular.module('starter.controllers', [])
 
         });
 
+        $scope.new_comment = function(){
 
-        console.log($scope.name);
-        Beach.getCommentsByBeach($scope.name).then(function(comments){
-
-            console.log("comments: " + angular.toJson(comments));
-
-            $scope.beachComments = comments;
-
-        });
-
-        var getlikes = function($index){
-            return $scope.beachComments[$index].likes.length;
         }
 
-        $scope.beach_likes = function($index, i){
-            console.log("indes " + i);
-            if(i == 0){
-                return getlikes($index);
-            }
-            else
-            return i;
+        var update_comments = function(){
+            Beach.getCommentsByBeach($scope.name).then(function(comments){
+
+                console.log("comments: " + angular.toJson(comments));
+
+                $scope.beachComments = comments;
+
+            });
         }
+
+        update_comments();
+
 
         var heroku_like = "http://beach-please.herokuapp.com/beaches/comment/addlike";
 
@@ -242,14 +236,7 @@ angular.module('starter.controllers', [])
                         $http.post(heroku_like, {'cmntid': cmnt_id, 'usrid': user.id})
                             .then(
                             function(response){
-                                console.log("data: " + response.data);
-                                console.log(user.id);
-                                $timeout(function(){
-                                    $scope.$apply(function(){
-                                        $window.location.reload();
-                                    });
-                                })
-
+                                update_comments();
                             },
                             function(error){
 
