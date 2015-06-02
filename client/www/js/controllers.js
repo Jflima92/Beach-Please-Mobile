@@ -171,7 +171,7 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, Beach, $stateParams, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
+    .controller('BeachCtrl', function($scope, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -181,6 +181,9 @@ angular.module('starter.controllers', [])
                 // error handling
                 return;
             }
+
+
+
             //pictureSource=navigator.camera.PictureSourceType.PHOTOLIBRARY;
             pictureSource=navigator.camera.PictureSourceType.CAMERA;
             destinationType=navigator.camera.DestinationType.FILE_URI;
@@ -205,28 +208,55 @@ angular.module('starter.controllers', [])
 
         });
 
+
         console.log($scope.name);
         Beach.getCommentsByBeach($scope.name).then(function(comments){
 
             console.log("comments: " + angular.toJson(comments));
 
             $scope.beachComments = comments;
+
         });
+
+        var getlikes = function($index){
+            return $scope.beachComments[$index].likes.length;
+        }
+
+        $scope.beach_likes = function($index, i){
+            console.log("indes " + i);
+            if(i == 0){
+                return getlikes($index);
+            }
+            else
+            return i;
+        }
 
         var heroku_like = "http://beach-please.herokuapp.com/beaches/comment/addlike";
 
-        $scope.like = function(cmnt_id, user_id){
-            console.log("aqui");
+        $scope.like = function(cmnt_id){
             if($localStorage.get('access_token')){
-                console.log("ACESS");
-                $http.post(heroku_like, {'cmntid': cmnt_id, ' usrid': user_id})
-                    .then(
-                    function(response){
-                    console.log(JSON.stringify(response));
-                    },
-                    function(error){
+                for(var i = 0; i < $scope.beachComments.length; i++){
+                    if($scope.beachComments[i]._id == cmnt_id){
+                        var user = $localStorage.getObject('user');
 
-                    })
+                        $http.post(heroku_like, {'cmntid': cmnt_id, 'usrid': user.id})
+                            .then(
+                            function(response){
+                                console.log("data: " + response.data);
+                                console.log(user.id);
+                                $timeout(function(){
+                                    $scope.$apply(function(){
+                                        $window.location.reload();
+                                    });
+                                })
+
+                            },
+                            function(error){
+
+                            })
+                    }
+                }
+
             }
         }
         /*

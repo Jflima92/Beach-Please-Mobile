@@ -65,7 +65,7 @@
                         <h1 class="title">Novidades</h1>
                     </div>
 
-                    <div class="list card" ng-repeat="comment in beachComments">
+                    <div class="list card" ng-repeat="comment in beachComments track by $index">
 
                         <div class="item item-body">
                             <div class="item item-avatar">
@@ -83,7 +83,7 @@
                         </div>
 
                         <div class="item tabs tabs-secondary tabs-icon-left">
-                            <a class="tab-item" href="#" ng-click="like(comment._id, comment.user.id)">
+                            <a class="tab-item" href="#" ng-click="like(comment._id)">
                                 <i class="icon ion-thumbsup"></i>
                                 Vote
                             </a>

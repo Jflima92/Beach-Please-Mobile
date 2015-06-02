@@ -229,7 +229,7 @@ router.post('/comment/addlike', function(req, res) {
     var _cmntid = req.body.cmntid;
     var _usrid = req.body.usrid;
 
-
+console.log(_usrid);
 
 
     comment.findOne({_id:_cmntid},function(err, model, next){
