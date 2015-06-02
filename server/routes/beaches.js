@@ -233,43 +233,51 @@ router.post('/comment/addlike', function(req, res) {
 
     comment.findOne({_id:_cmntid},function(err, model, next){
         if(err) return next(err);
-        var repeated = false;
-        var likeid;
-        usr.findOne({id:_usrid},function(err,userret){
-            if(err) return console.log(err);
-
-            model.likes.forEach(function(likee){
-                if(likee.usr.id == _usrid) {
-                    repeated = true;
-                    like.findOneAndRemove({_id: likee._id},function(err){
-                        if(err) return console.log("like remove error");
+        if(model!=null) {
+            var repeated = false;
+            var likeid;
+            usr.findOne({id: _usrid}, function (err, userret) {
+                if (err) return console.log(err);
+                if(userret!=null) {
+                    model.likes.forEach(function (likee) {
+                        if (likee.usr.id == _usrid) {
+                            repeated = true;
+                            like.findOneAndRemove({_id: likee._id}, function (err) {
+                                if (err) return console.log("like remove error");
+                            });
+                            likeid = likee._id;
+                            return;
+                        }
                     });
-                    likeid = likee._id;
-                    return;
-                }
-            });
 
-            if(!repeated) {
-                var _like = new like({
-                    usr: userret
-                });
+                    if (!repeated) {
+                        var _like = new like({
+                            usr: userret
+                        });
 
-                _like.save();
+                        _like.save();
 
 
-                model.update({$push: {likes: _like}}, {safe: true, upsert: true}, function (err) {
-                    console.log("feite1");
-                });
-                res.send("feite2");
+                        model.update({$push: {likes: _like}}, {safe: true, upsert: true}, function (err) {
+                            if (err) return console.log("erro");
+                            res.send((model.likes.length + 1).toString());
+                        });
+
+                    }
+                    else {
+                        model.update({$pull: {likes: {_id: likeid}}}, function (err) {
+                            if (err) return console.log("erro");
+                            res.send((model.likes.length - 1).toString());
+                        });
+                    }
+                }else {
+                    res.send("user not registed");
+                }});
+
             }
-            else{
-                model.update({$pull:{ likes:  {_id: likeid}}}, function (err) {
-                    if(err) return console.log("erro");
-                });
-                res.send("repeated");}
-        });
-
-    });
+    else{
+            res.send("comment not found");
+        }});
 
 });
 
