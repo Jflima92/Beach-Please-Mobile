@@ -40,8 +40,8 @@
             <p>{{user.name}}</p>
           </div>
         </ion-item>
-        <ion-item ng-show="$root.is_logged">
-        <a ng-click="logout()" >Logout</a>
+        <ion-item nav-clear ng-show="$root.is_logged" ng-click="logout()" >
+        <a>Logout</a>
         </ion-item>
       </ion-list>
     </ion-content>

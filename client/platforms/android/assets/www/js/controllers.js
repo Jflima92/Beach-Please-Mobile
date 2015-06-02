@@ -4,12 +4,19 @@ angular.module('starter.controllers', [])
         // Form data for the login modal
         $scope.loginData = {};
 
-        if($localStorage.hasOwnProperty('access_token')){
-            $scope.user = $localStorage.user;
-            $scope.$root.is_logged = true;
+        var check_user = function(){
+
+            var token = $localStorage.get('access_token')
+            if(token){
+                console.log("qui");
+                $scope.user = $localStorage.getObject('user');
+                $scope.$root.is_logged = true;
+            }
+            else
+                $scope.$root.is_logged = false;
         }
-        else
-            $scope.$root.is_logged = false;
+
+        check_user();
 
         //event listeners to update login mode
         $scope.$on('login_suc', function (event, data){
@@ -53,6 +60,8 @@ angular.module('starter.controllers', [])
             }, 1000);
         };
 
+
+
         $scope.facebookLogin = function() {
             var localx = "http://172.30.13.163:3000";  //mudar aqui para o iraoCU !!!!!!!
             var local = "http://192.168.1.79:3000/upload";
@@ -60,19 +69,21 @@ angular.module('starter.controllers', [])
             if (!$localStorage.hasOwnProperty('access_token')) {
 
                 $cordovaFacebook.login(["public_profile"]).then(function (success) {
-                    $localStorage.access_token = success.authResponse.accessToken;
+                    $localStorage.set('access_token',  success.authResponse.accessToken);
 
                     $cordovaFacebook.api("me",["public_profile"]).then(function(success){
-                        $localStorage.user = success;
+
                         var pic_link = 'http://graph.facebook.com/' + success.id + '/picture?width=270&height=270';
-                        $localStorage.user['profile_picture'] = pic_link;
-                        $localStorage.user['is_logged'] = true;
+                        success['profile_picture'] = pic_link;
+                        success['is_logged'] = true;
+                        $localStorage.setObject('user',success);
+
                         $timeout(function(){
-                            $rootScope.$broadcast('login_suc', $localStorage.user);
+                            $rootScope.$broadcast('login_suc', success);
                             $scope.$apply();
 
                         });
-
+                        check_user();
                         $http.post(heroku+"/users/verify",{id:success.id,name:success.name});
                         $scope.modal.hide();
                     })
@@ -85,14 +96,14 @@ angular.module('starter.controllers', [])
             // if ($localStorage.hasOwnProperty('access_token')) {
             $cordovaFacebook.logout().then(function(success){
                 delete $localStorage.access_token;
-                delete $localStorage.user;
+                $localStorage.setObject('user', null);
                 $timeout(function(){
                     $rootScope.$broadcast('logout', {});
                     $scope.$apply();
-
+                    check_user();
 
                 })
-                console.log(success);
+                console.log("aa " + success);
             })
             /*}
              else
@@ -122,16 +133,16 @@ angular.module('starter.controllers', [])
 
             var posOptions = {timeout: 10000, enableHighAccuracy: false};
 
-                $cordovaGeolocation
-                    .getCurrentPosition(posOptions)
-                    .then(function (position) {
-                        var lat = position.coords.latitude,
-                            long = position.coords.longitude,
-                            initialLocation = new google.maps.LatLng(lat, long);
-                        console.log(angular.toJson(position));
-                        $scope.map.setCenter(initialLocation);
-                        $ionicLoading.hide();
-                    });
+            $cordovaGeolocation
+                .getCurrentPosition(posOptions)
+                .then(function (position) {
+                    var lat = position.coords.latitude,
+                        long = position.coords.longitude,
+                        initialLocation = new google.maps.LatLng(lat, long);
+                    console.log(angular.toJson(position));
+                    $scope.map.setCenter(initialLocation);
+                    $ionicLoading.hide();
+                });
 
 
         }
@@ -160,7 +171,7 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, Beach, $stateParams, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage) {
+    .controller('BeachCtrl', function($scope, Beach, $stateParams, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -201,6 +212,23 @@ angular.module('starter.controllers', [])
 
             $scope.beachComments = comments;
         });
+
+        var heroku_like = "http://beach-please.herokuapp.com/beaches/comment/addlike";
+
+        $scope.like = function(cmnt_id, user_id){
+            console.log("aqui");
+            if($localStorage.get('access_token')){
+                console.log("ACESS");
+                $http.post(heroku_like, {'cmntid': cmnt_id, ' usrid': user_id})
+                    .then(
+                    function(response){
+                    console.log(JSON.stringify(response));
+                    },
+                    function(error){
+
+                    })
+            }
+        }
         /*
          $scope.getPhoto = function() {
          var local = "http://172.30.20.64:3000/beaches";

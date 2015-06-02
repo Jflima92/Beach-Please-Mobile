@@ -132,9 +132,10 @@ router.get('/weatherReq/:id', function(req, res, next) {
                 request(url, function (error, response, apiret) {
                     if (!error && response.statusCode == 200) {
                         data2 = JSON.parse(apiret);
+                        console.log(JSON.stringify(data2));
 
                         var hour =new Date().getHours();
-                        var div = Math.floor((hour+1.5)/3);
+                        var div = (Math.floor((hour)/3));
 
                         cond.waterTemperature=data2["data"]["weather"][0]["hourly"][div]["waterTemp_C"];
                         cond.temperature=data2["data"]["weather"][0]["hourly"][div]["tempC"];
@@ -260,7 +261,7 @@ router.post('/comment/addlike', function(req, res) {
                 model.update({$push: {likes: _like}}, {safe: true, upsert: true}, function (err) {
                     console.log("feite1");
                 });
-                res.send("feite2");
+                res.send(model.likes.length);
             }
             else{
                 model.update({$pull:{ likes:  {_id: likeid}}}, function (err) {

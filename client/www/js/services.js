@@ -13,6 +13,9 @@ angular.module('starter.services', [])
             },
             getObject: function (key) {
                 return JSON.parse($window.localStorage[key] || '{}');
+            },
+            delete: function(key){
+                delete $window.localStorage[key];
             }
         }
     }])
@@ -49,7 +52,7 @@ angular.module('starter.services', [])
             var geny = "192.168.56.1:3000/beaches";
             var localx = "http://172.30.13.163:3000/beaches";
             var localzex = "http://172.30.26.156:3000/beaches";
-            var string = localzex + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
+            var string = heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
             console.log(string);
 
             var beaches = $http.get(string)
@@ -75,7 +78,7 @@ angular.module('starter.services', [])
             var geny = "192.168.56.1:3000/beaches";
             var localx = "http://172.30.13.163:3000/beaches";
             var localzex = "http://172.30.26.156:3000/beaches";
-            var string = localzex + '/WeatherReq/'+id;
+            var string = heroku + '/WeatherReq/'+id;
             console.log(string);
             var beaches = $http.get(string)
                 .success(function(data) {
@@ -101,7 +104,7 @@ angular.module('starter.services', [])
             var localx = "http://172.30.13.163:3000/beaches";
             var localzex = "http://172.30.26.156:3000/beaches";
 
-            var string = localzex + '/' + name + '/comments';
+            var string = heroku + '/' + name + '/comments';
             console.log(string);
             var comments = $http.get(string).
                 success(function(data){

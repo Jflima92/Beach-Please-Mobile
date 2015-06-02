@@ -69,21 +69,21 @@
 
                         <div class="item item-body">
                             <div class="item item-avatar">
-                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t31.0-1/c282.0.960.960/p960x960/10506738_10150004552801856_220367501106153455_o.jpg">
-                                <h2>{{comment.commenttext}}</h2>
+                                <img src="http://graph.facebook.com/{{comment.user.id}}/picture?width=270&height=270"/>
+                                <h2>{{comment.user.name}}</h2>
                                 <p>6 de Maio de 2015</p>
                             </div>
                             <p>
-                                curti esta praia ao molhe, incrivel mesmo, do caralho
+                                {{comment.commenttext}}
                             </p>
                             <p>
-                                <a href="#" class="subdued">1 Upvote</a>
+                                <a href="#" class="subdued">{{comment.likes.length}} Upvotes</a>
                                 <a href="#" class="subdued">0 Reports</a>
                             </p>
                         </div>
 
                         <div class="item tabs tabs-secondary tabs-icon-left">
-                            <a class="tab-item" href="#">
+                            <a class="tab-item" href="#" ng-click="like(comment._id, comment.user.id)">
                                 <i class="icon ion-thumbsup"></i>
                                 Vote
                             </a>
