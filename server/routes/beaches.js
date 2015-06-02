@@ -302,4 +302,17 @@ router.post('/comment/removecomment', function(req, res) {
     });
 });
 
+router.get('/comment/:id/numlikes',function(req,res){
+
+    var _id = req.params.id;
+
+    comment.findOne({_id:_id},function(err,model){
+        if(err) return res.send("erro");
+        res.send(model.likes.length.toString());
+
+    })
+
+
+});
+
 module.exports = router;
