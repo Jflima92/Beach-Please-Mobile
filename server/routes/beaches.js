@@ -290,20 +290,30 @@ console.log(_usrid);
 
 router.post('/comment/removecomment', function(req, res) {
     var _cmntid = req.body.cmntid;
+    var _bname = req.body.bname;
 
-    comment.findOne({_id:_cmntid},function(err, model, next) {
-        if (err) return next(err);
-        console.log(model);
+    comment.findOne({_id:_cmntid},function(err, model) {
+        if (err)  throw err;
+        if(model!=null) {
 
+            beach.findOne({'name':_bname},function(err,beachs){
+                beachs.update({$pull:{comments:_cmntid}},function(err){
+                    if(err) console.log("err");
+                });
 
-        model.likes.forEach(function (likee) {
-            like.findOneAndRemove({_id: likee._id}, function (err) {
-                if (err) return console.log("like remove error");
             });
-        });
-        model.remove();
-        res.send("comment removed");
+
+            model.likes.forEach(function (likee) {
+                like.findOneAndRemove({_id: likee._id}, function (err) {
+                    if (err) return console.log("like remove error");
+                });
+            });
+            model.remove();
+            res.send("removed");
+        }else
+            res.send("comment not found");
     });
+
 });
 
 router.get('/comment/:id/numlikes',function(req,res){
