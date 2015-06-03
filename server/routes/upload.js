@@ -3,7 +3,8 @@ var router = express.Router();
 var multer = require('multer');
 var beach = require('../models/beach.js');
 var photo = require('../models/photo.js');
-
+var mongoose = require('mongoose');
+var request = require('request');
 router.get('/', function(req, res) {
 
     res.send("api");
@@ -14,17 +15,25 @@ router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     /*console.log("pintou");
     console.log(req.files);*/
     console.log("user");
-    console.log(req.body.user);
+    console.log(req.body.user.id);
 
     var praia =  req.body.beach;
-    beach.findOne({name:praia }).exec(function (err, query) {
-/*
+    var fbid = req.body.user.id;
+    beach.findOne({name:praia }, function (err, query) {
+
         var newphoto = new photo({
             name : req.file.name,
-            user: req.body
+            user: fbid
         });
 
-*/
+        newphoto.save();
+
+        beach.findByIdAndUpdate(query, { $push: { photos: newphoto }}, function (err, photo) {
+        });
+
+
+
+
 
     });
     res.sendStatus(200);
