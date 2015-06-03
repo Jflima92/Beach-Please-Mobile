@@ -12,10 +12,10 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
-    console.log("pintou");
-    console.log(req.files);
-    /*console.log("user");
-    console.log(req.body.user.id);*/
+    /*console.log("pintou");
+    console.log(req.files);*/
+    console.log("user");
+    console.log(req.body.user.id);
 
     var praia =  req.body.beach;
     var fbid = req.body.user.id;
