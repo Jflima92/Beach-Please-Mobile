@@ -120,6 +120,53 @@ angular.module('starter.services', [])
 
         }
 
+        self.getLikesByComment = function(beach_id){
+            console.log("NAME : " + beach_id);
+            var q = $q.defer();
+            var locali = "http://192.168.108.57:3000/beaches";
+            var heroku = "https://beach-please.herokuapp.com/beaches";
+            var local = "http://192.168.1.79 :3000/beaches";
+            var geny = "192.168.56.1:3000/beaches";
+            var localx = "http://172.30.13.163:3000/beaches";
+            var localzex = "http://172.30.26.156:3000/beaches";
+
+            var string = heroku + '/comment/'+ beach_id + '/numlikes';
+            console.log(string);
+            var commentLikes = $http.get(string).
+                success(function(data){
+                    q.resolve(data);
+                })
+                .error(function(error){
+                    console.log("Had an error");
+                    q.reject(error);
+                })
+
+            var res = q.promise;
+            return res;
+
+        }
+
+        self.postComment = function(data, user_id, beach_name){
+            console.log("NAME : " + beach_name);
+            var q = $q.defer();
+            var locali = "http://192.168.108.57:3000/beaches";
+            var heroku = "https://beach-please.herokuapp.com/beaches";
+            var local = "http://192.168.1.79 :3000/beaches";
+            var geny = "192.168.56.1:3000/beaches";
+            var localx = "http://172.30.13.163:3000/beaches";
+            var localzex = "http://172.30.26.156:3000/beaches";
+
+            var string = heroku + '/comment/';
+            console.log(string);
+            var post_comment = $http.post(string, {data: data, usrid: user_id, name: beach_name}).
+            success(function(data){
+                console.log(data);
+            })
+                .error(function(error){
+                    console.log("Had an error " + error);
+                })
+        }
+
 
         self.getAllByName = function(name) {
             return DB.query("SELECT * FROM users WHERE name LIKE '%"+name.toLowerCase()+"%' ORDER BY name")
@@ -163,7 +210,7 @@ angular.module('starter.services', [])
                     }
                 }
 
-                    navigator.camera.getPicture(onCapturePhoto,options).then(
+                navigator.camera.getPicture(onCapturePhoto,options).then(
                     function (fileURL) {
 
                         q.resolve(fileURL);

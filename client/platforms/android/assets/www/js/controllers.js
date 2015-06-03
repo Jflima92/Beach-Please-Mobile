@@ -171,7 +171,7 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
+    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -207,29 +207,66 @@ angular.module('starter.controllers', [])
             $ionicSlideBoxDelegate.update();
 
         });
+        var title = 'New comment on: ' + $scope.name;
 
 
-        console.log($scope.name);
-        Beach.getCommentsByBeach($scope.name).then(function(comments){
 
-            console.log("comments: " + angular.toJson(comments));
+        $scope.new_comment = function(){
+            $scope.data = {};
 
-            $scope.beachComments = comments;
-
-        });
-
-        var getlikes = function($index){
-            return $scope.beachComments[$index].likes.length;
+            var newCommentPopup = $ionicPopup.show({
+                template: '<input type="password" ng-model="data.wifi">',
+                title: title,
+                buttons: [
+                    {text: 'Cancel'},
+                    {
+                        text: '<b>Post</b>',
+                        type: 'button-energized',
+                        onTap: function(e){
+                            if(!$scope.data.wifi){
+                                e.preventDefault();
+                            } else {
+                                console.log($scope.data.wifi);
+                            }
+                        }
+                    }
+                ]
+            })
         }
 
-        $scope.beach_likes = function($index, i){
-            console.log("indes " + i);
-            if(i == 0){
-                return getlikes($index);
-            }
-            else
-            return i;
+        var update_comments = function(){
+            Beach.getCommentsByBeach($scope.name).then(function(comments){
+
+                console.log("comments: " + angular.toJson(comments));
+
+                $scope.beachComments = comments;
+
+            });
         }
+
+        update_comments();
+
+        var updateCommentLikes = function(cmnt_id, cb){
+
+
+            Beach.getLikesByComment(cmnt_id).then(function(likes){
+                console.log("likes: " + likes)
+
+                cb(likes);
+            });
+        }
+
+        //updateCommentLikes('556bc54d805f3c1848eae6bd');
+
+        $scope.getCommentLikes = function(comment_id){
+
+            updateCommentLikes(comment_id, function(likes) {
+                console.log("LIKKKKKKKKKKKKKKKKKKKKKKKKKKKES: " +likes);
+                return likes;
+            });
+
+        }
+
 
         var heroku_like = "http://beach-please.herokuapp.com/beaches/comment/addlike";
 
@@ -239,21 +276,8 @@ angular.module('starter.controllers', [])
                     if($scope.beachComments[i]._id == cmnt_id){
                         var user = $localStorage.getObject('user');
 
-                        $http.post(heroku_like, {'cmntid': cmnt_id, 'usrid': user.id})
-                            .then(
-                            function(response){
-                                console.log("data: " + response.data);
-                                console.log(user.id);
-                                $timeout(function(){
-                                    $scope.$apply(function(){
-                                        $window.location.reload();
-                                    });
-                                })
-
-                            },
-                            function(error){
-
-                            })
+                        $http.post(heroku_like, {'cmntid': cmnt_id, 'usrid': user.id});
+                        update_comments();
                     }
                 }
 

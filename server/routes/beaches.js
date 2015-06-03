@@ -197,15 +197,15 @@ router.get('/:name/comments', function(req, res, next) {
     });
 });
 
-router.post('/comment', function(req, res) {
+router.post('/comment', function(req, res, next) {
 
     console.log(req.body);
     var _data = req.body.data;
     var _usrid = req.body.usrid;
     var _name = req.body.name;
 
-    usr.findById(_usrid,function(err,userret){
-        if(err) return next(err);
+    usr.findOne({id:_usrid},function(err,userret){
+        if(err) throw err;
 
         var cenas = new comment({
             name : _name,

@@ -171,7 +171,7 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
+    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -208,10 +208,6 @@ angular.module('starter.controllers', [])
 
         });
 
-        $scope.new_comment = function(){
-
-        }
-
         var update_comments = function(){
             Beach.getCommentsByBeach($scope.name).then(function(comments){
 
@@ -224,6 +220,68 @@ angular.module('starter.controllers', [])
 
         update_comments();
 
+        var title = 'New comment on: ' + $scope.name;
+        $scope.new_comment = function(){
+            $scope.post = {};
+            if($localStorage.get('access_token')){
+                var newCommentPopup = $ionicPopup.show({
+                    template: '<input type="password" ng-model="post.data">',
+                    title: title,
+                    scope:$scope,
+                    buttons: [
+                        {text: 'Cancel'},
+                        {
+                            text: '<b>Post</b>',
+                            type: 'button-energized',
+                            onTap: function(e){
+                                if(!$scope.post.data){
+                                    e.preventDefault();
+                                } else {
+                                    console.log("wifi: " + $scope.post.data);
+                                    Beach.postComment($scope.post.data, $localStorage.getObject('user').id, $scope.name);
+                                    update_comments();
+                                    return $scope.post.data;
+                                }
+                            }
+                        }
+                    ]
+                })
+            } else {
+                var showLoggedOut =  $ionicPopup.alert({
+                    title: 'Unable to post comment!!',
+                    buttons: [
+                        {
+                            text: 'Ok',
+                            template: 'Please login and try again..',
+                            type: 'button-assertive'
+                        }
+                    ]
+                })
+            }
+        }
+
+
+        var updateCommentLikes = function(cmnt_id, cb){
+
+
+            Beach.getLikesByComment(cmnt_id).then(function(likes){
+                console.log("likes: " + likes)
+
+                cb(likes);
+            });
+        }
+
+
+
+        $scope.getCommentLikes = function(comment_id){
+
+            updateCommentLikes(comment_id, function(likes) {
+                console.log("LIKKKKKKKKKKKKKKKKKKKKKKKKKKKES: " +likes);
+                return likes;
+            });
+
+        }
+
 
         var heroku_like = "http://beach-please.herokuapp.com/beaches/comment/addlike";
 
@@ -233,14 +291,8 @@ angular.module('starter.controllers', [])
                     if($scope.beachComments[i]._id == cmnt_id){
                         var user = $localStorage.getObject('user');
 
-                        $http.post(heroku_like, {'cmntid': cmnt_id, 'usrid': user.id})
-                            .then(
-                            function(response){
-                                update_comments();
-                            },
-                            function(error){
-
-                            })
+                        $http.post(heroku_like, {'cmntid': cmnt_id, 'usrid': user.id});
+                        update_comments();
                     }
                 }
 

@@ -63,9 +63,14 @@
 
                     <div class="bar bar-header bar-energized" >
                         <h1 class="title">Novidades</h1>
+                        <button class="button button-clear button-dark" ng-click="new_comment()">
+                            <p>
+                                <i class="icon ion-plus-round"></i>
+                            </p>
+                        </button>
                     </div>
 
-                    <div class="list card" ng-repeat="comment in beachComments track by $index">
+                    <div class="list card feed_card" ng-repeat="comment in beachComments track by $index">
 
                         <div class="item item-body">
                             <div class="item item-avatar">
@@ -87,6 +92,7 @@
                                 <i class="icon ion-thumbsup"></i>
                                 Vote
                             </a>
+
                             <a class="tab-item" href="#">
                                 <i class="icon ion-chatbox"></i>
                                 Report
