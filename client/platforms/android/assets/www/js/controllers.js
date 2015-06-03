@@ -66,7 +66,7 @@ angular.module('starter.controllers', [])
             var localx = "http://172.30.13.163:3000";  //mudar aqui para o iraoCU !!!!!!!
             var local = "http://192.168.1.79:3000/upload";
             var heroku = "http://beach-please.herokuapp.com";
-            if (!$localStorage.hasOwnProperty('access_token')) {
+            if (!$localStorage.get('access_token')) {
 
                 $cordovaFacebook.login(["public_profile"]).then(function (success) {
                     $localStorage.set('access_token',  success.authResponse.accessToken);
@@ -171,7 +171,7 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
+    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicActionSheet, $ionicLoading, $localStorage, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -207,32 +207,6 @@ angular.module('starter.controllers', [])
             $ionicSlideBoxDelegate.update();
 
         });
-        var title = 'New comment on: ' + $scope.name;
-
-
-
-        $scope.new_comment = function(){
-            $scope.data = {};
-
-            var newCommentPopup = $ionicPopup.show({
-                template: '<input type="password" ng-model="data.wifi">',
-                title: title,
-                buttons: [
-                    {text: 'Cancel'},
-                    {
-                        text: '<b>Post</b>',
-                        type: 'button-energized',
-                        onTap: function(e){
-                            if(!$scope.data.wifi){
-                                e.preventDefault();
-                            } else {
-                                console.log($scope.data.wifi);
-                            }
-                        }
-                    }
-                ]
-            })
-        }
 
         var update_comments = function(){
             Beach.getCommentsByBeach($scope.name).then(function(comments){
@@ -246,6 +220,56 @@ angular.module('starter.controllers', [])
 
         update_comments();
 
+
+        $scope.isOwnComment = function(comment_id){
+
+            return false;
+
+        }
+
+        var title = 'New comment on: ' + $scope.name;
+        $scope.new_comment = function(){
+            $scope.post = {};
+            if($localStorage.get('access_token')){
+                var newCommentPopup = $ionicPopup.show({
+                    template: '<input type="password" ng-model="post.data">',
+                    title: title,
+                    scope:$scope,
+                    buttons: [
+                        {text: 'Cancel'},
+                        {
+                            text: '<b>Post</b>',
+                            type: 'button-energized',
+                            onTap: function(e){''
+                                if(!$scope.post.data){
+                                    e.preventDefault();
+                                } else {
+                                    console.log("wifi: " + $scope.post.data);
+                                    Beach.postComment($scope.post.data, $localStorage.getObject('user').id, $scope.name).then(function(success){
+                                        console.log(success);
+                                        update_comments();
+
+                                    });
+                                    return $scope.post.data;
+                                }
+                            }
+                        }
+                    ]
+                })
+            } else {
+                var showLoggedOut =  $ionicPopup.alert({
+                    title: 'Unable to post comment, please login and try again..',
+                    buttons: [
+                        {
+                            text: 'Ok',
+                            type: 'button-assertive'
+                        }
+                    ]
+                })
+            }
+        }
+
+
         var updateCommentLikes = function(cmnt_id, cb){
 
 
@@ -256,7 +280,7 @@ angular.module('starter.controllers', [])
             });
         }
 
-        //updateCommentLikes('556bc54d805f3c1848eae6bd');
+
 
         $scope.getCommentLikes = function(comment_id){
 
@@ -283,72 +307,6 @@ angular.module('starter.controllers', [])
 
             }
         }
-        /*
-         $scope.getPhoto = function() {
-         var local = "http://172.30.20.64:3000/beaches";
-         var locali = "http://192.168.108.57:3000/beaches";
-         var geny = "192.168.56.1:3000/beaches";
-         console.log('Getting camera');
-         Upload.getPicture({
-         quality: 75,
-         targetWidth: 320,
-         targetHeight: 320,
-         saveToPhotoAlbum: false
-         }).then(function(imageURI) {
-         console.log(imageURI);
-         $scope.lastPhoto = imageURI;
-         }, function(err) {
-         console.err(err);
-         })
-         };
-
-         $scope.upload = function() {
-         var local = "http://172.30.20.64:3000/beaches";
-         var locali = "http://192.168.108.57:3000/upload";
-         var geny = "192.168.56.1:3000/beaches";
-         var url = '';
-         var fd = new FormData();
-
-         //previously I had this
-         //angular.forEach($scope.files, function(file){
-         //fd.append('image',file)
-         //});
-
-         fd.append('image', $scope.lastPhoto);
-
-         $http.post(local, fd, {
-
-         transformRequest: angular.identity,
-         headers: {
-         'Content-Type': 'image/jpeg'
-         }
-         })
-         .success(function (data, status, headers) {
-         $scope.imageURL = data.resource_uri; //set it to the response we get
-         })
-         .error(function (data, status, headers) {
-
-         })
-         }
-
-         $scope.doRefresh = function() {
-         if($scope.newItems.length > 0){
-         $scope.items = $scope.newItems.concat($scope.items);
-
-         //Stop the ion-refresher from spinning
-         $scope.$broadcast('scroll.refreshComplete');
-
-         $scope.newItems = [];
-         } else {
-         PersonService.GetNewUsers().then(function(items){
-         $scope.items = items.concat($scope.items);
-
-         //Stop the ion-refresher from spinning
-         $scope.$broadcast('scroll.refreshComplete');
-         });
-         }
-         };*/
-
 
         $scope.data = { "ImageURI" :  "Select Image" };
         $scope.takePicture = function() {

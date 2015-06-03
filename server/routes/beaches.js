@@ -333,7 +333,7 @@ router.get('/comments/:name/user/:userid',function(req,res) {
         },function(error){
             beach.comments.forEach(function(i){
                 if(i.user.id == _userid){
-                    retjson.push('{' + 'id:' + i._id + '}');
+                    retjson.push({'id': i._id});
                 }
             });
             res.json(retjson);

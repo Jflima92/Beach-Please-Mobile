@@ -66,7 +66,7 @@ angular.module('starter.controllers', [])
             var localx = "http://172.30.13.163:3000";  //mudar aqui para o iraoCU !!!!!!!
             var local = "http://192.168.1.79:3000/upload";
             var heroku = "http://beach-please.herokuapp.com";
-            if (!$localStorage.hasOwnProperty('access_token')) {
+            if (!$localStorage.get('access_token')) {
 
                 $cordovaFacebook.login(["public_profile"]).then(function (success) {
                     $localStorage.set('access_token',  success.authResponse.accessToken);
@@ -171,7 +171,7 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicLoading, $localStorage, $http) {
+    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicActionSheet, $ionicLoading, $localStorage, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -220,6 +220,46 @@ angular.module('starter.controllers', [])
 
         update_comments();
 
+        var myComments;
+
+        Beach.getUserCommentsOnBeach($localStorage.getObject('user').id, $scope.name).then(function(comments){
+            myComments = comments;
+        })
+
+        $scope.isOwnComment = function(comment_id){
+            for(var j = 0; j < myComments.length; j++){
+                if(comment_id === myComments[j].id){
+
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        $scope.showOptions = function(){
+            $ionicActionSheet.show({
+                titleText: 'Comment Options',
+                buttons: [
+                    {
+                        text: '<i class="icon ion-edit"></i> Edit'
+                    },
+                ],
+                destructiveText: 'Delete',
+                cancelText: 'Cancel',
+                cancel: function(){
+                    console.log("canceled");
+                },
+                buttonClicked: function(index){
+                    return true;
+                },
+                destructiveButtonClicked: function(){
+
+                }
+            })
+        }
+
+
+
         var title = 'New comment on: ' + $scope.name;
         $scope.new_comment = function(){
             $scope.post = {};
@@ -233,7 +273,7 @@ angular.module('starter.controllers', [])
                         {
                             text: '<b>Post</b>',
                             type: 'button-energized',
-                            onTap: function(e){
+                            onTap: function(e){''
                                 if(!$scope.post.data){
                                     e.preventDefault();
                                 } else {
@@ -251,11 +291,10 @@ angular.module('starter.controllers', [])
                 })
             } else {
                 var showLoggedOut =  $ionicPopup.alert({
-                    title: 'Unable to post comment!!',
+                    title: 'Unable to post comment, please login and try again..',
                     buttons: [
                         {
                             text: 'Ok',
-                            template: 'Please login and try again..',
                             type: 'button-assertive'
                         }
                     ]
@@ -265,7 +304,6 @@ angular.module('starter.controllers', [])
 
 
         var updateCommentLikes = function(cmnt_id, cb){
-
 
             Beach.getLikesByComment(cmnt_id).then(function(likes){
                 console.log("likes: " + likes)
@@ -301,72 +339,6 @@ angular.module('starter.controllers', [])
 
             }
         }
-        /*
-         $scope.getPhoto = function() {
-         var local = "http://172.30.20.64:3000/beaches";
-         var locali = "http://192.168.108.57:3000/beaches";
-         var geny = "192.168.56.1:3000/beaches";
-         console.log('Getting camera');
-         Upload.getPicture({
-         quality: 75,
-         targetWidth: 320,
-         targetHeight: 320,
-         saveToPhotoAlbum: false
-         }).then(function(imageURI) {
-         console.log(imageURI);
-         $scope.lastPhoto = imageURI;
-         }, function(err) {
-         console.err(err);
-         })
-         };
-
-         $scope.upload = function() {
-         var local = "http://172.30.20.64:3000/beaches";
-         var locali = "http://192.168.108.57:3000/upload";
-         var geny = "192.168.56.1:3000/beaches";
-         var url = '';
-         var fd = new FormData();
-
-         //previously I had this
-         //angular.forEach($scope.files, function(file){
-         //fd.append('image',file)
-         //});
-
-         fd.append('image', $scope.lastPhoto);
-
-         $http.post(local, fd, {
-
-         transformRequest: angular.identity,
-         headers: {
-         'Content-Type': 'image/jpeg'
-         }
-         })
-         .success(function (data, status, headers) {
-         $scope.imageURL = data.resource_uri; //set it to the response we get
-         })
-         .error(function (data, status, headers) {
-
-         })
-         }
-
-         $scope.doRefresh = function() {
-         if($scope.newItems.length > 0){
-         $scope.items = $scope.newItems.concat($scope.items);
-
-         //Stop the ion-refresher from spinning
-         $scope.$broadcast('scroll.refreshComplete');
-
-         $scope.newItems = [];
-         } else {
-         PersonService.GetNewUsers().then(function(items){
-         $scope.items = items.concat($scope.items);
-
-         //Stop the ion-refresher from spinning
-         $scope.$broadcast('scroll.refreshComplete');
-         });
-         }
-         };*/
-
 
         $scope.data = { "ImageURI" :  "Select Image" };
         $scope.takePicture = function() {

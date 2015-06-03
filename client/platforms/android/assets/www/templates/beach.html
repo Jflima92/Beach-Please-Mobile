@@ -71,13 +71,13 @@
                     </div>
 
                     <div class="list card feed_card" ng-repeat="comment in beachComments track by $index">
-
                         <div class="item item-body">
                             <div class="item item-avatar">
                                 <img src="http://graph.facebook.com/{{comment.user.id}}/picture?width=270&height=270"/>
                                 <h2>{{comment.user.name}}</h2>
                                 <p>6 de Maio de 2015</p>
                             </div>
+
                             <p>
                                 {{comment.commenttext}}
                             </p>
@@ -96,6 +96,11 @@
                             <a class="tab-item" href="#">
                                 <i class="icon ion-chatbox"></i>
                                 Report
+                            </a>
+
+                            <a class="tab-item" href="#" ng-if="isOwnComment(comment.id)" ng-click="openAS()">
+                                <i class="icon ion-navicon-round"></i>
+                                Options
                             </a>
                         </div>
 
