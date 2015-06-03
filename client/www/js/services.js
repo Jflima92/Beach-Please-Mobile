@@ -146,7 +146,7 @@ angular.module('starter.services', [])
 
         }
 
-        self.postComment = function(data, user_id, beach_name){
+        self.postComment = function(data, user_id, beach_name) {
             console.log("NAME : " + beach_name);
             var q = $q.defer();
             var locali = "http://192.168.108.57:3000/beaches";
@@ -159,12 +159,17 @@ angular.module('starter.services', [])
             var string = heroku + '/comment/';
             console.log(string);
             var post_comment = $http.post(string, {data: data, usrid: user_id, name: beach_name}).
-            success(function(data){
-                console.log(data);
-            })
-                .error(function(error){
-                    console.log("Had an error " + error);
+                success(function (data) {
+                    console.log(data)
+                    q.resolve(data);
                 })
+                .error(function (error) {
+                    console.log("Had an error");
+                    q.reject(error);
+                })
+
+            var res = q.promise;
+            return res;
         }
 
 

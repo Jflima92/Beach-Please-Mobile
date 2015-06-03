@@ -238,8 +238,11 @@ angular.module('starter.controllers', [])
                                     e.preventDefault();
                                 } else {
                                     console.log("wifi: " + $scope.post.data);
-                                    Beach.postComment($scope.post.data, $localStorage.getObject('user').id, $scope.name);
-                                    update_comments();
+                                    Beach.postComment($scope.post.data, $localStorage.getObject('user').id, $scope.name).then(function(success){
+                                        console.log(success);
+                                        update_comments();
+
+                                    });
                                     return $scope.post.data;
                                 }
                             }
