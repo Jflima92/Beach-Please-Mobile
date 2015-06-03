@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var multer = require('multer');
 var beach = require('../models/beach.js');
+var photo = require('../models/photo.js');
 
 router.get('/', function(req, res) {
 
@@ -13,11 +14,17 @@ router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     /*console.log("pintou");
     console.log(req.files);*/
     console.log("req");
-    console.log(req.body);
+    console.log(req);
 
     var praia =  req.body.beach;
     beach.findOne({name:praia }).exec(function (err, query) {
+/*
+        var newphoto = new photo({
+            name : req.file.name,
+            user: req.body
+        });
 
+*/
 
     });
     res.sendStatus(200);

@@ -8,7 +8,9 @@ var BeachSchema = new mongoose.Schema({
         thumbUrl: String,
 
         picUrls: {type : Array , "default" : []},
-        comments : [{type: mongoose.Schema.ObjectId, ref: 'Comment'}]
+        comments : [{type: mongoose.Schema.ObjectId, ref: 'Comment'}],
+        photos : [{type: mongoose.Schema.ObjectId, ref: 'Photo'}]
+
     },
     {collection : "beaches"}
 );
