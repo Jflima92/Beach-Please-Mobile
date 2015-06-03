@@ -3,7 +3,7 @@ var router = express.Router();
 var multer = require('multer');
 var beach = require('../models/beach.js');
 var photo = require('../models/photo.js');
-var users = require('../models/users.js');
+var users = require('../models/user.js');
 var mongoose = require('mongoose');
 var request = require('request');
 router.get('/', function(req, res) {
