@@ -4,12 +4,14 @@
 var mongoose = require('mongoose');
 
 var WeatherSchema = new mongoose.Schema({
-    temperature: Number,
-    waterTemperature: Number,
-    windspeedKmph : Number,
-    swellHeight_m : Number,
-    time : { type: Date, default: Date.now }
-},
+        temperature: Number,
+        waterTemperature: Number,
+        windspeedKmph : Number,
+        swellHeight_m : Number,
+        description: String,
+        winddirection: String,
+        time : { type: Date, default: Date.now }
+    },
     {collection: "weatherCond"}
 );
 
