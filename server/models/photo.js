@@ -8,4 +8,4 @@ var PhotoSchema = new mongoose.Schema({
     {collection : "photos"}
 );
 
-module.exports = mongoose.model('Beach', BeachSchema);
+module.exports = mongoose.model('Photo', PhotoSchema);
