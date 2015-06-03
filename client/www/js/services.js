@@ -43,6 +43,7 @@ angular.module('starter.services', [])
         var self = this;
         var location = geoLocation.getGeolocation();
         console.log(geoLocation.getGeolocation());
+
         self.getFirst = function(number) {
             var q = $q.defer();
 

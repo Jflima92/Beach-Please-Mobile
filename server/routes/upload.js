@@ -15,13 +15,16 @@ router.get('/', function(req, res) {
 router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     /*console.log("pintou");
      console.log(req.files);*/
-    var user = req.body.user;
+    console.log("entrou");
+
+    var user = JSON.parse(req.body.user);
     console.log("user: " +user.id);
 
 
     var praia =  req.body.beach;
     console.log("praia: " +praia);
     var fbid = req.body.user["id"];
+    console.log("fbid: " + fbid);
     beach.findOne({name:praia }, function (err, query) {
 
 
@@ -37,11 +40,6 @@ router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
             beach.findByIdAndUpdate(query, { $push: { photos: newphoto }}, function (err, photo) {
             });
         });
-
-
-
-
-
     });
     res.sendStatus(200);
 }]);

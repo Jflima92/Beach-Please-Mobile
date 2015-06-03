@@ -220,19 +220,57 @@ angular.module('starter.controllers', [])
 
         update_comments();
 
+        var myComments;
+
+        Beach.getUserCommentsOnBeach($localStorage.getObject('user').id, $scope.name).then(function(comments){
+            myComments = comments;
+        })
 
         $scope.isOwnComment = function(comment_id){
+            for(var j = 0; j < myComments.length; j++){
+                if(comment_id === myComments[j].id){
 
+                    return true;
+                }
+            }
             return false;
-
         }
+
+        $scope.showOptions = function(comment_id){
+            $ionicActionSheet.show({
+                titleText: 'Comment Options',
+                buttons: [
+                    {
+                        text: '<i class="icon ion-edit"></i> Edit'
+                    },
+                ],
+                destructiveText: 'Delete',
+                cancelText: 'Cancel',
+                cancel: function(){
+                    console.log("canceled");
+                },
+                buttonClicked: function(index){
+                    return true;
+                },
+                destructiveButtonClicked: function(){
+                    Beach.deleteComment(comment_id).then(function(success){
+                        console.log("success on delete");
+                        update_comments();
+
+                    })
+                    return true;
+                }
+            });
+        }
+
+
 
         var title = 'New comment on: ' + $scope.name;
         $scope.new_comment = function(){
             $scope.post = {};
             if($localStorage.get('access_token')){
                 var newCommentPopup = $ionicPopup.show({
-                    template: '<input type="password" ng-model="post.data">',
+                    template: '<input type="text" ng-model="post.data">',
                     title: title,
                     scope:$scope,
                     buttons: [
@@ -247,6 +285,7 @@ angular.module('starter.controllers', [])
                                     console.log("wifi: " + $scope.post.data);
                                     Beach.postComment($scope.post.data, $localStorage.getObject('user').id, $scope.name).then(function(success){
                                         console.log(success);
+
                                         update_comments();
 
                                     });
@@ -271,7 +310,6 @@ angular.module('starter.controllers', [])
 
 
         var updateCommentLikes = function(cmnt_id, cb){
-
 
             Beach.getLikesByComment(cmnt_id).then(function(likes){
                 console.log("likes: " + likes)
