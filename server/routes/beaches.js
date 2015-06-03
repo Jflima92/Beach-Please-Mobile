@@ -285,9 +285,8 @@ console.log(_usrid);
 
 router.post('/comment/removecomment', function(req, res) {
     var _cmntid = req.body.cmntid;
-    var _usrid = req.body.usrid;
 
-    comment.findOne({_id:_cmntid,'user':_usrid},function(err, model, next) {
+    comment.findOne({_id:_cmntid},function(err, model, next) {
         if (err) return next(err);
         console.log(model);
 
