@@ -10,6 +10,7 @@ var WeatherSchema = new mongoose.Schema({
         swellHeight_m : Number,
         description: String,
         winddirection: String,
+        cloudcover: Number,
         time : { type: Date, default: Date.now }
     },
     {collection: "weatherCond"}
