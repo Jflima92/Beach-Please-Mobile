@@ -13,8 +13,8 @@ router.get('/', function(req, res) {
 router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     /*console.log("pintou");
     console.log(req.files);*/
-    console.log("req");
-    console.log(req);
+    console.log("res");
+    console.log(res);
 
     var praia =  req.body.beach;
     beach.findOne({name:praia }).exec(function (err, query) {
