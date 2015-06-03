@@ -315,4 +315,30 @@ router.get('/comment/:id/numlikes',function(req,res){
 
 });
 
+router.get('/comments/:name/user/:userid',function(req,res) {
+
+    var _bname = req.params.name;
+    var _userid = req.params.userid;
+    var retjson = new Array();
+
+    beach.findOne({name: _bname}).populate("comments").exec(function (err, beach) {
+        if (err) res.send("error");
+
+
+        async.forEach(beach.comments,function(item,callback){
+            comment.populate(item, {'path': 'user'}, function(err,output){
+                if(err) throw err;
+                callback();
+            });
+        },function(error){
+            beach.comments.forEach(function(i){
+                if(i.user.id == _userid){
+                    retjson.push('{' + 'id:' + i._id + '}');
+                }
+            });
+            res.json(retjson);
+        });
+    });
+});
+
 module.exports = router;
