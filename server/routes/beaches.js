@@ -8,6 +8,7 @@ var request = require('request');
 var comment = require('../models/comment.js');
 var usr = require('../models/user.js');
 var like = require('../models/like.js');
+var photo = require('../models/photo.js');
 var async = require('async');
 /* GET /todos listing. */
 
@@ -348,11 +349,19 @@ router.get('/photos/:name',function(req,res) {
 
     beach.findOne({name: _bname}).populate("photos").exec(function (err, beach) {
         if (err) res.send("error");
-        beach.photos.forEach(function(i){
-            console.log(i);
-            retjson.push({'name': i.name});
+
+        async.forEach(beach.photos,function(item,callback) {
+            photo.populate(item, {'path': 'user'}, function (err, output) {
+                if (err) throw err;
+                callback();
+            });
+        },function(error){
+            beach.photos.forEach(function(i){
+                retjson.push({'name': i.name, 'userid': i.user.id});
+            })
+            res.json(retjson);
         })
-        res.json(retjson);
+
     });
 });
 
