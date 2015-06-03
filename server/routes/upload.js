@@ -6,41 +6,73 @@ var photo = require('../models/photo.js');
 var users = require('../models/user.js');
 var mongoose = require('mongoose');
 var request = require('request');
+var imgur = require('imgur');
+var path = require('path');
+var fs = require('fs');
+
 router.get('/', function(req, res) {
 
     res.send("api");
 
 });
 
+var uploadToImgur = function(pic_url){
+    console.log("pintated");
+    imgur.uploadFile(pic_url)
+        .then(function(json){
+            console.log(json.data.link);
+        })
+        .catch(function(err){
+            console.log(err.message);
+        })
+}
+
 router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
     /*console.log("pintou");
      console.log(req.files);*/
-    console.log("entrou");
 
-    var user = JSON.parse(req.body.user);
-    console.log("user: " +user.id);
+
+    var uploadToImgur = function(pic_url, cb){
+        console.log("pintated");
+        imgur.uploadFile(pic_url)
+            .then(function(json){
+                console.log(json.data.link);
+                cb(json.data.link);
+            })
+            .catch(function(err){
+                console.log(err.message);
+            })
+    }
+    var url_to_file = './uploads/' + req.files.file.name;
+
+
+
+    var user_id = JSON.parse(req.body.user).id;
+    console.log("user: " + user_id);
 
 
     var praia =  req.body.beach;
+
     console.log("praia: " +praia);
-    var fbid = req.body.user["id"];
-    console.log("fbid: " + fbid);
-    beach.findOne({name:praia }, function (err, query) {
+    beach.findOne({name: praia }, function (err, query) {
 
 
-        users.findOne({id:fbid }, function (err, user) {
+        users.findOne({id: user_id }, function (err, user) {
 
-            var newphoto = new photo({
-                name : req.files.file.name,
-                user: user
-            });
+            uploadToImgur(url_to_file, function(link){
+                var newphoto = new photo({
+                    name : link,
+                    user: user
+                });
 
-            newphoto.save();
+                newphoto.save();
 
-            beach.findByIdAndUpdate(query, { $push: { photos: newphoto }}, function (err, photo) {
+                beach.findByIdAndUpdate(query, { $push: { photos: newphoto }}, function (err, photo) {
+                });
             });
         });
     });
+
     res.sendStatus(200);
 }]);
 

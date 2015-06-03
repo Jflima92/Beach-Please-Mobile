@@ -10,6 +10,7 @@ var usr = require('../models/user.js');
 var like = require('../models/like.js');
 var async = require('async');
 /* GET /todos listing. */
+
 router.get('/', function(req, res, next) {
     beach.find(function (err, todos) {
         if (err) return next(err);
@@ -337,6 +338,21 @@ router.get('/comments/:name/user/:userid',function(req,res) {
             });
             res.json(retjson);
         });
+    });
+});
+
+router.get('/photos/:name',function(req,res) {
+
+    var _bname = req.params.name;
+    var retjson = new Array();
+
+    beach.findOne({name: _bname}).populate("photos").exec(function (err, beach) {
+        if (err) res.send("error");
+        beach.photos.forEach(function(i){
+            console.log(i);
+            retjson.push({'name': i.name});
+        })
+        res.json(retjson);
     });
 });
 

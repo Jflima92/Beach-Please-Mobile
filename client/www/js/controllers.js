@@ -33,34 +33,45 @@ angular.module('starter.controllers', [])
 
 
         // Create the login modal that we will use later
-        $ionicModal.fromTemplateUrl('templates/login.html', {
+        $ionicModal.fromTemplateUrl('templates/login-modal.html', {
+            id: 1,
             scope: $scope
         }).then(function(modal) {
-            $scope.modal = modal;
+            $scope.modal1 = modal;
+        });
+
+        $ionicModal.fromTemplateUrl('templates/image-modal.html', {
+            id: 2,
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function(modal){
+            $scope.modal2 = modal;
         });
 
         // Triggered in the login modal to close it
-        $scope.closeLogin = function() {
-            $scope.modal.hide();
+        $scope.closeModal = function(index) {
+            if(index == 1) $scope.modal1.hide();
+            else
+                $scope.modal2.hide();
         };
+
+        $scope.openPhotoModal = function(photo){
+            $scope.image_src = photo;
+            $scope.modal2.show();
+        };
+
 
         // Open the login modal
-        $scope.login = function() {
-            $scope.modal.show();
+        $scope.openModal = function(index) {
+            if(index == 1) $scope.modal1.show();
+            else
+            $scope.modal2.show();
         };
 
-        // Perform the login action when the user submits the login form
-        $scope.doLogin = function() {
-            console.log('Doing login', $scope.loginData);
-
-            // Simulate a login delay. Remove this and replace with your login
-            // code if using a login system
-            $timeout(function() {
-                $scope.closeLogin();
-            }, 1000);
-        };
-
-
+        $scope.$on('$destroy', function(){
+            $scope.modal1.remove();
+            $scope.modal2.remove();
+        })
 
         $scope.facebookLogin = function() {
             var localx = "http://172.30.13.163:3000";  //mudar aqui para o iraoCU !!!!!!!
@@ -85,7 +96,7 @@ angular.module('starter.controllers', [])
                         });
                         check_user();
                         $http.post(heroku+"/users/verify",{id:success.id,name:success.name});
-                        $scope.modal.hide();
+                        $scope.modal1.hide();
                     })
 
                 })
@@ -171,7 +182,7 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicActionSheet, $ionicLoading, $localStorage, $http) {
+    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicActionSheet, $ionicModal, $ionicLoading, $localStorage, $timeout, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -221,9 +232,22 @@ angular.module('starter.controllers', [])
         update_comments();
 
         var myComments;
+        var update_my_comments = function(){
+            Beach.getUserCommentsOnBeach($localStorage.getObject('user').id, $scope.name).then(function(comments){
+                myComments = comments;
+            })
+        };
 
-        Beach.getUserCommentsOnBeach($localStorage.getObject('user').id, $scope.name).then(function(comments){
-            myComments = comments;
+        update_my_comments();
+        $scope.$on('logout', function(){
+            update_comments();
+            update_photos();
+            update_my_comments();
+        })
+        $scope.$on('login_suc', function(){
+            update_comments();
+            update_photos();
+            update_my_comments();
         })
 
         $scope.isOwnComment = function(comment_id){
@@ -256,13 +280,13 @@ angular.module('starter.controllers', [])
                     Beach.deleteComment(comment_id).then(function(success){
                         console.log("success on delete");
                         update_comments();
+                        update_my_comments();
 
                     })
                     return true;
                 }
             });
         }
-
 
 
         var title = 'New comment on: ' + $scope.name;
@@ -287,6 +311,7 @@ angular.module('starter.controllers', [])
                                         console.log(success);
 
                                         update_comments();
+                                        update_my_comments();
 
                                     });
                                     return $scope.post.data;
@@ -308,28 +333,6 @@ angular.module('starter.controllers', [])
             }
         }
 
-
-        var updateCommentLikes = function(cmnt_id, cb){
-
-            Beach.getLikesByComment(cmnt_id).then(function(likes){
-                console.log("likes: " + likes)
-
-                cb(likes);
-            });
-        }
-
-
-
-        $scope.getCommentLikes = function(comment_id){
-
-            updateCommentLikes(comment_id, function(likes) {
-                console.log("LIKKKKKKKKKKKKKKKKKKKKKKKKKKKES: " +likes);
-                return likes;
-            });
-
-        }
-
-
         var heroku_like = "http://beach-please.herokuapp.com/beaches/comment/addlike";
 
         $scope.like = function(cmnt_id){
@@ -345,6 +348,59 @@ angular.module('starter.controllers', [])
 
             }
         }
+
+        var update_photos = function(){
+            Beach.getBeachPhotos($scope.name).then(function(photos){
+                $scope.photos = photos;
+            })
+        }
+
+        update_photos();  //possivelmente passar para o ng-init
+
+
+        $scope.doCommentRefresh = function(){
+            $timeout(function(){
+                update_comments()
+                $scope.$broadcast('scroll.refreshComplete');
+            }, 1000);
+        }
+
+        $scope.doPhotoRefresh = function(){
+            $timeout(function(){
+                update_photos();
+                $scope.$broadcast('scroll.refreshComplete');
+            }, 1000);
+        }
+
+        $scope.show_photo_options = function(photo_uploader, photo_name){
+            if($localStorage.getObject('user')){
+                if(photo_uploader === user.id){
+                    $ionicActionSheet.show({
+                        titleText: 'Comment Options',
+                        destructiveText: 'Delete',
+                        cancelText: 'Cancel',
+                        cancel: function(){
+                            console.log("canceled");
+                        },
+                        buttonClicked: function(index){
+                            return true;
+                        },
+                        destructiveButtonClicked: function(){
+                            Beach.deletePhoto($scope.name, photo_name).then(function(success){
+                                console.log("success on delete");
+                                update_photos();
+                                //place toaster or popup
+
+                            })
+                            return true;
+                        }
+                    });
+                }
+
+            }
+
+        }
+
 
         $scope.data = { "ImageURI" :  "Select Image" };
         $scope.takePicture = function() {
@@ -406,8 +462,15 @@ angular.module('starter.controllers', [])
             var ft = new FileTransfer();
             var heroku = "https://beach-please.herokuapp.com/upload";
             var local = "http://localhost:3000/upload";
+
             ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
                 $ionicLoading.hide();}, options);
+
+            $timeout(function(){
+               update_photos();
+            },
+            500);
+
         }
 
         var viewUploadedPictures = function() {

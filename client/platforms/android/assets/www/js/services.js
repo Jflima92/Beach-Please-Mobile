@@ -43,6 +43,7 @@ angular.module('starter.services', [])
         var self = this;
         var location = geoLocation.getGeolocation();
         console.log(geoLocation.getGeolocation());
+
         self.getFirst = function(number) {
             var q = $q.defer();
 
@@ -225,6 +226,34 @@ angular.module('starter.services', [])
             return res;
 
         }
+
+        self.getBeachPhotos = function(beach_name) {
+            console.log("NAME : " + beach_name);
+            var q = $q.defer();
+            var locali = "http://192.168.108.57:3000/beaches";
+            var heroku = "https://beach-please.herokuapp.com/beaches";
+            var local = "http://192.168.1.79 :3000/beaches";
+            var geny = "192.168.56.1:3000/beaches";
+            var localx = "http://172.30.13.163:3000/beaches";
+            var localzex = "http://172.30.26.156:3000/beaches";
+
+            var string = heroku + '/photos/'+beach_name;
+            console.log("string: " + string);
+            var get_photos = $http.get(string).
+                success(function (data) {
+                    console.log(JSON.stringify(data))
+                    q.resolve(data);
+                })
+                .error(function (error) {
+                    console.log("Had an error");
+                    q.reject(error);
+                })
+
+            var res = q.promise;
+            return res;
+
+        }
+
 
 
         self.getAllByName = function(name) {

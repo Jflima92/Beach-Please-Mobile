@@ -33,7 +33,7 @@ angular.module('starter.controllers', [])
 
 
         // Create the login modal that we will use later
-        $ionicModal.fromTemplateUrl('templates/login.html', {
+        $ionicModal.fromTemplateUrl('templates/login-modal.html', {
             scope: $scope
         }).then(function(modal) {
             $scope.modal = modal;
@@ -171,7 +171,7 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicActionSheet, $ionicLoading, $localStorage, $http) {
+    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicActionSheet, $ionicModal, $ionicLoading, $localStorage, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -265,6 +265,8 @@ angular.module('starter.controllers', [])
 
 
 
+
+
         var title = 'New comment on: ' + $scope.name;
         $scope.new_comment = function(){
             $scope.post = {};
@@ -346,6 +348,36 @@ angular.module('starter.controllers', [])
             }
         }
 
+        var update_photos = function(){
+            Beach.getBeachPhotos($scope.name).then(function(photos){
+                $scope.photos = photos;
+                console.log(photos);
+            })
+        }
+
+        update_photos();  //possivelmente passar para o ng-init
+
+        $ionicModal.fromTemplateUrl('image-modal.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function(modal){
+            $scope.modal = modal;
+        })
+
+        $scope.openPhotoModal = function(photo){
+            $scope.image_src = photo;
+            $scope.modal.show();
+        }
+
+        $scope.closeModal = function(){
+            $scope.modal.hide();
+        }
+
+        $scope.$on('$destroy', function(){
+            $scope.modal.remove();
+        })
+
+
         $scope.data = { "ImageURI" :  "Select Image" };
         $scope.takePicture = function() {
             var options = {
@@ -409,6 +441,7 @@ angular.module('starter.controllers', [])
             ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
                 $ionicLoading.hide();}, options);
         }
+
 
         var viewUploadedPictures = function() {
             var heroku = "https://beach-please.herokuapp.com/upload";

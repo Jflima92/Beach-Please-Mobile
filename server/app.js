@@ -4,12 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var imgur = require('imgur');
+var multer = require('multer');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var beaches = require('./routes/beaches');
 var upload = require('./routes/upload');
-var multer = require('multer');
 
 var app = express();
 
