@@ -19,6 +19,7 @@ router.post('/', [ multer({ dest: './uploads/'}), function (req, res) {
 
 
     var praia =  req.body.beach;
+    console.log("praia: " +praia);
     var fbid = req.body.user["id"];
     beach.findOne({name:praia }, function (err, query) {
 
