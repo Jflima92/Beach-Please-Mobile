@@ -316,6 +316,27 @@ router.post('/comment/removecomment', function(req, res) {
 
 });
 
+router.post('/photo/remove', function(req, res) {
+
+    var _pname = req.body.pname;
+    var _bname = req.body.bname;
+
+    beach.findOne({name: _bname},function (err, beach) {
+        if (beach != null) {
+            photo.findOne({name:_pname},function(err,photo){
+
+                beach.update({$pull: {photos: photo._id}}, function (err) {
+                    if (err) console.log("err");
+                });
+    photo.remove();
+            })
+
+            res.send("photo removed");
+    }
+        else res.send("error");
+    });
+});
+
 router.get('/comment/:id/numlikes',function(req,res){
 
     var _id = req.params.id;
