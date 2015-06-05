@@ -20,7 +20,8 @@
     "com.ionic.keyboard",
     "org.apache.cordova.camera",
     "org.apache.cordova.file-transfer",
-    "cordova-plugin-geolocation"
+    "cordova-plugin-geolocation",
+    "cordova-plugin-network-information"
   ],
   "cordovaPlatforms": [
     "ios",

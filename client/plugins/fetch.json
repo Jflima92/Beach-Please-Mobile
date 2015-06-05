@@ -75,5 +75,13 @@
             "APP_ID": "1028453483866622",
             "APP_NAME": "Beach-Please"
         }
+    },
+    "cordova-plugin-network-information": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

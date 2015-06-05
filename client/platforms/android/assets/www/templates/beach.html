@@ -46,15 +46,11 @@
                             <h2>Ondulação</h2>
                             <p>Altura: {{weatherConds.swellHeight_m}} metros</p>
                         </div>
-
-
-
-
-                        <!--<a class="item item-icon-left assertive" href="#">-->
-                        <!--<i class="icon ion-music-note"></i>-->
-                        <!--Start listening-->
-                        <!--</a>-->
                     </div>
+
+                    <button class="button button-block button-balanced" style="margin-top:5%;" ng-click="checkIn()">
+                        Check In
+                    </button>
                 </ion-content>
             </ion-tab>
 
@@ -70,41 +66,44 @@
                         </button>
                     </div>
 
-                    <div class="list card feed_card" ng-repeat="comment in beachComments track by $index">
-                        <div class="item item-body">
-                            <div class="item item-avatar">
-                                <img src="http://graph.facebook.com/{{comment.user.id}}/picture?width=270&height=270"/>
-                                <h2>{{comment.user.name}}</h2>
-                                <p>6 de Maio de 2015</p>
+                    <ion-content class="has-header has-bottom" padding="true">
+                        <ion-refresher on-refresh ="doCommentRefresh()"></ion-refresher>
+                        <div class="list card feed_card" ng-repeat="comment in beachComments track by $index">
+                            <div class="item item-body">
+                                <div class="item item-avatar">
+                                    <img src="http://graph.facebook.com/{{comment.user.id}}/picture?width=270&height=270"/>
+                                    <h2>{{comment.user.name}}</h2>
+                                    <p>6 de Maio de 2015</p>
+                                </div>
+
+                                <p>
+                                    {{comment.commenttext}}
+                                </p>
+                                <p>
+                                    <a href="#" class="subdued">{{comment.likes.length}} Upvotes</a>
+                                    <a href="#" class="subdued">0 Reports</a>
+                                </p>
                             </div>
 
-                            <p>
-                                {{comment.commenttext}}
-                            </p>
-                            <p>
-                                <a href="#" class="subdued">{{comment.likes.length}} Upvotes</a>
-                                <a href="#" class="subdued">0 Reports</a>
-                            </p>
+                            <div class="item tabs tabs-secondary tabs-icon-left">
+                                <a class="tab-item" href="#" ng-click="like(comment._id)">
+                                    <i class="icon ion-thumbsup"></i>
+                                    Vote
+                                </a>
+
+                                <a class="tab-item" href="#">
+                                    <i class="icon ion-chatbox"></i>
+                                    Report
+                                </a>
+
+                                <a class="tab-item" href="#" ng-if="isOwnComment(comment._id)" ng-click="showOptions(comment._id)">
+                                    <i class="icon ion-navicon-round"></i>
+                                    Options
+                                </a>
+                            </div>
+
                         </div>
-
-                        <div class="item tabs tabs-secondary tabs-icon-left">
-                            <a class="tab-item" href="#" ng-click="like(comment._id)">
-                                <i class="icon ion-thumbsup"></i>
-                                Vote
-                            </a>
-
-                            <a class="tab-item" href="#">
-                                <i class="icon ion-chatbox"></i>
-                                Report
-                            </a>
-
-                            <a class="tab-item" href="#" ng-if="isOwnComment(comment._id)" ng-click="showOptions(comment._id)">
-                                <i class="icon ion-navicon-round"></i>
-                                Options
-                            </a>
-                        </div>
-
-                    </div>
+                    </ion-content>
                 </ion-content>
             </ion-tab>
 
@@ -121,17 +120,18 @@
                             <a class="button button-assertive" ng-click="selectPicture()">Choose photo</a>
                             <a class="button button-assertive" ng-click="viewPictures();">View loaded</a>
                         </div>
+
                         <div ng-show="picData" class="item item-image">
                             When pics loaded click to upload!
                             <img id="myImage" class="item" ng-src="{{picData}}" ng-click="uploadPicture()" style="max-width: 100%"/>
                         </div>
+                        <ion-refresher on-refresh ="doPhotoRefresh()"></ion-refresher>
                         <div class="home-sq" ng-show=photos>
-                            <p><i class="icon ion-alert-circled" style="color:#F60"></i> Click to set photo like avatar, or lon click to delete!<p>
-                            <div class="row" ng-repeat="photo in photos" ng-if="$index % 4 ===0">
-                                <div class="col col-50" ng-if="$index < photos.length" ng-click="openPhotoModal(photos[$index].name)">
+                            <div class="row" ng-repeat="photo in photos" ng-if="$index % 2 ===0">
+                                <div class="col col-50" ng-if="$index < photos.length" ng-click="openPhotoModal(photos[$index].name)" on-hold="show_photo_options(photos[$index].userid, photos[$index].name)">
                                     <img ng-src="{{photos[$index].name}}" width="100%"/>
                                 </div>
-                                <div class="col col-50" ng-if="$index+1 < photos.length" ng-click="openPhotoModal(photos[$index+1].name)">
+                                <div class="col col-50" ng-if="$index+1 < photos.length" ng-click="openPhotoModal(photos[$index+1].name)" on-hold="show_photo_options(photos[$index].userid, photos[$index+1].name)">
                                     <img ng-src="{{photos[$index+1].name}}" width="100%"/>
                                 </div>
                                 <!--<div class="col col-25" ng-if="$index+2 < photos.length">

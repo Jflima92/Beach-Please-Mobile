@@ -6,8 +6,21 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers','starter.directives','starter.services','ngCordova'])
 
-    .run(function($ionicPlatform, $cordovaGeolocation, geoLocation) {
+    .run(function($ionicPlatform, $cordovaGeolocation, geoLocation, $cordovaNetwork) {
         $ionicPlatform.ready(function() {
+
+                if($cordovaNetwork.getNetwork() == Connection.NONE){
+                    $ionicPopup.confirm({
+                        title: "No Internet Connection",
+                        content: "You must be connected to the internet to enjoy Beach Please."
+                    })
+                        .then(function(result){
+                            if(!result){
+                                ionic.Platform.exitApp();
+                            }
+                        });
+                }
+
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins.Keyboard) {

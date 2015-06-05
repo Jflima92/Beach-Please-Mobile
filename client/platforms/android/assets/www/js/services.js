@@ -53,7 +53,10 @@ angular.module('starter.services', [])
             var geny = "192.168.56.1:3000/beaches";
             var localx = "http://172.30.13.163:3000/beaches";
             var localzex = "http://172.30.26.156:3000/beaches";
+            if(location.lat != undefined && location.lng!= undefined)
             var string = heroku + '?dist='+number+'&lat='+location.lat+'&long='+location.lng;
+                else
+                var string = heroku + '?dist='+number+'&lat=41.1778751&long=-8.597915999999941';
             console.log(string);
 
             var beaches = $http.get(string)
@@ -200,7 +203,7 @@ angular.module('starter.services', [])
 
         }
 
-        self.deleteComment = function(comment_id) {
+        self.deleteComment = function(beach_name, comment_id) {
             console.log("NAME : " + comment_id);
             var q = $q.defer();
             var locali = "http://192.168.108.57:3000/beaches";
@@ -212,7 +215,7 @@ angular.module('starter.services', [])
 
             var string = heroku + '/comment/removecomment/';
             console.log(string);
-            var delete_comment = $http.post(string, {cmntid: comment_id}).
+            var delete_comment = $http.post(string, {bname: beach_name, cmntid: comment_id}).
                 success(function (data) {
                     console.log(data)
                     q.resolve(data);
@@ -240,6 +243,33 @@ angular.module('starter.services', [])
             var string = heroku + '/photos/'+beach_name;
             console.log("string: " + string);
             var get_photos = $http.get(string).
+                success(function (data) {
+                    console.log(JSON.stringify(data))
+                    q.resolve(data);
+                })
+                .error(function (error) {
+                    console.log("Had an error");
+                    q.reject(error);
+                })
+
+            var res = q.promise;
+            return res;
+
+        }
+
+        self.deletePhoto = function(photo_name, beach_name) {
+            console.log("NAME : " + beach_name);
+            var q = $q.defer();
+            var locali = "http://192.168.108.57:3000/beaches";
+            var heroku = "https://beach-please.herokuapp.com/beaches";
+            var local = "http://192.168.1.79 :3000/beaches";
+            var geny = "192.168.56.1:3000/beaches";
+            var localx = "http://172.30.13.163:3000/beaches";
+            var localzex = "http://172.30.26.156:3000/beaches";
+
+            var string = heroku + '/photo/remove/';
+            console.log("string: " + string);
+            var delete_photo = $http.post(string, {pname: photo_name, bname: beach_name}).
                 success(function (data) {
                     console.log(JSON.stringify(data))
                     q.resolve(data);

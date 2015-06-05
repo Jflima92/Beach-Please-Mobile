@@ -65,7 +65,7 @@ angular.module('starter.controllers', [])
         $scope.openModal = function(index) {
             if(index == 1) $scope.modal1.show();
             else
-            $scope.modal2.show();
+                $scope.modal2.show();
         };
 
         $scope.$on('$destroy', function(){
@@ -79,7 +79,7 @@ angular.module('starter.controllers', [])
             var heroku = "http://beach-please.herokuapp.com";
             if (!$localStorage.get('access_token')) {
 
-                $cordovaFacebook.login(["public_profile"]).then(function (success) {
+                $cordovaFacebook.login(["public_profile, publish_actions"]).then(function (success) {
                     $localStorage.set('access_token',  success.authResponse.accessToken);
 
                     $cordovaFacebook.api("me",["public_profile"]).then(function(success){
@@ -175,14 +175,14 @@ angular.module('starter.controllers', [])
 
     .controller('SearchCtrl', function($scope, Beach) {
         $scope.beaches = [];
-        Beach.getFirst(35000).then(function(beaches){
+        Beach.getFirst(200000).then(function(beaches){
             $scope.beaches = beaches;
         });
     })
 
 
 
-    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $window, $ionicSlideBoxDelegate,$cordovaCamera, $ionicActionSheet, $ionicModal, $ionicLoading, $localStorage, $timeout, $http) {
+    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $ionicLoading, $window, $ionicSlideBoxDelegate, $cordovaFacebook, $cordovaCamera, $ionicActionSheet, $ionicModal, $ionicLoading, $localStorage, $timeout, $http) {
         $scope.name = $stateParams.beachId;
 
         ionic.Platform.ready(function() {
@@ -203,7 +203,7 @@ angular.module('starter.controllers', [])
 
         var auxBeaches;
         var auxConds;
-        Beach.getFirst(35000).then(function(beaches){
+        Beach.getFirst(200000).then(function(beaches){
             auxBeaches = beaches;
             var beach = [];
             for(var i=0;i<auxBeaches.length;i++) {
@@ -277,7 +277,7 @@ angular.module('starter.controllers', [])
                     return true;
                 },
                 destructiveButtonClicked: function(){
-                    Beach.deleteComment(comment_id).then(function(success){
+                    Beach.deleteComment($scope.name, comment_id).then(function(success){
                         console.log("success on delete");
                         update_comments();
                         update_my_comments();
@@ -309,6 +309,13 @@ angular.module('starter.controllers', [])
                                     console.log("wifi: " + $scope.post.data);
                                     Beach.postComment($scope.post.data, $localStorage.getObject('user').id, $scope.name).then(function(success){
                                         console.log(success);
+
+                                        $ionicLoading.show({
+                                            template: 'Posting..',
+                                            duration: 1000
+                                        })
+
+
 
                                         update_comments();
                                         update_my_comments();
@@ -373,10 +380,11 @@ angular.module('starter.controllers', [])
         }
 
         $scope.show_photo_options = function(photo_uploader, photo_name){
-            if($localStorage.getObject('user')){
+            console.log("quero aparecer + " + photo_uploader);
+            var user = $localStorage.getObject('user');
+            if(user){
                 if(photo_uploader === user.id){
                     $ionicActionSheet.show({
-                        titleText: 'Comment Options',
                         destructiveText: 'Delete',
                         cancelText: 'Cancel',
                         cancel: function(){
@@ -386,18 +394,107 @@ angular.module('starter.controllers', [])
                             return true;
                         },
                         destructiveButtonClicked: function(){
-                            Beach.deletePhoto($scope.name, photo_name).then(function(success){
+                            Beach.deletePhoto(photo_name, $scope.name).then(function(success){
                                 console.log("success on delete");
                                 update_photos();
                                 //place toaster or popup
+
 
                             })
                             return true;
                         }
                     });
                 }
+                else
+                    var newPhotoPopup = $ionicPopup.alert({
+                        title: "You don't have permissions to delete this photo!",
+                        buttons: [
+                            {
+                                text: 'Ok',
+                                type: 'button-assertive'
+                            }
+                        ]
+                    });
 
             }
+            else
+                var newPhotoPopup = $ionicPopup.alert({
+                    title: "Please login first!",
+                    buttons: [
+                        {
+                            text: 'Ok',
+                            type: 'button-assertive'
+                        }
+                    ]
+                });
+
+        }
+
+        $scope.checkIn = function(){
+            var user = $localStorage.getObject('user');
+            var message = encodeURIComponent('I have just checked in @ ' + $scope.name);
+            var request = "https://graph.facebook.com/"+user.id+"/feed?method=post&message=" + message + "&access_token=" + $localStorage.get('access_token');
+
+            var req = +user.id+"/feed?method=post&message=testes/"+$localStorage.get('access_token');
+            console.log(request);
+
+            var confirmPopup = $ionicPopup.confirm({
+                title: "Publicar pelo Facebook..."
+                /*buttons: [
+                 {text: "Ok",
+                 type: 'button-assertive',
+                 onTap: function(e){
+                 $http.post(request).then(function(success){
+                 console.log(success);
+                 },
+                 function(err){
+                 console.log(JSON.stringify(err));
+                 })
+                 return true;
+                 }}
+                 ]*/
+            });
+
+            confirmPopup.then(function(res){
+                if(res){
+                    $http.post(request).then(function(success){
+                            console.log(success);
+                        },
+                        function(err){
+                            console.log(JSON.stringify(err));
+                        })
+                }
+            })
+
+
+
+            //$cordovaFacebook.api(request, ["publish_actions"], function(success){ console.log(success)}, function(error){console.log(error)});
+
+            /*if(user){
+
+             var check_in_message = {
+             method: "apprequests",
+             message: "Mensagem daquelas"
+             }
+             $cordovaFacebook.showDialog(check_in_message,
+             function(success){
+             console.log("Posted: " + success)
+             var newPhotoPopup = $ionicPopup.alert({
+             title: "Publicação com sucesso",
+             buttons: [
+             {
+             text: 'Ok',
+             type: 'button-assertive'
+             }
+             ]
+             });
+
+             },
+             function(error){
+             console.log("error: " + error)
+             })
+             }*/
+
 
         }
 
@@ -466,10 +563,12 @@ angular.module('starter.controllers', [])
             ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
                 $ionicLoading.hide();}, options);
 
+            delete $scope.picData;
             $timeout(function(){
-               update_photos();
-            },
-            500);
+                    update_photos();
+
+                },
+                4000);
 
         }
 

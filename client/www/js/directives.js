@@ -52,7 +52,7 @@ angular.module('starter.directives', [])
                             google.maps.event.addListener(marker2, 'click', (function(marker2) {
                                 return function() {
 
-                                    infowindow.setContent("<div class=\"list card\" style=\"margin-top:14%;\">" +"<div class=\"item item-avatar\">"
+                                    infowindow.setContent("<div class=\"list card\>" +"<div class=\"item item-avatar\">"
                                     + "<img src=\""+ beach.thumbUrl + "\">"
                                     +"<h2>Praia do"+ beach.name +" </h2>"
                                     +"<p>"+ beach.lat+" | "+beach.lng+"</p> </div> ");
@@ -77,7 +77,7 @@ angular.module('starter.directives', [])
                 $scope.onCreate({map: map});
 
                 google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent("Voc� est� Aqui!!");
+                    infowindow.setContent("Você está Aqui!!");
                     infowindow.open(map,marker);
                 });
 

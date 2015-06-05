@@ -93,4 +93,7 @@
     <preference name="SplashScreenDelay" value="3000" />
     <allow-intent href="*" />
     <allow-navigation href="*" />
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
 </widget>
