@@ -573,26 +573,26 @@ angular.module('starter.controllers', [])
         }
 
 
-        $scope.data = {"ImageURI": "Select Image"};
-        $scope.takePicture = function () {
+        $scope.data = { "ImageURI" :  "Select Image" };
+        $scope.takePicture = function() {
             var options = {
                 quality: 50,
                 destinationType: Camera.DestinationType.FILE_URL,
                 sourceType: Camera.PictureSourceType.CAMERA
             };
             $cordovaCamera.getPicture(options).then(
-                function (imageData) {
+                function(imageData) {
                     $scope.picData = imageData;
                     $scope.ftLoad = true;
                     $localStorage.setObject('fotoUp', imageData);
-                    $ionicLoading.show({template: 'Fotografia adquirida...', duration: 500});
+                    $ionicLoading.show({template: 'Fotografia adquirida...', duration:500});
                 },
-                function (err) {
-                    $ionicLoading.show({template: 'Erro na câmara...', duration: 500});
+                function(err){
+                    $ionicLoading.show({template: 'Erro na câmara...', duration:500});
                 })
         }
 
-        $scope.selectPicture = function () {
+        $scope.selectPicture = function() {
             var options = {
                 quality: 50,
                 destinationType: Camera.DestinationType.FILE_URI,
@@ -600,22 +600,22 @@ angular.module('starter.controllers', [])
             };
 
             $cordovaCamera.getPicture(options).then(
-                function (imageURI) {
-                    window.resolveLocalFileSystemURI(imageURI, function (fileEntry) {
+                function(imageURI) {
+                    window.resolveLocalFileSystemURI(imageURI, function(fileEntry) {
                         $scope.picData = fileEntry.nativeURL;
+                        console.log(picData);
                         $scope.ftLoad = true;
                         var image = document.getElementById('myImage');
                         image.src = fileEntry.nativeURL;
                     });
-                    $ionicLoading.show({template: 'Fotografia adquirida...', duration: 500});
+                    $ionicLoading.show({template: 'Fotografia adquirida...', duration:500});
                 },
-                function (err) {
-                    $ionicLoading.show({template: 'Erro na câmara...', duration: 500});
+                function(err){
+                    $ionicLoading.show({template: 'Erro na câmara...', duration:500});
                 })
-        }
+        };
 
-
-        $scope.uploadPicture = function () {
+        $scope.uploadPicture = function() {
             $ionicLoading.show({template: 'A enviar...'});
             var fileURL = $scope.picData;
             var options = new FileUploadOptions();
@@ -634,23 +634,60 @@ angular.module('starter.controllers', [])
             var heroku = "https://beach-please.herokuapp.com/upload";
             var local = "http://localhost:3000/upload";
 
-            ft.upload(fileURL, encodeURI(heroku), function(success){
+            ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
+                $ionicLoading.hide();}, options);
 
-            }, function (error) {
-                $ionicLoading.show({template: 'Erro de ligação...'});
-                $ionicLoading.hide();
-            }, options);
-
-            delete $scope.picData;
-            $timeout(function () {
+            $timeout(function(){
+                    delete $scope.picData;
                     update_photos();
-
                 },
-                3000);
+                500);
 
         }
-    })
 
+        var viewUploadedPictures = function() {
+            var heroku = "https://beach-please.herokuapp.com/upload";
+            $ionicLoading.show({template: 'A recolher fotografias...'});
+            server = "http://192.168.1.79:3000/upload";
+            if (heroku) {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange=function(){
+                    if(xmlhttp.readyState === 4){
+                        if (xmlhttp.status === 200) {
+                            document.getElementById('server_images').innerHTML = xmlhttp.responseText;
+                        }
+                        else { $ionicLoading.show({template: 'Errore durante il caricamento...', duration: 1000});
+                            return false;
+                        }
+                    }
+                };
+                xmlhttp.open("GET", heroku , true);
+                xmlhttp.send()}	;
+            $ionicLoading.hide();
+        }
+
+        $scope.viewPictures = function() {
+            var heroku = "https://beach-please.herokuapp.com/upload";
+            $ionicLoading.show({template: 'Sto cercando le tue foto...'});
+            server = "http://192.168.1.79:3000/upload";
+            if (heroku) {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange=function(){
+                    if(xmlhttp.readyState === 4){
+                        if (xmlhttp.status === 200) {
+                            document.getElementById('server_images').innerHTML = xmlhttp.responseText;
+                        }
+                        else { $ionicLoading.show({template: 'Errore durante il caricamento...', duration: 1000});
+                            return false;
+                        }
+                    }
+                };
+                xmlhttp.open("GET", heroku , true);
+                xmlhttp.send()}	;
+            $ionicLoading.hide();
+        }
+
+    })
 
 
 
