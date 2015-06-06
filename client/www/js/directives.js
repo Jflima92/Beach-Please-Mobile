@@ -46,6 +46,7 @@ angular.module('starter.directives', [])
                                 position: myLatlng,
                                 map: map,
                                 title: allBeaches[i].name
+
                             });
                             markers.push(marker2);
                             var beach = allBeaches[i];
@@ -53,9 +54,12 @@ angular.module('starter.directives', [])
                                 return function() {
 
                                     infowindow.setContent("<div class=\"list card\>" +"<div class=\"item item-avatar\">"
-                                    + "<img src=\""+ beach.thumbUrl + "\">"
-                                    +"<h2>Praia do"+ beach.name +" </h2>"
-                                    +"<p>"+ beach.lat+" | "+beach.lng+"</p> </div> ");
+
+                                    +"<h2>Praia do "+ marker2.title +" </h2>"
+                                    +"<p>"+ beach.lat+" | "+beach.lng+"</p>"
+                                    + "<button class=\"button button-block button-balanced\" style=\"margin-top:5%;\" ng-click=\"+checkIn()+ \">Check In</button>"
+                                        +"<a style= \"text-decoration: none;\" href=\"#/app/search/"+marker2.title+"\">"+ "<button  class=\"button button-block button-assertive\" style=\"margin-top:5%;\" ng-click=\"+goToInfo("+marker2.title+ ")+ \">Info</button></a>"
+                                        +"</div> ");
 
 
                                     // location.replace("#/app/search/"+marker2.title);

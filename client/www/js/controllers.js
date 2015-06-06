@@ -430,6 +430,11 @@ angular.module('starter.controllers', [])
 
         }
 
+        $scope.goToInfo = function(beach_name){
+            //$state.go('app.beach', { beachId: beach_name });
+            $state.go('app.beach',{beachId: beach_name});
+
+        }
         $scope.checkIn = function(){
             var user = $localStorage.getObject('user');
             var message = encodeURIComponent('I have just checked in @ ' + $scope.name);
