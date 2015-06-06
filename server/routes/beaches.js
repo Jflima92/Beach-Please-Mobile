@@ -146,6 +146,8 @@ router.get('/weatherReq/:id', function(req, res, next) {
                         cond.description = data2["data"]["weather"][0]["hourly"][div]["weatherIconUrl"][0]["value"];
                         cond.winddirection = data2["data"]["weather"][0]["hourly"][div]["winddir16Point"];
                         cond.cloudcover = data2["data"]["weather"][0]["hourly"][div]["cloudcover"];
+                        cond.humidity = data2["data"]["weather"][0]["hourly"][div]["humidity"];
+                        cond.precipitation = data2["data"]["weather"][0]["hourly"][div]["precipMM"];
                         cond.time = Date.now();
                         cond.save(function (err) {
                             if(err) {
