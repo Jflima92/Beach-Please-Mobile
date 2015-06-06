@@ -180,7 +180,9 @@ router.post('/getFeedMsg', function(req, res) {
                         callback();
                     });
             }, function(err){
-                res.send(feed.messages);
+                console.log(feed.messages);
+
+                res.send(feed.messages.sort(function(a,b) { return parseFloat(a.time) - parseFloat(b.time) } ));
             });
         });
     });
@@ -236,7 +238,7 @@ router.post('/comment/addlike', function(req, res) {
     var _cmntid = req.body.cmntid;
     var _usrid = req.body.usrid;
 
-console.log(_usrid);
+    console.log(_usrid);
 
 
     comment.findOne({_id:_cmntid},function(err, model, next){
@@ -330,11 +332,11 @@ router.post('/photo/remove', function(req, res) {
                 beach.update({$pull: {photos: photo._id}}, function (err) {
                     if (err) console.log("err");
                 });
-    photo.remove();
+                photo.remove();
             })
 
             res.send("photo removed");
-    }
+        }
         else res.send("error");
     });
 });
