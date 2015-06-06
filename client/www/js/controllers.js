@@ -97,6 +97,14 @@ angular.module('starter.controllers', [])
                         check_user();
                         $http.post(heroku+"/users/verify",{id:success.id,name:success.name});
                         $scope.modal1.hide();
+                        $cordovaToast
+                            .show('Logged in!', 'long', 'bottom')
+                            .then(function (success) {
+                                //sucesso
+                            }),
+                            function (erro) {
+                                console.log(erro);
+                            }
                     })
 
                 })
@@ -107,19 +115,29 @@ angular.module('starter.controllers', [])
             // if ($localStorage.hasOwnProperty('access_token')) {
             $cordovaFacebook.logout().then(function(success){
                 $localStorage.delete('access_token');
-                $localStorage.setObject('user', null);
+                $localStorage.delete('user');
                 $timeout(function(){
                     $rootScope.$broadcast('logout', {});
                     $scope.$apply();
                     check_user();
 
                 })
+                $cordovaToast
+                    .show('Logged out!', 'long', 'bottom')
+                    .then(function (success) {
+                        //sucesso
+                    }),
+                    function (erro) {
+                        console.log(erro);
+                    }
                 console.log("aa " + success);
             })
             /*}
              else
              alert("faz login primeiro");*/
         };
+
+
 
 
 
@@ -160,6 +178,8 @@ angular.module('starter.controllers', [])
 
 
 
+
+
     })
 
     .controller('PlaylistsCtrl', function($scope) {
@@ -182,36 +202,34 @@ angular.module('starter.controllers', [])
 
 
 
-    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $ionicLoading, $window, $ionicSlideBoxDelegate, $cordovaFacebook, $cordovaCamera, $ionicActionSheet, $ionicModal, $ionicLoading, $localStorage, $timeout, $http) {
+    .controller('BeachCtrl', function($scope, $ionicPopup, Beach, $stateParams, $timeout, $ionicLoading, $cordovaToast, $window, $ionicSlideBoxDelegate, $cordovaFacebook, $cordovaCamera, $ionicActionSheet, $ionicModal, $ionicLoading, $localStorage, $timeout, $http) {
         $scope.name = $stateParams.beachId;
 
-        ionic.Platform.ready(function() {
+        ionic.Platform.ready(function () {
             //console.log("ready get camera types");
-            if (!navigator.camera)
-            {
+            if (!navigator.camera) {
                 // error handling
                 return;
             }
 
 
-
             //pictureSource=navigator.camera.PictureSourceType.PHOTOLIBRARY;
-            pictureSource=navigator.camera.PictureSourceType.CAMERA;
-            destinationType=navigator.camera.DestinationType.FILE_URI;
+            pictureSource = navigator.camera.PictureSourceType.CAMERA;
+            destinationType = navigator.camera.DestinationType.FILE_URI;
         });
 
 
         var auxBeaches;
         var auxConds;
-        Beach.getFirst(200000).then(function(beaches){
+        Beach.getFirst(200000).then(function (beaches) {
             auxBeaches = beaches;
             var beach = [];
-            for(var i=0;i<auxBeaches.length;i++) {
+            for (var i = 0; i < auxBeaches.length; i++) {
                 if (auxBeaches[i].name === $scope.name) {
                     $scope.beach = auxBeaches[i];
                 }
             }
-            Beach.getBeachConds($scope.beach._id).then(function(beaches){
+            Beach.getBeachConds($scope.beach._id).then(function (beaches) {
                 auxConds = beaches;
                 $scope.weatherConds = auxConds;
             });
@@ -219,8 +237,8 @@ angular.module('starter.controllers', [])
 
         });
 
-        var update_comments = function(){
-            Beach.getCommentsByBeach($scope.name).then(function(comments){
+        var update_comments = function () {
+            Beach.getCommentsByBeach($scope.name).then(function (comments) {
 
                 console.log("comments: " + angular.toJson(comments));
 
@@ -232,27 +250,27 @@ angular.module('starter.controllers', [])
         update_comments();
 
         var myComments;
-        var update_my_comments = function(){
-            Beach.getUserCommentsOnBeach($localStorage.getObject('user').id, $scope.name).then(function(comments){
+        var update_my_comments = function () {
+            Beach.getUserCommentsOnBeach($localStorage.getObject('user').id, $scope.name).then(function (comments) {
                 myComments = comments;
             })
         };
 
         update_my_comments();
-        $scope.$on('logout', function(){
+        $scope.$on('logout', function () {
             update_comments();
             update_photos();
             update_my_comments();
         })
-        $scope.$on('login_suc', function(){
+        $scope.$on('login_suc', function () {
             update_comments();
             update_photos();
             update_my_comments();
         })
 
-        $scope.isOwnComment = function(comment_id){
-            for(var j = 0; j < myComments.length; j++){
-                if(comment_id === myComments[j].id){
+        $scope.isOwnComment = function (comment_id) {
+            for (var j = 0; j < myComments.length; j++) {
+                if (comment_id === myComments[j].id) {
 
                     return true;
                 }
@@ -260,7 +278,7 @@ angular.module('starter.controllers', [])
             return false;
         }
 
-        $scope.showOptions = function(comment_id){
+        $scope.showOptions = function (comment_id) {
             $ionicActionSheet.show({
                 titleText: 'Comment Options',
                 buttons: [
@@ -270,14 +288,14 @@ angular.module('starter.controllers', [])
                 ],
                 destructiveText: 'Delete',
                 cancelText: 'Cancel',
-                cancel: function(){
+                cancel: function () {
                     console.log("canceled");
                 },
-                buttonClicked: function(index){
+                buttonClicked: function (index) {
                     return true;
                 },
-                destructiveButtonClicked: function(){
-                    Beach.deleteComment($scope.name, comment_id).then(function(success){
+                destructiveButtonClicked: function () {
+                    Beach.deleteComment($scope.name, comment_id).then(function (success) {
                         console.log("success on delete");
                         update_comments();
                         update_my_comments();
@@ -290,31 +308,31 @@ angular.module('starter.controllers', [])
 
 
         var title = 'New comment on: ' + $scope.name;
-        $scope.new_comment = function(){
+        $scope.new_comment = function () {
             $scope.post = {};
-            if($localStorage.get('access_token')){
+            if ($localStorage.get('access_token')) {
                 var newCommentPopup = $ionicPopup.show({
                     template: '<input type="text" ng-model="post.data">',
                     title: title,
-                    scope:$scope,
+                    scope: $scope,
                     buttons: [
                         {text: 'Cancel'},
                         {
                             text: '<b>Post</b>',
                             type: 'button-energized',
-                            onTap: function(e){''
-                                if(!$scope.post.data){
+                            onTap: function (e) {
+                                ''
+                                if (!$scope.post.data) {
                                     e.preventDefault();
                                 } else {
                                     console.log("wifi: " + $scope.post.data);
-                                    Beach.postComment($scope.post.data, $localStorage.getObject('user').id, $scope.name).then(function(success){
+                                    Beach.postComment($scope.post.data, $localStorage.getObject('user').id, $scope.name).then(function (success) {
                                         console.log(success);
 
                                         $ionicLoading.show({
                                             template: 'Posting..',
                                             duration: 1000
                                         })
-
 
 
                                         update_comments();
@@ -328,7 +346,7 @@ angular.module('starter.controllers', [])
                     ]
                 })
             } else {
-                var showLoggedOut =  $ionicPopup.alert({
+                var showLoggedOut = $ionicPopup.alert({
                     title: 'Unable to post comment, please login and try again..',
                     buttons: [
                         {
@@ -342,10 +360,10 @@ angular.module('starter.controllers', [])
 
         var heroku_like = "http://beach-please.herokuapp.com/beaches/comment/addlike";
 
-        $scope.like = function(cmnt_id){
-            if($localStorage.get('access_token')){
-                for(var i = 0; i < $scope.beachComments.length; i++){
-                    if($scope.beachComments[i]._id == cmnt_id){
+        $scope.like = function (cmnt_id) {
+            if ($localStorage.get('access_token')) {
+                for (var i = 0; i < $scope.beachComments.length; i++) {
+                    if ($scope.beachComments[i]._id == cmnt_id) {
                         var user = $localStorage.getObject('user');
 
                         $http.post(heroku_like, {'cmntid': cmnt_id, 'usrid': user.id});
@@ -356,8 +374,8 @@ angular.module('starter.controllers', [])
             }
         }
 
-        var update_photos = function(){
-            Beach.getBeachPhotos($scope.name).then(function(photos){
+        var update_photos = function () {
+            Beach.getBeachPhotos($scope.name).then(function (photos) {
                 $scope.photos = photos;
             })
         }
@@ -365,39 +383,47 @@ angular.module('starter.controllers', [])
         update_photos();  //possivelmente passar para o ng-init
 
 
-        $scope.doCommentRefresh = function(){
-            $timeout(function(){
+        $scope.doCommentRefresh = function () {
+            $timeout(function () {
                 update_comments()
                 $scope.$broadcast('scroll.refreshComplete');
             }, 1000);
         }
 
-        $scope.doPhotoRefresh = function(){
-            $timeout(function(){
+        $scope.doPhotoRefresh = function () {
+            $timeout(function () {
                 update_photos();
                 $scope.$broadcast('scroll.refreshComplete');
             }, 1000);
         }
 
-        $scope.show_photo_options = function(photo_uploader, photo_name){
+        $scope.show_photo_options = function (photo_uploader, photo_name) {
             console.log("quero aparecer + " + photo_uploader);
             var user = $localStorage.getObject('user');
-            if(user){
-                if(photo_uploader === user.id){
+            if (user) {
+                if (photo_uploader === user.id) {
                     $ionicActionSheet.show({
                         destructiveText: 'Delete',
                         cancelText: 'Cancel',
-                        cancel: function(){
+                        cancel: function () {
                             console.log("canceled");
                         },
-                        buttonClicked: function(index){
+                        buttonClicked: function (index) {
                             return true;
                         },
-                        destructiveButtonClicked: function(){
-                            Beach.deletePhoto(photo_name, $scope.name).then(function(success){
+                        destructiveButtonClicked: function () {
+                            Beach.deletePhoto(photo_name, $scope.name).then(function (success) {
                                 console.log("success on delete");
                                 update_photos();
                                 //place toaster or popup
+                                $cordovaToast
+                                    .show('Deleted!', 'long', 'bottom')
+                                    .then(function (success) {
+                                        //sucesso
+                                    }),
+                                    function (erro) {
+                                        console.log(erro);
+                                    }
 
 
                             })
@@ -430,100 +456,143 @@ angular.module('starter.controllers', [])
 
         }
 
-        $scope.goToInfo = function(beach_name){
+        $scope.goToInfo = function (beach_name) {
             //$state.go('app.beach', { beachId: beach_name });
-            $state.go('app.beach',{beachId: beach_name});
+            $state.go('app.beach', {beachId: beach_name});
 
         }
-        $scope.checkIn = function(){
-            var user = $localStorage.getObject('user');
-            var message = encodeURIComponent('I have just checked in @ ' + $scope.name);
-            var request = "https://graph.facebook.com/"+user.id+"/feed?method=post&message=" + message + "&access_token=" + $localStorage.get('access_token');
+        $scope.checkIn = function () {
+            var user = $localStorage.get('access_token');
 
-            var req = +user.id+"/feed?method=post&message=testes/"+$localStorage.get('access_token');
-            console.log(request);
+            if (user) {
+                var message1 = encodeURIComponent('I have just checked in @ ' + $scope.name);
+                var request1 = "https://graph.facebook.com/" + user.id + "/feed?method=post&message=" + message1 + "&access_token=" + $localStorage.get('access_token');
 
-            var confirmPopup = $ionicPopup.confirm({
-                title: "Publicar pelo Facebook..."
-                /*buttons: [
-                 {text: "Ok",
-                 type: 'button-assertive',
-                 onTap: function(e){
-                 $http.post(request).then(function(success){
-                 console.log(success);
-                 },
-                 function(err){
-                 console.log(JSON.stringify(err));
-                 })
-                 return true;
-                 }}
-                 ]*/
-            });
+                var req = +user.id + "/feed?method=post&message=testes/" + $localStorage.get('access_token');
+                console.log(request1);
 
-            confirmPopup.then(function(res){
-                if(res){
-                    $http.post(request).then(function(success){
-                            console.log(success);
-                        },
-                        function(err){
-                            console.log(JSON.stringify(err));
-                        })
-                }
-            })
+                $ionicLoading.show({
+                    template: 'Posting..',
+                    duration: 2000
+                });
+                var request1 = "https://graph.facebook.com/" + user.id + "/feed?method=post&message=" + message1 + "&access_token=" + $localStorage.get('access_token');
 
+                $http.post(request1).then(function (success) {
+                        console.log(success);
+                    },
+                    function (err) {
+                        console.log(JSON.stringify(err));
+                    })
+                $timeout(function () {
+                    $cordovaToast
+                        .show('Checked in!', 'long', 'bottom')
+                        .then(function (success) {
+                            //sucesso
+                        }),
+                        function (erro) {
+                            console.log(erro);
+                        }
+                }, 2010)
+            }else{
+                var showLoggedOut = $ionicPopup.alert({
+                    title: 'Unable to check in, please login and try again..',
+                    buttons: [
+                        {
+                            text: 'Ok',
+                            type: 'button-assertive'
+                        }
+                    ]
+                })
+            }
+        }
 
+        $scope.shout = function () {
+            $scope.shout = {};
+            var user = $localStorage.get('access_token');
+            if(user) {
+                var message1 = encodeURIComponent('I have just checked in @ ' + $scope.name);
+                var request1 = "https://graph.facebook.com/" + user.id + "/feed?method=post&message=" + message1 + "&access_token=" + $localStorage.get('access_token');
 
-            //$cordovaFacebook.api(request, ["publish_actions"], function(success){ console.log(success)}, function(error){console.log(error)});
+                var req = +user.id + "/feed?method=post&message=testes/" + $localStorage.get('access_token');
+                console.log(request1);
 
-            /*if(user){
+                var newCommentPopup = $ionicPopup.show({
+                    template: '<input type="text" ng-model="shout.data"> @ ' + $scope.name,
+                    title: "Say something!",
+                    scope: $scope,
+                    buttons: [
+                        {text: 'Cancel'},
+                        {
+                            text: '<b>Shout!</b>',
+                            type: 'button-energized',
+                            onTap: function (e) {
+                                ''
+                                if (!$scope.shout.data) {
+                                    e.preventDefault();
+                                } else {
+                                    console.log("wifi: " + $scope.shout.data);
+                                    $ionicLoading.show({
+                                        template: 'Shouting...',
+                                        duration: 2000
+                                    });
+                                    var message = encodeURIComponent($scope.shout.data + " @ " + $scope.name);
+                                    var request = "https://graph.facebook.com/" + user.id + "/feed?method=post&message=" + message + "&access_token=" + $localStorage.get('access_token');
 
-             var check_in_message = {
-             method: "apprequests",
-             message: "Mensagem daquelas"
-             }
-             $cordovaFacebook.showDialog(check_in_message,
-             function(success){
-             console.log("Posted: " + success)
-             var newPhotoPopup = $ionicPopup.alert({
-             title: "Publicação com sucesso",
-             buttons: [
-             {
-             text: 'Ok',
-             type: 'button-assertive'
-             }
-             ]
-             });
-
-             },
-             function(error){
-             console.log("error: " + error)
-             })
-             }*/
-
-
+                                    $http.post(request).then(function (success) {
+                                            console.log(success);
+                                        },
+                                        function (err) {
+                                            console.log(JSON.stringify(err));
+                                        })
+                                    $timeout(function () {
+                                        $cordovaToast
+                                            .show('Shouted out!', 'long', 'bottom')
+                                            .then(function (success) {
+                                                //sucesso
+                                            }),
+                                            function (erro) {
+                                                console.log(erro);
+                                            }
+                                    }, 2010)
+                                }
+                            }
+                        }
+                    ]
+                })
+            }else{
+                var showLoggedOut = $ionicPopup.alert({
+                    title: 'Unable to shout, please login and try again..',
+                    buttons: [
+                        {
+                            text: 'Ok',
+                            type: 'button-assertive'
+                        }
+                    ]
+                })
+            }
         }
 
 
-        $scope.data = { "ImageURI" :  "Select Image" };
-        $scope.takePicture = function() {
+        $scope.data = {"ImageURI": "Select Image"};
+        $scope.takePicture = function () {
             var options = {
                 quality: 50,
                 destinationType: Camera.DestinationType.FILE_URL,
                 sourceType: Camera.PictureSourceType.CAMERA
             };
             $cordovaCamera.getPicture(options).then(
-                function(imageData) {
+                function (imageData) {
                     $scope.picData = imageData;
                     $scope.ftLoad = true;
                     $localStorage.setObject('fotoUp', imageData);
-                    $ionicLoading.show({template: 'Fotografia adquirida...', duration:500});
+                    $ionicLoading.show({template: 'Fotografia adquirida...', duration: 500});
                 },
-                function(err){
-                    $ionicLoading.show({template: 'Erro na câmara...', duration:500});
+                function (err) {
+                    $ionicLoading.show({template: 'Erro na câmara...', duration: 500});
                 })
         }
 
-        $scope.selectPicture = function() {
+        $scope.selectPicture = function () {
             var options = {
                 quality: 50,
                 destinationType: Camera.DestinationType.FILE_URI,
@@ -531,22 +600,22 @@ angular.module('starter.controllers', [])
             };
 
             $cordovaCamera.getPicture(options).then(
-                function(imageURI) {
-                    window.resolveLocalFileSystemURI(imageURI, function(fileEntry) {
+                function (imageURI) {
+                    window.resolveLocalFileSystemURI(imageURI, function (fileEntry) {
                         $scope.picData = fileEntry.nativeURL;
-                        console.log(picData);
                         $scope.ftLoad = true;
                         var image = document.getElementById('myImage');
                         image.src = fileEntry.nativeURL;
                     });
-                    $ionicLoading.show({template: 'Fotografia adquirida...', duration:500});
+                    $ionicLoading.show({template: 'Fotografia adquirida...', duration: 500});
                 },
-                function(err){
-                    $ionicLoading.show({template: 'Erro na câmara...', duration:500});
+                function (err) {
+                    $ionicLoading.show({template: 'Erro na câmara...', duration: 500});
                 })
-        };
+        }
 
-        $scope.uploadPicture = function() {
+
+        $scope.uploadPicture = function () {
             $ionicLoading.show({template: 'A enviar...'});
             var fileURL = $scope.picData;
             var options = new FileUploadOptions();
@@ -565,61 +634,24 @@ angular.module('starter.controllers', [])
             var heroku = "https://beach-please.herokuapp.com/upload";
             var local = "http://localhost:3000/upload";
 
-            ft.upload(fileURL, encodeURI(heroku), viewUploadedPictures, function(error) {$ionicLoading.show({template: 'Erro de ligação...'});
-                $ionicLoading.hide();}, options);
+            ft.upload(fileURL, encodeURI(heroku), function(success){
+
+            }, function (error) {
+                $ionicLoading.show({template: 'Erro de ligação...'});
+                $ionicLoading.hide();
+            }, options);
 
             delete $scope.picData;
-            $timeout(function(){
+            $timeout(function () {
                     update_photos();
 
                 },
-                4000);
+                3000);
 
         }
-
-        var viewUploadedPictures = function() {
-            var heroku = "https://beach-please.herokuapp.com/upload";
-            $ionicLoading.show({template: 'A recolher fotografias...'});
-            server = "http://192.168.1.79:3000/upload";
-            if (heroku) {
-                var xmlhttp = new XMLHttpRequest();
-                xmlhttp.onreadystatechange=function(){
-                    if(xmlhttp.readyState === 4){
-                        if (xmlhttp.status === 200) {
-                            document.getElementById('server_images').innerHTML = xmlhttp.responseText;
-                        }
-                        else { $ionicLoading.show({template: 'Errore durante il caricamento...', duration: 1000});
-                            return false;
-                        }
-                    }
-                };
-                xmlhttp.open("GET", heroku , true);
-                xmlhttp.send()}	;
-            $ionicLoading.hide();
-        }
-
-        $scope.viewPictures = function() {
-            var heroku = "https://beach-please.herokuapp.com/upload";
-            $ionicLoading.show({template: 'Sto cercando le tue foto...'});
-            server = "http://192.168.1.79:3000/upload";
-            if (heroku) {
-                var xmlhttp = new XMLHttpRequest();
-                xmlhttp.onreadystatechange=function(){
-                    if(xmlhttp.readyState === 4){
-                        if (xmlhttp.status === 200) {
-                            document.getElementById('server_images').innerHTML = xmlhttp.responseText;
-                        }
-                        else { $ionicLoading.show({template: 'Errore durante il caricamento...', duration: 1000});
-                            return false;
-                        }
-                    }
-                };
-                xmlhttp.open("GET", heroku , true);
-                xmlhttp.send()}	;
-            $ionicLoading.hide();
-        }
-
     })
+
+
 
 
 

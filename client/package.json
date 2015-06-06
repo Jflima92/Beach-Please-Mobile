@@ -18,13 +18,40 @@
     "org.apache.cordova.device",
     "org.apache.cordova.console",
     "com.ionic.keyboard",
+    "cordova-plugin-geolocation",
+    {
+      "locator": "https://github.com/wf9a5m75/google-play-services",
+      "id": "com.google.playservices"
+    },
+    {
+      "locator": "https://github.com/apache/cordova-plugin-whitelist",
+      "id": "cordova-plugin-whitelist"
+    },
     "org.apache.cordova.camera",
     "org.apache.cordova.file-transfer",
-    "cordova-plugin-geolocation",
-    "cordova-plugin-network-information"
+    "org.apache.cordova.file",
+    {
+      "locator": "https://github.com/Wizcorp/phonegap-facebook-plugin",
+      "id": "com.phonegap.plugins.facebookconnect"
+    },
+    "cordova-plugin-network-information",
+    {
+      "locator": "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+      "id": "nl.x-services.plugins.toast"
+    }
   ],
   "cordovaPlatforms": [
     "ios",
-    "android"
+    "android",
+    {
+      "platform": "android",
+      "version": "",
+      "locator": "android"
+    },
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
   ]
 }

@@ -96,4 +96,7 @@
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
+    <feature name="Toast">
+        <param name="ios-package" value="Toast" />
+    </feature>
 </widget>

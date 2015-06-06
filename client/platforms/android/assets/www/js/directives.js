@@ -35,7 +35,9 @@ angular.module('starter.directives', [])
                     });
 
 
-                    Beach.getFirst(200000).then(function(allBeaches){      //in 50km range
+
+
+                    Beach.getFirst(50000).then(function(allBeaches){      //in 50km range
                         for(var i = 0; i < allBeaches.length; i++){
 
                             var myLatlng = new google.maps.LatLng(parseFloat(allBeaches[i].lat),parseFloat(allBeaches[i].lng));
@@ -44,13 +46,22 @@ angular.module('starter.directives', [])
                                 position: myLatlng,
                                 map: map,
                                 title: allBeaches[i].name
+
                             });
                             markers.push(marker2);
                             var beach = allBeaches[i];
                             google.maps.event.addListener(marker2, 'click', (function(marker2) {
                                 return function() {
-                                    infowindow.setContent("<h1>"+marker2.title+"<h1>"+"<img src=\""+beach.thumbUrl+"\" >"+
-                                    "<a href=\"#/app/search/"+marker2.title+"\">Info</a>");
+
+                                    infowindow.setContent("<div class=\"list card\>" +"<div class=\"item item-avatar\">"
+
+                                    +"<h2>Praia do "+ marker2.title +" </h2>"
+                                    +"<p>"+ beach.lat+" | "+beach.lng+"</p>"
+                                    + '<button class="button button-block button-balanced" style="margin-top:5%;" ng-click="checkIn()">Check In</button>'
+                                        +"<a style= \"text-decoration: none;\" href=\"#/app/search/"+marker2.title+"\">"+ "<button  class=\"button button-block button-assertive\" style=\"margin-top:5%;\" ng-click=\"+goToInfo("+marker2.title+ ")+ \">Info</button></a>"
+                                        +"</div> ");
+
+
                                     // location.replace("#/app/search/"+marker2.title);
                                     infowindow.open(map, marker2);
                                 }
@@ -58,75 +69,77 @@ angular.module('starter.directives', [])
                         }
                     });
 
-                    var marker = new google.maps.Marker({
-                        position: geoLocation.getGeolocation(),
-                        map: map,
-                        title: 'Uluru (Ayers Rock)'
-                    });
 
 
-                    $scope.onCreate({map: map});
-
-                    google.maps.event.addListener(marker, 'click', function() {
-                        infowindow.setContent("Voc� est� Aqui!!");
-                        infowindow.open(map,marker);
-                    });
-
-                    // Stop the side bar from dragging when mousedown/tapdown on the map
-                    google.maps.event.addDomListener($element[0], 'mousedown', function (e) {
-                        e.preventDefault();
-                        return false;
-                    });
+                var marker = new google.maps.Marker({
+                    position: geoLocation.getGeolocation(),
+                    map: map,
+                    title: 'Uluru (Ayers Rock)'
+                });
 
 
-                }
+                $scope.onCreate({map: map});
 
-                if (document.readyState === "complete") {
-                    initialize();
-                } else {
-                    ionic.Platform.ready(initialize);
-                }
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.setContent("Voc&#234; est&#225; Aqui!!");
+                    infowindow.open(map,marker);
+                });
+
+                // Stop the side bar from dragging when mousedown/tapdown on the map
+                google.maps.event.addDomListener($element[0], 'mousedown', function (e) {
+                    e.preventDefault();
+                    return false;
+                });
+
+
             }
+
+            if (document.readyState === "complete") {
+            initialize();
+        } else {
+            ionic.Platform.ready(initialize);
         }
-    })
+    }
+}
+})
 
-    .directive('ionSearch', function() {
-        return {
-            restrict: 'E',
-            replace: true,
-            scope: {
-                getData: '&source',
-                model: '=?',
-                search: '=?filter'
-            },
-            link: function(scope, element, attrs) {
-                attrs.minLength = attrs.minLength || 0;
-                scope.placeholder = attrs.placeholder || '';
-                scope.search = {value: ''};
+.directive('ionSearch', function() {
+    return {
+        restrict: 'E',
+        replace: true,
+        scope: {
+            getData: '&source',
+            model: '=?',
+            search: '=?filter'
+        },
+        link: function(scope, element, attrs) {
+            attrs.minLength = attrs.minLength || 0;
+            scope.placeholder = attrs.placeholder || '';
+            scope.search = {value: ''};
 
-                if (attrs.class)
-                    element.addClass(attrs.class);
+            if (attrs.class)
+                element.addClass(attrs.class);
 
-                if (attrs.source) {
-                    scope.$watch('search.value', function (newValue, oldValue) {
-                        if (newValue.length > attrs.minLength) {
-                            scope.getData({str: newValue}).then(function (results) {
-                                scope.model = results;
-                            });
-                        } else {
-                            scope.model = [];
-                        }
-                    });
-                }
+            if (attrs.source) {
+                scope.$watch('search.value', function (newValue, oldValue) {
+                    if (newValue.length > attrs.minLength) {
+                        scope.getData({str: newValue}).then(function (results) {
+                            scope.model = results;
+                        });
+                    } else {
+                        scope.model = [];
+                    }
+                });
+            }
 
-                scope.clearSearch = function() {
-                    scope.search.value = '';
-                };
-            },
-            template: '<div class="item-input-wrapper">' +
-            '<i class="icon ion-android-search"></i>' +
-            '<input type="search" placeholder="{{placeholder}}" ng-model="search.value">' +
-            '<i ng-if="search.value.length > 0" ng-click="clearSearch()" class="icon ion-close"></i>' +
-            '</div>'
-        };
-    });
+            scope.clearSearch = function() {
+                scope.search.value = '';
+            };
+        },
+        template: '<div class="item-input-wrapper">' +
+        '<i class="icon ion-android-search"></i>' +
+        '<input type="search" placeholder="{{placeholder}}" ng-model="search.value">' +
+        '<i ng-if="search.value.length > 0" ng-click="clearSearch()" class="icon ion-close"></i>' +
+        '</div>'
+    };
+});
