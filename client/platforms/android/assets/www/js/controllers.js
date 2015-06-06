@@ -462,7 +462,7 @@ angular.module('starter.controllers', [])
 
         }
         $scope.checkIn = function () {
-            var user = $localStorage.get('access_token');
+            var user = $localStorage.getObject('user');
 
             if (user) {
                 var message1 = encodeURIComponent('I have just checked in @ ' + $scope.name);
@@ -508,7 +508,7 @@ angular.module('starter.controllers', [])
 
         $scope.shout = function () {
             $scope.shout = {};
-            var user = $localStorage.get('access_token');
+            var user = $localStorage.getObject('user');
             if(user) {
                 var message1 = encodeURIComponent('I have just checked in @ ' + $scope.name);
                 var request1 = "https://graph.facebook.com/" + user.id + "/feed?method=post&message=" + message1 + "&access_token=" + $localStorage.get('access_token');
