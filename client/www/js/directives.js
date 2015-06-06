@@ -81,7 +81,7 @@ angular.module('starter.directives', [])
                 $scope.onCreate({map: map});
 
                 google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent("Você está Aqui!!");
+                    infowindow.setContent("Voc&#234; est&#225; Aqui!!");
                     infowindow.open(map,marker);
                 });
 
