@@ -11,6 +11,8 @@ var WeatherSchema = new mongoose.Schema({
         description: String,
         winddirection: String,
         cloudcover: Number,
+        humidity: Number,
+        precipitation: Number,
         time : { type: Date, default: Date.now }
     },
     {collection: "weatherCond"}
